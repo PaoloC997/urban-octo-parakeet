@@ -91,7 +91,7 @@
 }
 
 .s-main__cta--primary {
-  background: var(--c-primary);
+  background: var(--c-brand-grad);
   color: #fff;
 
 }
@@ -142,13 +142,13 @@
 .s-main__caption {
   position: absolute;
   left: 1rem;
-  top: 60%;
+  top: 80%;
   transform: translateY(-50%);
   max-width: min(45rem, calc(100% - 2rem));
   margin: 0;
   padding: 0.75rem 0.875rem;
   border-radius: 1rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-transform:uppercase;
   color: white;
   font-weight: 400;

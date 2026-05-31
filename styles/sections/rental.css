@@ -1,9 +1,32 @@
 .s-rental {
-  height:auto;
+  max-height:90vh;
+  min-height:80vh;
   padding-top:3.5rem;
   padding-bottom:5rem;
   background: var(--c-bg);
   color: var(--c-text);
+  position: relative;
+}
+
+.s-rental::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 5rem;
+  background: #fff;
+  clip-path: polygon(
+    0% 70%,
+    25% 0%,
+    50% 80%,
+    75% 10%,
+    100% 90%,
+    100% 100%,
+    0% 100%
+  );
+  z-index: 5;
+  pointer-events: none;
 }
 
 .s-rental .l-sectionTitle {

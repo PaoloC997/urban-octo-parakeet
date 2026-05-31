@@ -4,6 +4,25 @@
   padding: 3.5rem 0;
   background: #fff;
   color: #0f172a;
+  position: relative;
+}
+
+.s-about::before {
+  content: "";
+  position: absolute;
+  bottom:30px;
+  inset:0;
+  background-image: url("../../src/img/Fotos/valencia.webp");
+  background-size: cover;
+  background-position:center;
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.s-about__grid {
+  position: relative;
+  z-index: 1;
 }
 
 .s-about__grid {
