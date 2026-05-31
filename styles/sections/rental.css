@@ -1,7 +1,9 @@
 .s-rental {
   max-height: 100vh;
-  min-height: 50vh;
+  min-height: 80vh;
   padding: 3.5rem 0;
+  background: var(--c-bg);
+  color: var(--c-text);
 }
 
 .s-rental .l-sectionTitle {

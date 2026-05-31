@@ -20,8 +20,8 @@
   display: inline-flex;
   align-items: center;
   gap: 0.625rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
+  font-weight: 400;
+  letter-spacing: 0.02rem;
   text-decoration: none;
   color: inherit;
   white-space: nowrap;

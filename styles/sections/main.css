@@ -26,36 +26,39 @@
   padding-right: 1.25rem;
 }
 
-.s-main__eyebrow {
-  font-weight: 500;
-  opacity: 0.75;
-  margin: 0 0 0.75rem;
-}
-
 .s-main__title {
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.2rem;
   font-weight: 500;
   font-size: clamp(2.25rem, 5vw, 3.25rem);
   margin: 0 0 1rem;
   line-height: 1.05;
 }
 
+.s-main__brandLogo {
+  display: block;
+  width: clamp(16rem, 28vw, 26rem);
+  max-width: 100%;
+  height: auto;
+  margin: 0 0 1rem;
+}
+
 .s-main__divider {
-  height: 0.1875rem;
+  height: 0.1rem;
   width: min(32.5rem, 90%);
   border-radius: 62.4375rem;
-  background: var(--c-brand-grad);
+  background: white;
   margin: 0.75rem 0 1.125rem;
 }
 
 .s-main__lead {
-  font-size: 1.125rem;
+  font-size: 2.125rem;
   line-height: 1.6;
   max-width: 70ch;
   margin: 0 0 1.375rem;
   opacity: 0.85;
   font-weight: 400;
+  letter-spacing: 0.1rem;
 }
 
 .s-main__ctaRow {
@@ -132,11 +135,11 @@
   margin: 0;
   padding: 0.75rem 0.875rem;
   border-radius: 1rem;
-  font-size: 3rem;
+  font-size: 2rem;
   text-transform:uppercase;
-  color: lightyellow;
+  color: white;
   font-weight: 400;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03rem;
   opacity: 0;
   filter: blur(0);
   transition:
