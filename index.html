@@ -16,10 +16,10 @@
           <div class="s-main__grid">
             <div class="s-main__copy">
               <img class="s-main__brandLogo" src="src/img/logo.png" alt="Ono Bikeshop" />
-              <div class="s-main__divider" aria-hidden="true"></div>
               <p class="s-main__lead">BIKE RENTAL & WORKSHOP</p>
+              <div class="s-main__divider" aria-hidden="true"></div>
               <div class="s-main__ctaRow">
-                <a class="s-main__cta s-main__cta--primary" href="#services">SEE SERVICES</a>
+                  <a class="s-main__cta s-main__cta--primary" href="#services">SEE SERVICES</a>
                 <a class="s-main__cta s-main__cta--secondary" href="#contact">CONTACT</a>
               </div>
             </div>
@@ -68,15 +68,39 @@
       </section>
 
       <section id="about" class="s-about">
-        <h2 class="l-sectionTitle">About</h2>
-        <div class="s-about__inner">
-          <p>
-            Ono Bikeshop is a workshop in Ciutat Vella, València. Bring your bike for a safety check, maintenance, or
-            a full rebuild — we’ll help you keep it running smoothly.
-          </p>
+        <div class="s-about__grid">
+          <div class="s-about__media reveal-right" data-reveal aria-label="Workshop photos">
+            <div class="s-about__collage" aria-hidden="true">
+              <div class="s-about__tile s-about__tile--hero">
+                <img class="s-about__photo" src="src/img/Fotos/img12.JPG" alt="" loading="lazy" />
+              </div>
+              <div class="s-about__side">
+                <div class="s-about__tile s-about__tile--small">
+                  <img class="s-about__photo" src="src/img/Fotos/img2.JPG" alt="" loading="lazy" />
+                </div>
+                <div class="s-about__tile s-about__tile--small">
+                  <img class="s-about__photo" src="src/img/Fotos/img7.JPG" alt="" loading="lazy" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="s-about__copy reveal-up" data-reveal>
+            <p>
+              Ono Bikeshop is a workshop in Ciutat Vella, València. Bring your bike for a safety check, maintenance, or a
+              full rebuild — we’ll help you keep it running smoothly.
+            </p>
+            <p>
+              From quick adjustments to full overhauls, our focus is simple: reliable bikes, honest service, and clean
+              results. Drop by the shop, tell us what you need, and we’ll recommend the best option for your bike and
+              your riding.
+            </p>
+            <p>
+              We also build personalized bicycles from the frame and give old bikes a second life with careful
+              restoration and detailing.
+            </p>
+          </div>
         </div>
       </section>
-
       <section id="rental" class="s-rental">
         <h2 class="l-sectionTitle">Bike Rental</h2>
         <div class="s-rental__divider" aria-hidden="true"></div>
@@ -187,6 +211,7 @@
 
         </div>
       </section>
+
 
       <section id="services" class="s-services">
         <h2 class="l-sectionTitle">Services</h2>
@@ -379,5 +404,6 @@
     <div data-include="components/footer.html"></div>
     <script src="scripts/include.js"></script>
     <script src="scripts/carousel.js"></script>
+    <script src="scripts/reveal.js"></script>
   </body>
 </html>

@@ -39,6 +39,43 @@ body {
     box-sizing: border-box;
 }
 
+.reveal-up,
+.reveal-right {
+    opacity: 0;
+    transition:
+        opacity 700ms ease,
+        transform 700ms ease;
+    will-change: opacity, transform;
+}
+
+.reveal-up {
+    transform: translateY(1.5rem);
+}
+
+.reveal-right {
+    transform: translateX(-2rem);
+}
+
+.reveal-up.is-revealed,
+.reveal-right.is-revealed {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+}
+
+.reveal-up[data-delay],
+.reveal-right[data-delay] {
+    transition-delay: var(--reveal-delay);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal-up,
+    .reveal-right {
+        transition: none;
+        transform: none;
+        opacity: 1;
+    }
+}
+
 .l-sectionTitle {
     max-width: 68.75rem;
     margin: 0 auto;
