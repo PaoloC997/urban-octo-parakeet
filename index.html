@@ -13,15 +13,57 @@
     <main>
       <section id="main" class="s-main">
         <div class="s-main__inner">
-          <p class="s-main__eyebrow">València</p>
-          <h1 class="s-main__title">ONO BIKESHOP</h1>
-          <div class="s-main__divider" aria-hidden="true"></div>
-          <p class="s-main__lead">
-           BIKE RENTAL & WORKSHOP
-          </p>
-          <div class="s-main__ctaRow">
-            <a class="s-main__cta s-main__cta--primary" href="#services">See services</a>
-            <a class="s-main__cta s-main__cta--secondary" href="#contact">Contact</a>
+          <div class="s-main__grid">
+            <div class="s-main__copy">
+              <p class="s-main__eyebrow">València</p>
+              <h1 class="s-main__title">ONO BIKESHOP</h1>
+              <div class="s-main__divider" aria-hidden="true"></div>
+              <p class="s-main__lead">BIKE RENTAL & WORKSHOP</p>
+              <div class="s-main__ctaRow">
+                <a class="s-main__cta s-main__cta--primary" href="#services">See services</a>
+                <a class="s-main__cta s-main__cta--secondary" href="#contact">Contact</a>
+              </div>
+            </div>
+            <div class="s-main__media" data-carousel>
+              <div class="s-main__slides" aria-label="Workshop photos">
+                <figure class="s-main__frame s-main__frame--capFadeDelay is-active">
+                  <img class="s-main__slide" src="src/img/Fotos/img3.JPG" alt="Bicycle workshop" loading="lazy" />
+                  <figcaption class="s-main__caption">
+                    Complete technical and safety inspection.
+                  </figcaption>
+                </figure>
+                <figure class="s-main__frame s-main__frame--capSlideUpDelay">
+                  <img class="s-main__slide" src="src/img/Fotos/img6.JPG" alt="Bicycle workshop" loading="lazy" />
+                  <figcaption class="s-main__caption">
+                    Basic maintenance: clean, adjust, and lubricate.
+                  </figcaption>
+                </figure>
+                <figure class="s-main__frame s-main__frame--capBlurIn">
+                  <img class="s-main__slide" src="src/img/Fotos/img8.JPG" alt="Bicycle workshop" loading="lazy" />
+                  <figcaption class="s-main__caption">
+                    Premium maintenance: full disassembly and rebuild.
+                  </figcaption>
+                </figure>
+                <figure class="s-main__frame s-main__frame--capScaleIn">
+                  <img class="s-main__slide" src="src/img/Fotos/img11.JPG" alt="Bicycle workshop" loading="lazy" />
+                  <figcaption class="s-main__caption">
+                    Wheel truing, hubs, drivetrain, headset, and more.
+                  </figcaption>
+                </figure>
+                <figure class="s-main__frame s-main__frame--capSlideFromLeft">
+                  <img class="s-main__slide" src="src/img/Fotos/img14.JPG" alt="Bicycle workshop" loading="lazy" />
+                  <figcaption class="s-main__caption">
+                    Custom builds, restoration, and detailing.
+                  </figcaption>
+                </figure>
+              </div>
+              <button class="s-main__arrow s-main__arrow--prev" type="button" aria-label="Previous photo" data-carousel-prev>
+                <span aria-hidden="true">‹</span>
+              </button>
+              <button class="s-main__arrow s-main__arrow--next" type="button" aria-label="Next photo" data-carousel-next>
+                <span aria-hidden="true">›</span>
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -144,23 +186,24 @@
             </article>
           </div>
 
-          <div class="s-rental__services">
-            <h3 class="s-rental__servicesTitle">Workshop services available</h3>
-            <div class="s-rental__pillRow" aria-label="Workshop services">
-              <span class="s-rental__pill">Cleaning</span>
-              <span class="s-rental__pill">Maintenance</span>
-              <span class="s-rental__pill">Adjustments</span>
-              <span class="s-rental__pill">Replacements</span>
-              <span class="s-rental__pill">Lubrication</span>
-            </div>
-            <p class="s-rental__footerNote">Components and accessories for sale.</p>
-          </div>
         </div>
       </section>
 
       <section id="services" class="s-services">
         <h2 class="l-sectionTitle">Services</h2>
+        <div class="s-services__divider" aria-hidden="true"></div>
         <div class="s-services__inner">
+          <div class="s-services__workshop">
+            <h3 class="s-services__workshopTitle">Workshop services available</h3>
+            <div class="s-services__pillRow" aria-label="Workshop services">
+              <span class="s-services__pill">Cleaning</span>
+              <span class="s-services__pill">Maintenance</span>
+              <span class="s-services__pill">Adjustments</span>
+              <span class="s-services__pill">Replacements</span>
+              <span class="s-services__pill">Lubrication</span>
+            </div>
+            <p class="s-services__workshopNote">Components and accessories for sale.</p>
+          </div>
           <div class="s-services__grid">
             <article class="s-services__card">
               <h3 class="s-services__cardTitle">Inspection</h3>
@@ -194,6 +237,7 @@
 
       <section id="contact" class="s-contact">
         <h2 class="l-sectionTitle">Contact</h2>
+        <div class="s-contact__divider" aria-hidden="true"></div>
         <div class="s-contact__inner">
           <div class="s-contact__card">
             <div class="s-contact__row">
@@ -287,5 +331,6 @@
 
     <div data-include="components/footer.html"></div>
     <script src="scripts/include.js"></script>
+    <script src="scripts/carousel.js"></script>
   </body>
 </html>

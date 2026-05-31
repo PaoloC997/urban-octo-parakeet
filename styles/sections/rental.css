@@ -1,4 +1,6 @@
 .s-rental {
+  max-height: 100vh;
+  min-height: 50vh;
   padding: 3.5rem 0;
 }
 
@@ -6,7 +8,7 @@
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  font-weight: 900;
+  font-weight: 700;
   font-size: clamp(2.25rem, 5vw, 3.25rem);
   margin-bottom: 0.75rem;
 }
@@ -48,7 +50,7 @@
 
 .s-rental__cardTitle {
   margin: 0 0 1rem;
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -94,51 +96,19 @@
   opacity: 0.9;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .s-rental__note {
   opacity: 0.7;
   font-size: 0.9em;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.02em;
 }
 
 .s-rental__price {
   flex: 0 0 auto;
-  font-weight: 900;
-}
-
-.s-rental__services {
-  margin-top: 1.125rem;
-  border-top: 0.0625rem solid var(--c-border);
-  padding-top: 0.875rem;
-}
-
-.s-rental__servicesTitle {
-  margin: 0 0 0.625rem;
-  font-weight: 800;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-}
-
-.s-rental__pillRow {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.625rem;
-}
-
-.s-rental__pill {
-  padding: 0.5rem 0.625rem;
-  border-radius: 62.4375rem;
-  background: var(--c-surface-2);
-  border: 0.0625rem solid color-mix(in srgb, var(--c-border) 60%, transparent);
-  font-weight: 600;
-}
-
-.s-rental__footerNote {
-  margin: 0.75rem 0 0;
-  opacity: 0.7;
+  font-weight: 700;
 }
 
 @media (max-width: 56.25rem) {

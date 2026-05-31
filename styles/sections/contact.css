@@ -1,5 +1,24 @@
 .s-contact {
+  max-height: 100vh;
+  min-height: 50vh;
   padding: 3.5rem 0 4.5rem;
+}
+
+.s-contact .l-sectionTitle {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  font-size: clamp(2.25rem, 5vw, 3.25rem);
+  margin-bottom: 0.75rem;
+}
+
+.s-contact__divider {
+  height: 0.1875rem;
+  width: min(40rem, calc(100% - 2.5rem));
+  margin: 0 auto 1.5rem;
+  border-radius: 62.4375rem;
+  background: var(--c-brand-grad);
 }
 
 .s-contact__inner {

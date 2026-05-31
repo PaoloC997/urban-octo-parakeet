@@ -1,4 +1,6 @@
 .s-about {
+  max-height: 100vh;
+  min-height: 50vh;
   padding: 3.5rem 0;
 }
 
