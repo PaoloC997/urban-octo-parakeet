@@ -1,0 +1,89 @@
+@import url("./_fonts.css");
+@import url("./components/navbar.css");
+@import url("./components/footer.css");
+@import url("./sections/main.css");
+@import url("./sections/about.css");
+@import url("./sections/services.css");
+@import url("./sections/contact.css");
+@import url("./sections/rental.css");
+
+:root {
+    color-scheme: light;
+    --c-bg: #0a0a0f;
+    --c-text: #f8fafc;
+    --c-muted: rgba(248, 250, 252, 0.78);
+    --c-border: rgba(248, 250, 252, 0.12);
+    --c-surface-1: rgba(248, 250, 252, 0.06);
+    --c-surface-2: rgba(248, 250, 252, 0.08);
+    --c-primary: #774cf8;
+    --c-primary-2: #754ff6;
+    --c-secondary: #fb8003;
+    --c-secondary-2: #fb9c0d;
+    --c-secondary-3: #fa6207;
+    --c-tertiary: #4cc8de;
+    --c-tertiary-2: #4ed5d8;
+    --c-vivid: #5a86f1;
+    --c-vivid-2: #5d8cf1;
+    --c-turquoise: #43e5ce;
+    --c-brand-grad: linear-gradient(90deg, #12c2ff 0%, #fb8003 50%, #7a2cff 100%);
+}
+
+body {
+    margin: 0;
+    background: var(--c-bg);
+    color: var(--c-text);
+    font-weight: 400;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.l-sectionTitle {
+    max-width: 68.75rem;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+    font-size: 1.75rem;
+    letter-spacing: -0.01em;
+    font-weight: 700;
+}
+
+#primary{
+    color: var(--c-primary);
+}
+
+#primary-2{
+    color: var(--c-primary-2);
+}
+
+#secondary{
+    color: var(--c-secondary);
+}
+
+#secondary-2{
+    color: var(--c-secondary-2);
+}
+
+#secondary-3{
+    color: var(--c-secondary-3);
+}
+
+#tertiary{
+    color: var(--c-tertiary);
+}
+
+#tertiary-2{
+    color: var(--c-tertiary-2);
+}
+
+#vivid{
+    color: var(--c-vivid);
+}
+
+#vivid-2{
+    color: var(--c-vivid-2);
+}
+
+#turquoise{
+    color: var(--c-turquoise);
+}

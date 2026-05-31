@@ -1,0 +1,62 @@
+.c-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: color-mix(in srgb, var(--c-bg) 70%, transparent);
+  backdrop-filter: blur(0.625rem);
+  border-bottom: 0.0625rem solid var(--c-border);
+}
+
+.c-navbar__inner {
+  max-width: 68.75rem;
+  margin: 0 auto;
+  padding: 0.875rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.125rem;
+}
+
+.c-navbar__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: inherit;
+  white-space: nowrap;
+}
+
+.c-navbar__logo {
+  width: 2.125rem;
+  
+  border-radius: 0.625rem;
+  object-fit: cover;
+  box-shadow: 0 0.0625rem 0 rgba(0, 0, 0, 0.04);
+}
+
+.c-navbar__brandText {
+  line-height: 1;
+}
+
+.c-navbar__nav {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.c-navbar__link {
+  text-decoration: none;
+  color: inherit;
+  opacity: 0.85;
+  padding: 0.5rem 0.625rem;
+  border-radius: 0.625rem;
+}
+
+.c-navbar__link:hover {
+  opacity: 1;
+  background: var(--c-surface-2);
+}

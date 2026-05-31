@@ -1,0 +1,41 @@
+.s-services {
+  padding: 3.5rem 0;
+}
+
+.s-services__inner {
+  max-width: 68.75rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.s-services__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.875rem;
+  margin-top: 1rem;
+}
+
+.s-services__card {
+  flex: 1 1 18rem;
+  border: 0.0625rem solid var(--c-border);
+  border-radius: 0.875rem;
+  padding: 0.875rem;
+  background: var(--c-surface-1);
+}
+
+.s-services__cardTitle {
+  margin: 0 0 0.5rem;
+  font-weight: 700;
+}
+
+.s-services__cardBody {
+  margin: 0;
+  opacity: 0.8;
+  font-weight: 400;
+}
+
+@media (max-width: 56.25rem) {
+  .s-services__grid {
+    flex-direction: column;
+  }
+}

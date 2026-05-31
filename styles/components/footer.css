@@ -1,0 +1,16 @@
+.c-footer {
+  border-top: 0.0625rem solid var(--c-border);
+  padding: 1.625rem 0;
+  background: transparent;
+}
+
+.c-footer__inner {
+  max-width: 68.75rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.c-footer__text {
+  margin: 0;
+  opacity: 0.75;
+}
