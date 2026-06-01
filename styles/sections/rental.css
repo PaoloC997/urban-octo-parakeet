@@ -17,13 +17,9 @@
   height: 5rem;
   background: #fff;
   clip-path: polygon(
-    0% 70%,
-    25% 0%,
-    50% 80%,
-    75% 10%,
-    100% 90%,
-    100% 100%,
-    0% 100%
+      0%, 100%,
+      50% 70%,
+      100% 100%,
   );
   z-index: 5;
   pointer-events: none;

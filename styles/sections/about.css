@@ -5,6 +5,8 @@
   background: #fff;
   color: #0f172a;
   position: relative;
+  bottom: 3rem;
+  z-index: 6;
 }
 
 .s-about::before {
