@@ -5,7 +5,10 @@ async function includePartials() {
       const path = node.getAttribute("data-include");
       if (!path) return;
 
-      const response = await fetch(path, { cache: "no-cache" });
+      const url = new URL(path, window.location.href);
+      url.searchParams.set("v", String(Date.now()));
+
+      const response = await fetch(url.toString(), { cache: "no-store" });
       if (!response.ok) throw new Error(`Failed to load ${path}: ${response.status}`);
 
       node.innerHTML = await response.text();
