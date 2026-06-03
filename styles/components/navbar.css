@@ -19,6 +19,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.625rem;
+  flex: 0 0 calc(50vw - 3.5rem);
   font-weight: 400;
   letter-spacing: 0.02rem;
   text-decoration: none;
@@ -40,10 +41,9 @@
 .c-navbar__nav {
   display: flex;
   align-items: center;
-  gap: 2.875rem;
+  gap: 1.75rem;
   flex-wrap: wrap;
-  justify-content: flex-end;
-  width:30vw;
+  justify-content: flex-start;
 }
 
 .c-navbar__link {
@@ -65,6 +65,7 @@
   gap: 0.5rem;
   flex-wrap: wrap;
   justify-content: flex-end;
+  margin-left: auto;
   opacity: 0.85;
   font-size: 0.9rem;
 }
@@ -87,6 +88,27 @@
 
 .c-navbar__sep {
   opacity: 0.5;
+}
+
+.c-navbar__lang {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.c-navbar__langLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  text-decoration: none;
+  border-radius: 999rem;
+  background: var(--c-surface-1);
+}
+
+.c-navbar__langLink:hover {
+  background: var(--c-surface-2);
 }
 
 @media (max-width: 56.25rem) {

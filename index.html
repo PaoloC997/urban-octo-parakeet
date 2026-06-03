@@ -2,16 +2,39 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-	    <meta name="viewport" content="width=device-width, initial-scale=1" />
-	    <title>Ono Bikeshop</title>
-	    <link rel="icon" type="image/png" href="src/img/logo.png" />
-	    <link
-	      rel="stylesheet"
-	      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-	      referrerpolicy="no-referrer"
-	    />
-	    <link rel="stylesheet" href="styles/main.css" />
-	  </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ono Bikeshop | Bike Rental & Workshop</title>
+    <meta
+      name="description"
+      content="Ono Bikeshop offers bike rental, bicycle repair, maintenance, and workshop services."
+    />
+    <meta
+      name="keywords"
+      content="Ono Bikeshop, bike rental, bicycle rental, bike workshop, bicycle repair, bike maintenance"
+    />
+    <meta name="author" content="Ono Bikeshop" />
+    <meta property="og:title" content="Ono Bikeshop | Bike Rental & Workshop" />
+    <meta
+      property="og:description"
+      content="Bike rental, bicycle repair, maintenance, and workshop services from Ono Bikeshop."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="src/img/logo.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Ono Bikeshop | Bike Rental & Workshop" />
+    <meta
+      name="twitter:description"
+      content="Bike rental, bicycle repair, maintenance, and workshop services from Ono Bikeshop."
+    />
+    <meta name="twitter:image" content="src/img/logo.png" />
+    <link id="logo" rel="icon" type="image/png" href="src/img/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
   <body>
 	    <header class="c-navbar">
 	      <div class="c-navbar__inner">
@@ -37,6 +60,11 @@
 	          <a class="c-navbar__contactLink" href="https://instagram.com/onobikeshop" target="_blank" rel="noreferrer"
 	            ><i class="c-navbar__contactIcon fa-brands fa-instagram" aria-hidden="true"></i>@onobikeshop</a
 	          >
+            <span class="c-navbar__sep" aria-hidden="true">•</span>
+            <span class="c-navbar__lang" aria-label="Language selection">
+              <a class="c-navbar__langLink" href="#" aria-label="Spanish version">🇪🇸</a>
+              <a class="c-navbar__langLink" href="#" aria-label="English version">🇬🇧</a>
+            </span>
 	        </div>
 	      </div>
 	    </header>
@@ -119,20 +147,18 @@
             <p>
               Ono Bikeshop is a workshop in Ciutat Vella, València. Bring your bike for a safety check, maintenance, or a
               full rebuild — we’ll help you keep it running smoothly.
-            </p>
-            <p>
+           
               From quick adjustments to full overhauls, our focus is simple: reliable bikes, honest service, and clean
               results. Drop by the shop, tell us what you need, and we’ll recommend the best option for your bike and
               your riding.
-            </p>
-            <p>
+          
               We also build personalized bicycles from the frame and give old bikes a second life with careful
               restoration and detailing.
             </p>
           </div>
         </div>
       </section>
-      <section id="rental" class="s-rental">
+      <section id="rental" class="s-rental fade-in" data-reveal>
         <h2 class="l-sectionTitle">Bike Rental</h2>
         <div class="s-rental__divider" aria-hidden="true"></div>
         <div class="s-rental__inner">

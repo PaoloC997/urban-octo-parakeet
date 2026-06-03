@@ -34,6 +34,10 @@ body {
     font-weight: 400;
 }
 
+main {
+    overflow: hidden;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -45,6 +49,16 @@ body {
         opacity 700ms ease,
         transform 700ms ease;
     will-change: opacity, transform;
+}
+
+.fade-in{
+    opacity: 0;
+    transition: opacity 700ms ease;
+    will-change: opacity;
+}
+
+.fade-in.is-revealed{
+    opacity: 1;
 }
 
 .reveal-up {
@@ -66,6 +80,9 @@ body {
     transition-delay: var(--reveal-delay);
 }
 
+#logo{
+    max-width:1rem;
+}
 @media (prefers-reduced-motion: reduce) {
     .reveal-up,
     .reveal-right {
