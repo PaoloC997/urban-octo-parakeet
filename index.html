@@ -3,28 +3,40 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ono Bikeshop | Bike Rental & Workshop</title>
+    <title id="page-title" data-lang>Ono Bikeshop | Bike Rental & Workshop</title>
     <meta
+      id="meta-description"
       name="description"
       content="Ono Bikeshop offers bike rental, bicycle repair, maintenance, and workshop services."
+      data-lang
+      data-lang-attr="content"
     />
     <meta
+      id="meta-keywords"
       name="keywords"
       content="Ono Bikeshop, bike rental, bicycle rental, bike workshop, bicycle repair, bike maintenance"
+      data-lang
+      data-lang-attr="content"
     />
     <meta name="author" content="Ono Bikeshop" />
-    <meta property="og:title" content="Ono Bikeshop | Bike Rental & Workshop" />
+    <meta id="og-title" property="og:title" content="Ono Bikeshop | Bike Rental & Workshop" data-lang data-lang-attr="content" />
     <meta
+      id="og-description"
       property="og:description"
       content="Bike rental, bicycle repair, maintenance, and workshop services from Ono Bikeshop."
+      data-lang
+      data-lang-attr="content"
     />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="src/img/logo.png" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Ono Bikeshop | Bike Rental & Workshop" />
+    <meta id="twitter-title" name="twitter:title" content="Ono Bikeshop | Bike Rental & Workshop" data-lang data-lang-attr="content" />
     <meta
+      id="twitter-description"
       name="twitter:description"
       content="Bike rental, bicycle repair, maintenance, and workshop services from Ono Bikeshop."
+      data-lang
+      data-lang-attr="content"
     />
     <meta name="twitter:image" content="src/img/logo.png" />
     <link id="logo" rel="icon" type="image/png" href="src/img/logo.png" />
@@ -39,33 +51,49 @@
 	    <header class="c-navbar">
 	      <div class="c-navbar__inner">
 	        <a class="c-navbar__brand" href="#main">
-	          <img class="c-navbar__logo" src="src/img/logo.png" alt="Ono Bikeshop logo" />
+	          <img id="nav-logo-alt" class="c-navbar__logo" src="src/img/logo.png" alt="Ono Bikeshop logo" data-lang data-lang-attr="alt" />
 	          <span class="c-navbar__brandText">ONO BIKESHOP</span>
 	        </a>
-	        <nav class="c-navbar__nav" aria-label="Primary">
-	          <a class="c-navbar__link" href="#main">Home</a>
-	          <a class="c-navbar__link" href="#about">About</a>
-	          <a class="c-navbar__link" href="#services">Services</a>
-	          <a class="c-navbar__link" href="#contact">Contact</a>
-	        </nav>
-	        <div class="c-navbar__contact" aria-label="Quick contact">
-	          <a class="c-navbar__contactLink" href="tel:+34694912878"
-	            ><i class="c-navbar__contactIcon fa-solid fa-phone" aria-hidden="true"></i>(+34) 694 912 878</a
-	          >
-	          <span class="c-navbar__sep" aria-hidden="true">•</span>
-	          <a class="c-navbar__contactLink" href="mailto:onobicicletas@gmail.com"
-	            ><i class="c-navbar__contactIcon fa-solid fa-envelope" aria-hidden="true"></i>onobicicletas@gmail.com</a
-	          >
-	          <span class="c-navbar__sep" aria-hidden="true">•</span>
-	          <a class="c-navbar__contactLink" href="https://instagram.com/onobikeshop" target="_blank" rel="noreferrer"
-	            ><i class="c-navbar__contactIcon fa-brands fa-instagram" aria-hidden="true"></i>@onobikeshop</a
-	          >
-            <span class="c-navbar__sep" aria-hidden="true">•</span>
-            <span class="c-navbar__lang" aria-label="Language selection">
-              <a class="c-navbar__langLink" href="#" aria-label="Spanish version">🇪🇸</a>
-              <a class="c-navbar__langLink" href="#" aria-label="English version">🇬🇧</a>
-            </span>
-	        </div>
+          <button
+            id="nav-toggle"
+            class="c-navbar__toggle"
+            type="button"
+            aria-controls="navbar-menu"
+            aria-expanded="false"
+            aria-label="Open menu"
+            data-lang
+            data-lang-attr="aria-label"
+          >
+            <span class="c-navbar__toggleLine" aria-hidden="true"></span>
+            <span class="c-navbar__toggleLine" aria-hidden="true"></span>
+            <span class="c-navbar__toggleLine" aria-hidden="true"></span>
+          </button>
+          <div class="c-navbar__menu" id="navbar-menu">
+	          <nav id="nav-primary-label" class="c-navbar__nav" aria-label="Primary" data-lang data-lang-attr="aria-label">
+	            <a id="nav-home" class="c-navbar__link" href="#main" data-lang>Home</a>
+	            <a id="nav-about" class="c-navbar__link" href="#about" data-lang>About</a>
+	            <a id="nav-services" class="c-navbar__link" href="#services" data-lang>Services</a>
+	            <a id="nav-contact" class="c-navbar__link" href="#contact" data-lang>Contact</a>
+	          </nav>
+	          <div id="nav-contact-label" class="c-navbar__contact" aria-label="Quick contact" data-lang data-lang-attr="aria-label">
+	            <a class="c-navbar__contactLink" href="tel:+34694912878"
+	              ><i class="c-navbar__contactIcon fa-solid fa-phone" aria-hidden="true"></i>(+34) 694 912 878</a
+	            >
+	            <span class="c-navbar__sep" aria-hidden="true">•</span>
+	            <a class="c-navbar__contactLink" href="mailto:onobicicletas@gmail.com"
+	              ><i class="c-navbar__contactIcon fa-solid fa-envelope" aria-hidden="true"></i>onobicicletas@gmail.com</a
+	            >
+	            <span class="c-navbar__sep" aria-hidden="true">•</span>
+	            <a class="c-navbar__contactLink" href="https://instagram.com/onobikeshop" target="_blank" rel="noreferrer"
+	              ><i class="c-navbar__contactIcon fa-brands fa-instagram" aria-hidden="true"></i>@onobikeshop</a
+	            >
+              <span class="c-navbar__sep" aria-hidden="true">•</span>
+              <span id="nav-lang-label" class="c-navbar__lang" aria-label="Language selection" data-lang data-lang-attr="aria-label">
+                <a id='es' class="c-navbar__langLink" href="#" aria-label="Spanish version" data-lang data-lang-attr="aria-label">🇪🇸</a>
+                <a id='en' class="c-navbar__langLink" href="#" aria-label="English version" data-lang data-lang-attr="aria-label">🇬🇧</a>
+              </span>
+	          </div>
+          </div>
 	      </div>
 	    </header>
 
@@ -74,51 +102,51 @@
         <div class="s-main__inner">
           <div class="s-main__grid">
             <div class="s-main__copy">
-              <img class="s-main__brandLogo" src="src/img/logo.png" alt="Ono Bikeshop" />
-              <p class="s-main__lead">BIKE RENTAL & WORKSHOP</p>
+              <img id="hero-logo-alt" class="s-main__brandLogo" src="src/img/logo.png" alt="Ono Bikeshop" data-lang data-lang-attr="alt" />
+              <p id="hero-lead" class="s-main__lead" data-lang>BIKE RENTAL & WORKSHOP</p>
               <div class="s-main__divider" aria-hidden="true"></div>
               <div class="s-main__ctaRow">
-                  <a class="s-main__cta s-main__cta--primary" href="#services">SEE SERVICES</a>
-                <a class="s-main__cta s-main__cta--secondary" href="#services">Services</a>
+                  <a id="hero-cta-primary" class="s-main__cta s-main__cta--primary" href="#services" data-lang>SEE SERVICES</a>
+                <a id="hero-cta-secondary" class="s-main__cta s-main__cta--secondary" href="#contact" data-lang>Contact</a>
               </div>
             </div>
             <div class="s-main__media" data-carousel>
-              <div class="s-main__slides" aria-label="Workshop photos">
+              <div id="hero-slides-label" class="s-main__slides" aria-label="Workshop photos" data-lang data-lang-attr="aria-label">
                 <figure class="s-main__frame s-main__frame--capFadeDelay is-active">
-                  <img class="s-main__slide" src="src/img/Fotos/img3.JPG" alt="Bicycle workshop" loading="lazy" />
-                  <figcaption class="s-main__caption">
+                  <img id="hero-slide-1-alt" class="s-main__slide" src="src/img/Fotos/img3.JPG" alt="Bicycle workshop" loading="lazy" data-lang data-lang-attr="alt" />
+                  <figcaption id="hero-caption-1" class="s-main__caption" data-lang>
                     Complete technical and safety inspection.
                   </figcaption>
                 </figure>
                 <figure class="s-main__frame s-main__frame--capSlideUpDelay">
-                  <img class="s-main__slide" src="src/img/Fotos/img6.JPG" alt="Bicycle workshop" loading="lazy" />
-                  <figcaption class="s-main__caption">
+                  <img id="hero-slide-2-alt" class="s-main__slide" src="src/img/Fotos/img6.JPG" alt="Bicycle workshop" loading="lazy" data-lang data-lang-attr="alt" />
+                  <figcaption id="hero-caption-2" class="s-main__caption" data-lang>
                     Basic maintenance: clean, adjust, and lubricate.
                   </figcaption>
                 </figure>
                 <figure class="s-main__frame s-main__frame--capBlurIn">
-                  <img class="s-main__slide" src="src/img/Fotos/img8.JPG" alt="Bicycle workshop" loading="lazy" />
-                  <figcaption class="s-main__caption">
+                  <img id="hero-slide-3-alt" class="s-main__slide" src="src/img/Fotos/img8.JPG" alt="Bicycle workshop" loading="lazy" data-lang data-lang-attr="alt" />
+                  <figcaption id="hero-caption-3" class="s-main__caption" data-lang>
                     Premium maintenance: full disassembly and rebuild.
                   </figcaption>
                 </figure>
                 <figure class="s-main__frame s-main__frame--capScaleIn">
-                  <img class="s-main__slide" src="src/img/Fotos/img11.JPG" alt="Bicycle workshop" loading="lazy" />
-                  <figcaption class="s-main__caption">
+                  <img id="hero-slide-4-alt" class="s-main__slide" src="src/img/Fotos/img11.JPG" alt="Bicycle workshop" loading="lazy" data-lang data-lang-attr="alt" />
+                  <figcaption id="hero-caption-4" class="s-main__caption" data-lang>
                     Wheel truing, hubs, drivetrain, headset, and more.
                   </figcaption>
                 </figure>
                 <figure class="s-main__frame s-main__frame--capSlideFromLeft">
-                  <img class="s-main__slide" src="src/img/Fotos/img14.JPG" alt="Bicycle workshop" loading="lazy" />
-                  <figcaption class="s-main__caption">
+                  <img id="hero-slide-5-alt" class="s-main__slide" src="src/img/Fotos/img14.JPG" alt="Bicycle workshop" loading="lazy" data-lang data-lang-attr="alt" />
+                  <figcaption id="hero-caption-5" class="s-main__caption" data-lang>
                     Custom builds, restoration, and detailing.
                   </figcaption>
                 </figure>
               </div>
-              <button class="s-main__arrow s-main__arrow--prev" type="button" aria-label="Previous photo" data-carousel-prev>
+              <button id="carousel-prev-label" class="s-main__arrow s-main__arrow--prev" type="button" aria-label="Previous photo" data-carousel-prev data-lang data-lang-attr="aria-label">
                 <span aria-hidden="true">‹</span>
               </button>
-              <button class="s-main__arrow s-main__arrow--next" type="button" aria-label="Next photo" data-carousel-next>
+              <button id="carousel-next-label" class="s-main__arrow s-main__arrow--next" type="button" aria-label="Next photo" data-carousel-next data-lang data-lang-attr="aria-label">
                 <span aria-hidden="true">›</span>
               </button>
             </div>
@@ -128,7 +156,7 @@
 
       <section id="about" class="s-about">
         <div class="s-about__grid">
-          <div class="s-about__media reveal-right" data-reveal aria-label="Workshop photos">
+          <div id="about-media-label" class="s-about__media reveal-right" data-reveal aria-label="Workshop photos" data-lang data-lang-attr="aria-label">
             <div class="s-about__collage" aria-hidden="true">
               <div class="s-about__tile s-about__tile--hero">
                 <img class="s-about__photo" src="src/img/Fotos/img12.JPG" alt="" loading="lazy" />
@@ -143,7 +171,7 @@
               </div>
             </div>
           </div>
-          <div class="s-about__copy reveal-up" data-reveal>
+          <div id="lang-1" class="s-about__copy reveal-up" data-reveal data-lang>
             <p>
               Ono Bikeshop is a workshop in Ciutat Vella, València. Bring your bike for a safety check, maintenance, or a
               full rebuild — we’ll help you keep it running smoothly.
@@ -159,107 +187,107 @@
         </div>
       </section>
       <section id="rental" class="s-rental fade-in" data-reveal>
-        <h2 class="l-sectionTitle">Bike Rental</h2>
+        <h2 id="rental-title" class="l-sectionTitle" data-lang>Bike Rental</h2>
         <div class="s-rental__divider" aria-hidden="true"></div>
         <div class="s-rental__inner">
           <div class="s-rental__grid">
             <article class="s-rental__card">
-              <h3 class="s-rental__cardTitle">Regular bikes</h3>
+              <h3 id="rental-regular-title" class="s-rental__cardTitle" data-lang>Regular bikes</h3>
               <ul class="s-rental__list">
                 <li class="s-rental__item">
                   <span class="s-rental__dot" aria-hidden="true"></span>
-                  <span class="s-rental__label">4 hours</span>
+                  <span id="rental-regular-4h" class="s-rental__label" data-lang>4 hours</span>
                   <span class="s-rental__price">8€</span>
                 </li>
                 <li class="s-rental__item">
                   <span class="s-rental__dot" aria-hidden="true"></span>
-                  <span class="s-rental__label">1 day <span class="s-rental__note">(return by closing)</span></span>
+                  <span class="s-rental__label"><span id="rental-regular-1d" data-lang>1 day</span> <span id="rental-regular-return" class="s-rental__note" data-lang>(return by closing)</span></span>
                   <span class="s-rental__price">10€</span>
                 </li>
                 <li class="s-rental__item">
                   <span class="s-rental__dot" aria-hidden="true"></span>
-                  <span class="s-rental__label">24 hours</span>
+                  <span id="rental-regular-24h" class="s-rental__label" data-lang>24 hours</span>
                   <span class="s-rental__price">14€</span>
                 </li>
                 <li class="s-rental__item">
                   <span class="s-rental__dot" aria-hidden="true"></span>
-                  <span class="s-rental__label">2 days</span>
+                  <span id="rental-regular-2d" class="s-rental__label" data-lang>2 days</span>
                   <span class="s-rental__price">22€</span>
                 </li>
                 <li class="s-rental__item">
                   <span class="s-rental__dot" aria-hidden="true"></span>
-                  <span class="s-rental__label">3 days</span>
+                  <span id="rental-regular-3d" class="s-rental__label" data-lang>3 days</span>
                   <span class="s-rental__price">30€</span>
                 </li>
                 <li class="s-rental__item">
                   <span class="s-rental__dot" aria-hidden="true"></span>
-                  <span class="s-rental__label">4 days</span>
+                  <span id="rental-regular-4d" class="s-rental__label" data-lang>4 days</span>
                   <span class="s-rental__price">38€</span>
                 </li>
                 <li class="s-rental__item">
                   <span class="s-rental__dot" aria-hidden="true"></span>
-                  <span class="s-rental__label">5 days</span>
+                  <span id="rental-regular-5d" class="s-rental__label" data-lang>5 days</span>
                   <span class="s-rental__price">46€</span>
                 </li>
                 <li class="s-rental__item">
                   <span class="s-rental__dot" aria-hidden="true"></span>
-                  <span class="s-rental__label">6 days</span>
+                  <span id="rental-regular-6d" class="s-rental__label" data-lang>6 days</span>
                   <span class="s-rental__price">54€</span>
                 </li>
                 <li class="s-rental__item">
                   <span class="s-rental__dot" aria-hidden="true"></span>
-                  <span class="s-rental__label">1 week</span>
+                  <span id="rental-regular-week" class="s-rental__label" data-lang>1 week</span>
                   <span class="s-rental__price">62€</span>
                 </li>
               </ul>
             </article>
 
             <article class="s-rental__card">
-              <h3 class="s-rental__cardTitle">Premium bikes</h3>
+              <h3 id="rental-premium-title" class="s-rental__cardTitle" data-lang>Premium bikes</h3>
               <ul class="s-rental__list">
                 <li class="s-rental__item">
                   <span class="s-rental__dot" aria-hidden="true"></span>
-                  <span class="s-rental__label">4 hours</span>
+                  <span id="rental-premium-4h" class="s-rental__label" data-lang>4 hours</span>
                   <span class="s-rental__price">10€</span>
                 </li>
                 <li class="s-rental__item">
                   <span class="s-rental__dot" aria-hidden="true"></span>
-                  <span class="s-rental__label">1 day <span class="s-rental__note">(return by closing)</span></span>
+                  <span class="s-rental__label"><span id="rental-premium-1d" data-lang>1 day</span> <span id="rental-premium-return" class="s-rental__note" data-lang>(return by closing)</span></span>
                   <span class="s-rental__price">12€</span>
                 </li>
                 <li class="s-rental__item">
                   <span class="s-rental__dot" aria-hidden="true"></span>
-                  <span class="s-rental__label">24 hours</span>
+                  <span id="rental-premium-24h" class="s-rental__label" data-lang>24 hours</span>
                   <span class="s-rental__price">17€</span>
                 </li>
                 <li class="s-rental__item">
                   <span class="s-rental__dot" aria-hidden="true"></span>
-                  <span class="s-rental__label">2 days</span>
+                  <span id="rental-premium-2d" class="s-rental__label" data-lang>2 days</span>
                   <span class="s-rental__price">26€</span>
                 </li>
                 <li class="s-rental__item">
                   <span class="s-rental__dot" aria-hidden="true"></span>
-                  <span class="s-rental__label">3 days</span>
+                  <span id="rental-premium-3d" class="s-rental__label" data-lang>3 days</span>
                   <span class="s-rental__price">35€</span>
                 </li>
                 <li class="s-rental__item">
                   <span class="s-rental__dot" aria-hidden="true"></span>
-                  <span class="s-rental__label">4 days</span>
+                  <span id="rental-premium-4d" class="s-rental__label" data-lang>4 days</span>
                   <span class="s-rental__price">44€</span>
                 </li>
                 <li class="s-rental__item">
                   <span class="s-rental__dot" aria-hidden="true"></span>
-                  <span class="s-rental__label">5 days</span>
+                  <span id="rental-premium-5d" class="s-rental__label" data-lang>5 days</span>
                   <span class="s-rental__price">53€</span>
                 </li>
                 <li class="s-rental__item">
                   <span class="s-rental__dot" aria-hidden="true"></span>
-                  <span class="s-rental__label">6 days</span>
+                  <span id="rental-premium-6d" class="s-rental__label" data-lang>6 days</span>
                   <span class="s-rental__price">62€</span>
                 </li>
                 <li class="s-rental__item">
                   <span class="s-rental__dot" aria-hidden="true"></span>
-                  <span class="s-rental__label">1 week</span>
+                  <span id="rental-premium-week" class="s-rental__label" data-lang>1 week</span>
                   <span class="s-rental__price">70€</span>
                 </li>
               </ul>
@@ -271,13 +299,13 @@
 
 
       <section id="services" class="s-services">
-        <h2 class="l-sectionTitle">Services</h2>
+        <h2 id="services-title" class="l-sectionTitle" data-lang>Services</h2>
         <div class="s-services__divider" aria-hidden="true"></div>
         <div class="s-services__inner">
           <div class="s-services__grid">
             <article class="s-services__card">
               <div class="s-services__cardHead">
-                <h3 class="s-services__cardTitle">Inspection</h3>
+                <h3 id="service-inspection-title" class="s-services__cardTitle" data-lang>Inspection</h3>
                 <svg class="s-services__cardIcon" viewBox="0 0 24 24" aria-hidden="true">
                   <path
                     fill="currentColor"
@@ -285,12 +313,12 @@
                   />
                 </svg>
               </div>
-              <p class="s-services__cardBody">Complete technical and safety inspection.</p>
-              <img class="s-services__cardImg" src="src/img/Fotos/img4.JPG" alt="Inspection" loading="lazy" />
+              <p id="service-inspection-body" class="s-services__cardBody" data-lang>Complete technical and safety inspection.</p>
+              <img id="service-inspection-alt" class="s-services__cardImg" src="src/img/Fotos/img4.JPG" alt="Inspection" loading="lazy" data-lang data-lang-attr="alt" />
             </article>
             <article class="s-services__card">
               <div class="s-services__cardHead">
-                <h3 class="s-services__cardTitle">Basic maintenance</h3>
+                <h3 id="service-basic-title" class="s-services__cardTitle" data-lang>Basic maintenance</h3>
                 <svg class="s-services__cardIcon" viewBox="0 0 24 24" aria-hidden="true">
                   <path
                     fill="currentColor"
@@ -298,12 +326,12 @@
                   />
                 </svg>
               </div>
-              <p class="s-services__cardBody">Full clean, shifting + braking adjustment, chain lubrication.</p>
-              <img class="s-services__cardImg" src="src/img/Fotos/img5.JPG" alt="Basic maintenance" loading="lazy" />
+              <p id="service-basic-body" class="s-services__cardBody" data-lang>Full clean, shifting + braking adjustment, chain lubrication.</p>
+              <img id="service-basic-alt" class="s-services__cardImg" src="src/img/Fotos/img5.JPG" alt="Basic maintenance" loading="lazy" data-lang data-lang-attr="alt" />
             </article>
             <article class="s-services__card">
               <div class="s-services__cardHead">
-                <h3 class="s-services__cardTitle">Premium maintenance</h3>
+                <h3 id="service-premium-title" class="s-services__cardTitle" data-lang>Premium maintenance</h3>
                 <svg class="s-services__cardIcon" viewBox="0 0 24 24" aria-hidden="true">
                   <path
                     fill="currentColor"
@@ -311,12 +339,12 @@
                   />
                 </svg>
               </div>
-              <p class="s-services__cardBody">Full disassembly, inspection, lubrication, and rebuild.</p>
-              <img class="s-services__cardImg" src="src/img/Fotos/img9.JPG" alt="Premium maintenance" loading="lazy" />
+              <p id="service-premium-body" class="s-services__cardBody" data-lang>Full disassembly, inspection, lubrication, and rebuild.</p>
+              <img id="service-premium-alt" class="s-services__cardImg" src="src/img/Fotos/img9.JPG" alt="Premium maintenance" loading="lazy" data-lang data-lang-attr="alt" />
             </article>
             <article class="s-services__card">
               <div class="s-services__cardHead">
-                <h3 class="s-services__cardTitle">Per-part services</h3>
+                <h3 id="service-parts-title" class="s-services__cardTitle" data-lang>Per-part services</h3>
                 <svg class="s-services__cardIcon" viewBox="0 0 24 24" aria-hidden="true">
                   <path
                     fill="currentColor"
@@ -324,14 +352,14 @@
                   />
                 </svg>
               </div>
-              <p class="s-services__cardBody">
+              <p id="service-parts-body" class="s-services__cardBody" data-lang>
                 Wheel truing/building, hubs, bottom bracket, drivetrain, headset, handlebar, bar tape, seatpost + saddle.
               </p>
-              <img class="s-services__cardImg" src="src/img/Fotos/img10.JPG" alt="Per-part services" loading="lazy" />
+              <img id="service-parts-alt" class="s-services__cardImg" src="src/img/Fotos/img10.JPG" alt="Per-part services" loading="lazy" data-lang data-lang-attr="alt" />
             </article>
             <article class="s-services__card">
               <div class="s-services__cardHead">
-                <h3 class="s-services__cardTitle">Custom builds</h3>
+                <h3 id="service-custom-title" class="s-services__cardTitle" data-lang>Custom builds</h3>
                 <svg class="s-services__cardIcon" viewBox="0 0 24 24" aria-hidden="true">
                   <path
                     fill="currentColor"
@@ -339,12 +367,12 @@
                   />
                 </svg>
               </div>
-              <p class="s-services__cardBody">Personalized bicycles built from the frame.</p>
-              <img class="s-services__cardImg" src="src/img/Fotos/img13.JPG" alt="Custom builds" loading="lazy" />
+              <p id="service-custom-body" class="s-services__cardBody" data-lang>Personalized bicycles built from the frame.</p>
+              <img id="service-custom-alt" class="s-services__cardImg" src="src/img/Fotos/img13.JPG" alt="Custom builds" loading="lazy" data-lang data-lang-attr="alt" />
             </article>
             <article class="s-services__card">
               <div class="s-services__cardHead">
-                <h3 class="s-services__cardTitle">Restoration + detailing</h3>
+                <h3 id="service-restoration-title" class="s-services__cardTitle" data-lang>Restoration + detailing</h3>
                 <svg class="s-services__cardIcon" viewBox="0 0 24 24" aria-hidden="true">
                   <path
                     fill="currentColor"
@@ -352,42 +380,42 @@
                   />
                 </svg>
               </div>
-              <p class="s-services__cardBody">We flip old bicycles and do full bicycle detailing.</p>
-              <img class="s-services__cardImg" src="src/img/Fotos/img15.JPG" alt="Restoration and detailing" loading="lazy" />
+              <p id="service-restoration-body" class="s-services__cardBody" data-lang>We flip old bicycles and do full bicycle detailing.</p>
+              <img id="service-restoration-alt" class="s-services__cardImg" src="src/img/Fotos/img15.JPG" alt="Restoration and detailing" loading="lazy" data-lang data-lang-attr="alt" />
             </article>
           </div>
           <div class="s-services__workshop">
-            <h3 class="s-services__workshopTitle">Workshop services available</h3>
-            <div class="s-services__pillRow" aria-label="Workshop services">
-              <span class="s-services__pill">Cleaning</span>
-              <span class="s-services__pill">Maintenance</span>
-              <span class="s-services__pill">Adjustments</span>
-              <span class="s-services__pill">Replacements</span>
-              <span class="s-services__pill">Lubrication</span>
+            <h3 id="workshop-title" class="s-services__workshopTitle" data-lang>Workshop services available</h3>
+            <div id="workshop-pills-label" class="s-services__pillRow" aria-label="Workshop services" data-lang data-lang-attr="aria-label">
+              <span id="workshop-cleaning" class="s-services__pill" data-lang>Cleaning</span>
+              <span id="workshop-maintenance" class="s-services__pill" data-lang>Maintenance</span>
+              <span id="workshop-adjustments" class="s-services__pill" data-lang>Adjustments</span>
+              <span id="workshop-replacements" class="s-services__pill" data-lang>Replacements</span>
+              <span id="workshop-lubrication" class="s-services__pill" data-lang>Lubrication</span>
             </div>
-            <p class="s-services__workshopNote">Components and accessories for sale.</p>
+            <p id="workshop-note" class="s-services__workshopNote" data-lang>Components and accessories for sale.</p>
           </div>
         </div>
       </section>
 
     </main>
-	    <footer class="c-footer">
+	    <footer id="contact" class="c-footer">
 	      <div class="c-footer__inner">
 	        <div class="c-footer__grid">
 	          <div class="c-footer__left">
 	            <div class="c-footer__brandRow">
-	              <img class="c-footer__logo" src="src/img/logo.png" alt="Ono Bikeshop logo" />
+	              <img id="footer-logo-alt" class="c-footer__logo" src="src/img/logo.png" alt="Ono Bikeshop logo" data-lang data-lang-attr="alt" />
 	              <div>
 	                <div class="c-footer__brand">Ono Bikeshop</div>
-	                <div class="c-footer__tag">Bike rental & workshop</div>
+	                <div id="footer-tagline" class="c-footer__tag" data-lang>Bike rental & workshop</div>
 	              </div>
 	            </div>
 
-	            <div class="c-footer__contact" aria-label="Contact">
+	            <div id="footer-contact-label" class="c-footer__contact" aria-label="Contact" data-lang data-lang-attr="aria-label">
 	              <div class="c-footer__row">
 	                <i class="c-footer__icon fa-solid fa-phone" aria-hidden="true"></i>
 	                <div class="c-footer__rowText">
-	                  <div class="c-footer__label">Phone</div>
+	                  <div id="footer-phone-label" class="c-footer__label" data-lang>Phone</div>
 	                  <a class="c-footer__link" href="tel:+34694912878">(+34) 694 912 878</a>
 	                </div>
 	              </div>
@@ -395,7 +423,7 @@
 	              <div class="c-footer__row">
 	                <i class="c-footer__icon fa-solid fa-envelope" aria-hidden="true"></i>
 	                <div class="c-footer__rowText">
-	                  <div class="c-footer__label">Email</div>
+	                  <div id="footer-email-label" class="c-footer__label" data-lang>Email</div>
 	                  <a class="c-footer__link" href="mailto:onobicicletas@gmail.com">onobicicletas@gmail.com</a>
 	                </div>
 	              </div>
@@ -403,7 +431,7 @@
 	              <div class="c-footer__row">
 	                <i class="c-footer__icon fa-brands fa-instagram" aria-hidden="true"></i>
 	                <div class="c-footer__rowText">
-	                  <div class="c-footer__label">Instagram</div>
+	                  <div id="footer-instagram-label" class="c-footer__label" data-lang>Instagram</div>
 	                  <a class="c-footer__link" href="https://instagram.com/onobikeshop" target="_blank" rel="noreferrer"
 	                    >@onobikeshop</a
 	                  >
@@ -413,8 +441,8 @@
 	              <div class="c-footer__row">
 	                <i class="c-footer__icon fa-solid fa-location-dot" aria-hidden="true"></i>
 	                <div class="c-footer__rowText">
-	                  <div class="c-footer__label">Address</div>
-	                  <span class="c-footer__addr"
+	                  <div id="footer-address-label" class="c-footer__label" data-lang>Address</div>
+	                  <span id="footer-address" class="c-footer__addr" data-lang
 	                    >C/ de Guillem de Castro, 64, Ciutat Vella, 46001 València, Valencia, Spain</span
 	                  >
 	                </div>
@@ -423,7 +451,7 @@
 	              <div class="c-footer__row">
 	                <i class="c-footer__icon fa-solid fa-globe" aria-hidden="true"></i>
 	                <div class="c-footer__rowText">
-	                  <div class="c-footer__label">Website</div>
+	                  <div id="footer-website-label" class="c-footer__label" data-lang>Website</div>
 	                  <a class="c-footer__link" href="https://www.onobikeshop.com" target="_blank" rel="noreferrer"
 	                    >www.onobikeshop.com</a
 	                  >
@@ -434,10 +462,10 @@
 	            <div class="c-footer__meta">© <span data-year></span> Ono Bikeshop</div>
 	          </div>
 
-	          <div class="c-footer__right" aria-label="Map placeholder">
+	          <div id="footer-map-label" class="c-footer__right" aria-label="Map placeholder" data-lang data-lang-attr="aria-label">
 	            <div class="c-footer__map">
-	              <div class="c-footer__mapTitle">Find us</div>
-	              <div class="c-footer__mapBox">Google Maps embed coming soon</div>
+	              <div id="footer-map-title" class="c-footer__mapTitle" data-lang>Find us</div>
+	              <div id="footer-map-box" class="c-footer__mapBox" data-lang>Google Maps embed coming soon</div>
 	            </div>
 	          </div>
 	        </div>
@@ -446,6 +474,8 @@
 
 	    <script src="scripts/carousel.js"></script>
 	    <script src="scripts/reveal.js"></script>
+	    <script src="scripts/navbar.js"></script>
+       <script src="scripts/lang.js"></script>
 	    <script>
 	      const yearNodes = document.querySelectorAll("[data-year]");
 	      const year = String(new Date().getFullYear());
