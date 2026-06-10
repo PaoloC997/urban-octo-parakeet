@@ -238,31 +238,83 @@
 }
 
 @media (max-width: 56.25rem) {
+  .s-main {
+    height: auto;
+    min-height: 100vh;
+    padding-top: 2rem;
+  }
+
+  .s-main::after {
+    height: 4rem;
+  }
+
+  .s-main__inner,
+  .s-main__grid {
+    min-height: 100vh;
+  }
+
   .s-main__grid {
     flex-direction: column;
     align-items: stretch;
-    gap: 1.5rem;
+    height: auto;
+    gap: 2rem;
   }
 
   .s-main__copy {
     flex: 0 0 auto;
-    padding-left: 0;
-    padding-right: 1.25rem;
-    padding-left: 1.25rem;
+    padding: 4rem 1.25rem 0;
+  }
+
+  .s-main__brandLogo {
+    width: min(14rem, 70vw);
+  }
+
+  .s-main__lead {
+    font-size: clamp(1.35rem, 7vw, 2rem);
+    line-height: 1.35;
+  }
+
+  .s-main__divider {
+    width: 100%;
   }
 
   .s-main__media {
     flex: 0 0 auto;
     padding: 0;
+    min-height: 24rem;
   }
 
   .s-main__slides {
-    min-height: 22rem;
+    height: 45vh;
+    min-height: 24rem;
   }
 
   .s-main__caption {
     top: auto;
     bottom: 1rem;
     transform: none;
+    right: 1rem;
+    left: 1rem;
+    max-width: none;
+    font-size: clamp(1rem, 5vw, 1.35rem);
+  }
+
+  .s-main__arrow {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+@media (max-width: 35rem) {
+  .s-main__copy {
+    padding-top: 3rem;
+  }
+
+  .s-main__ctaRow {
+    flex-direction: column;
+  }
+
+  .s-main__cta {
+    width: 100%;
   }
 }

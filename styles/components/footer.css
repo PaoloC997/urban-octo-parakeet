@@ -135,12 +135,37 @@
 }
 
 @media (max-width: 56.25rem) {
+  .c-footer {
+    padding: 2rem 0;
+  }
+
+  .c-footer__inner {
+    padding: 0 1rem;
+  }
+
   .c-footer__grid {
     flex-direction: column;
+    gap: 2.5rem;
   }
 
   .c-footer__left,
   .c-footer__right {
+    width: 100%;
     flex: 0 0 auto;
+  }
+
+  .c-footer__link,
+  .c-footer__addr {
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (max-width: 35rem) {
+  .c-footer__brandRow {
+    align-items: flex-start;
+  }
+
+  .c-footer__map {
+    min-height: 14rem;
   }
 }

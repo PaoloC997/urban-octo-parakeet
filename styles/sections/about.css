@@ -99,10 +99,18 @@
 }
 
 @media (max-width: 56.25rem) {
+  .s-about {
+    max-height: none;
+    min-height: auto;
+    bottom: 0;
+    padding: 3rem 0;
+  }
+
   .s-about__grid {
     flex-direction: column;
     align-items: stretch;
     gap: 2rem;
+    min-height: auto;
   }
 
   .s-about__media,
@@ -115,10 +123,25 @@
   .s-about__collage {
     width: min(30rem, calc(100% - 2.5rem));
     gap: 0.875rem;
-    height: auto;
+    height: clamp(18rem, 58vw, 26rem);
   }
 
   .s-about__side {
     gap: 0.875rem;
+  }
+}
+
+@media (max-width: 35rem) {
+  .s-about__media {
+    padding: 0;
+  }
+
+  .s-about__collage {
+    width: calc(100% - 2rem);
+    height: 20rem;
+  }
+
+  .s-about__side {
+    display: none;
   }
 }

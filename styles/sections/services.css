@@ -122,7 +122,46 @@
 }
 
 @media (max-width: 56.25rem) {
+  .s-services {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+  }
+
+  .s-services__inner {
+    padding: 0 1rem;
+  }
+
   .s-services__grid {
     flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .s-services__card {
+    flex-basis: auto;
+  }
+
+  .s-services__cardBody {
+    display: block;
+    min-height: 0;
+    overflow: visible;
+  }
+
+  .s-services__cardImg {
+    height: clamp(11rem, 48vw, 16rem);
+  }
+}
+
+@media (max-width: 35rem) {
+  .s-services__workshop {
+    padding: 0.875rem;
+  }
+
+  .s-services__pillRow {
+    gap: 0.5rem;
+  }
+
+  .s-services__pill {
+    font-size: 0.9rem;
   }
 }
