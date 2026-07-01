@@ -111,25 +111,13 @@ const contents = {
     en: "Bicycle workshop",
     es: "Taller de bicicletas",
   },
-  "hero-caption-1": {
-    en: "Complete technical and safety inspection.",
-    es: "Revisión técnica y de seguridad completa.",
+  "hero-caption-title": {
+    en: "We are open!",
+    es: "¡Estamos abiertos!",
   },
-  "hero-caption-2": {
-    en: "Basic maintenance: clean, adjust, and lubricate.",
-    es: "Mantenimiento básico: limpieza, ajuste y lubricación.",
-  },
-  "hero-caption-3": {
-    en: "Premium maintenance: full disassembly and rebuild.",
-    es: "Mantenimiento premium: desmontaje completo y reconstrucción.",
-  },
-  "hero-caption-4": {
-    en: "Wheel truing, hubs, drivetrain, headset, and more.",
-    es: "Centrado de ruedas, bujes, transmisión, dirección y más.",
-  },
-  "hero-caption-5": {
-    en: "Custom builds, restoration, and detailing.",
-    es: "Montajes personalizados, restauración y detailing.",
+  "hero-caption-promo": {
+    en: "Promos on premium services and bike rentals",
+    es: "Promos en servicios premium y alquiler de bicis",
   },
   "carousel-prev-label": {
     en: "Previous photo",
