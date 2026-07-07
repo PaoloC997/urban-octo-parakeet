@@ -5,22 +5,26 @@
 }
 
 .c-footer__inner {
-  max-width: 68.75rem;
+  width: min(100% - clamp(2rem, 7vw, 8rem), 96rem);
   margin: 0 auto;
-  padding: 0 1.25rem;
 }
 
 .c-footer__grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
-  align-items: flex-start;
+  gap: clamp(2rem, 6vw, 6rem);
+  align-items: stretch;
 }
 
 .c-footer__left,
 .c-footer__right {
-  flex: 1 1 26rem;
+  flex: 1 1 30rem;
   min-width: 0;
+}
+
+.c-footer__left {
+  display: flex;
+  flex-direction: column;
 }
 
 .c-footer__brandRow {
@@ -49,9 +53,9 @@
 }
 
 .c-footer__contact {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem 1.5rem;
   padding: 1rem 0 0;
 }
 
@@ -102,12 +106,14 @@
 }
 
 .c-footer__meta {
-  margin-top: 1.25rem;
+  grid-column: 1 / -1;
+  margin-top: auto;
+  padding-top: 1.25rem;
   opacity: 0.75;
 }
 
 .c-footer__map {
-  min-height: 18rem;
+  min-height: 24rem;
   border: 0.0625rem solid color-mix(in srgb, currentColor 18%, transparent);
   border-radius: 1rem;
   padding: 1rem;
@@ -140,7 +146,7 @@
   }
 
   .c-footer__inner {
-    padding: 0 1rem;
+    width: calc(100% - 2rem);
   }
 
   .c-footer__grid {
@@ -152,6 +158,15 @@
   .c-footer__right {
     width: 100%;
     flex: 0 0 auto;
+  }
+
+  .c-footer__contact {
+    grid-template-columns: 1fr;
+  }
+
+  .c-footer__meta {
+    margin-top: 1.25rem;
+    padding-top: 0;
   }
 
   .c-footer__link,

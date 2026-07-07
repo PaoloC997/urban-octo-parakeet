@@ -111,11 +111,11 @@ const contents = {
     en: "Bicycle workshop",
     es: "Taller de bicicletas",
   },
-  "hero-caption-title": {
+  "about-promo-title": {
     en: "We are open!",
     es: "¡Estamos abiertos!",
   },
-  "hero-caption-promo": {
+  "about-promo-body": {
     en: "Promos on premium services and bike rentals",
     es: "Promos en servicios premium y alquiler de bicis",
   },

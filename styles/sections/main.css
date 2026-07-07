@@ -168,46 +168,6 @@
   pointer-events: none;
 }
 
-.s-main__caption {
-  position: absolute;
-  left: 2rem;
-  right: 2rem;
-  bottom: 7rem;
-  transform: translateY(0);
-  z-index: 2;
-  display: grid;
-  justify-items: start;
-  gap: 0.35rem;
-  max-width: none;
-  margin: 0;
-  padding: 0;
-  letter-spacing: 0;
-  text-align: left;
-  text-wrap: balance;
-  opacity: 1;
-  filter: blur(0);
-}
-
-.s-main__captionTitle {
-  width: fit-content;
-  color: #fff;
-  font-size: clamp(3rem, 7vw, 6rem);
-  line-height: 0.88;
-  font-weight: 500;
-  letter-spacing: 0;
-  text-shadow: 0 0.25rem 1.5rem color-mix(in srgb, #000 70%, transparent);
-}
-
-.s-main__captionPromo {
-  max-width: min(48rem, 82%);
-  color: #3dd6ff;
-  font-size: clamp(1.15rem, 2.1vw, 1.85rem);
-  line-height: 1.12;
-  font-weight: 500;
-  letter-spacing: 0;
-  text-shadow: 0 0.18rem 1rem color-mix(in srgb, #000 74%, transparent);
-}
-
 @keyframes heroIntro {
   to {
     opacity: 1;
@@ -250,44 +210,45 @@
     opacity: 0.85;
   }
 
-  .s-main__frame,
-  .s-main__caption {
+  .s-main__frame {
     transition: none;
   }
 }
 
-.s-main__arrow {
+.s-main__dots {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 3rem;
-  height: 3rem;
-  border-radius: 62.4375rem;
-  border: 0.0625rem solid color-mix(in srgb, var(--c-border) 70%, transparent);
-  background: color-mix(in srgb, var(--c-bg) 55%, transparent);
-  color: var(--c-text);
-  display: inline-flex;
+  left: 50%;
+  bottom: 5.25rem;
+  z-index: 6;
+  display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 0.45rem;
+  padding: 0;
+  transform: translateX(-50%);
+}
+
+.s-main__dot {
+  width: 0.42rem;
+  height: 0.42rem;
+  padding: 0;
+  border: 0;
+  border-radius: 62.4375rem;
+  background: #fff;
+  opacity: 0.34;
   cursor: pointer;
-  user-select: none;
 }
 
-.s-main__arrow:hover {
-  background: color-mix(in srgb, var(--c-bg) 35%, transparent);
+.s-main__dot.is-active {
+  opacity: 0.72;
 }
 
-.s-main__arrow:focus-visible {
+.s-main__dot:focus-visible {
   outline: 0.125rem solid color-mix(in srgb, var(--c-primary) 70%, white 0%);
-  outline-offset: 0.125rem;
+  outline-offset: 0.1875rem;
 }
 
-.s-main__arrow--prev {
-  left: 1rem;
-}
-
-.s-main__arrow--next {
-  right: 1rem;
+.s-main__dot:hover {
+  opacity: 0.72;
 }
 
 @media (max-width: 56.25rem) {
@@ -342,30 +303,8 @@
     min-height: 24rem;
   }
 
-  .s-main__caption {
-    top: auto;
-    bottom: 1.25rem;
-    transform: none;
-    right: 1rem;
-    left: 1rem;
-    justify-items: start;
-    max-width: none;
-    padding: 0;
-    text-align: left;
-  }
-
-  .s-main__captionTitle {
-    font-size: clamp(2.35rem, 14vw, 4.5rem);
-  }
-
-  .s-main__captionPromo {
-    max-width: 20rem;
-    font-size: clamp(1rem, 5.5vw, 1.35rem);
-  }
-
-  .s-main__arrow {
-    width: 2.5rem;
-    height: 2.5rem;
+  .s-main__dots {
+    bottom: 2rem;
   }
 }
 

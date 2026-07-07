@@ -72,7 +72,7 @@
 	          <nav id="nav-primary-label" class="c-navbar__nav" aria-label="Primary" data-lang data-lang-attr="aria-label">
 	            <a id="nav-home" class="c-navbar__link" href="#main" data-lang>Home</a>
 	            <a id="nav-about" class="c-navbar__link" href="#about" data-lang>About</a>
-	            <a id="nav-services" class="c-navbar__link" href="#services" data-lang>Services</a>
+	            <a id="nav-services" class="c-navbar__link" href="services.html" data-lang>Services</a>
 	            <a id="nav-contact" class="c-navbar__link" href="#contact" data-lang>Contact</a>
 	          </nav>
 	          <div id="nav-contact-label" class="c-navbar__contact" aria-label="Quick contact" data-lang data-lang-attr="aria-label">
@@ -106,7 +106,7 @@
               <p id="hero-lead" class="s-main__lead" data-lang>BIKE RENTAL & WORKSHOP</p>
               <div class="s-main__divider" aria-hidden="true"></div>
               <div class="s-main__ctaRow">
-                  <a id="hero-cta-primary" class="s-main__cta s-main__cta--primary" href="#services" data-lang>SEE SERVICES</a>
+                  <a id="hero-cta-primary" class="s-main__cta s-main__cta--primary" href="services.html" data-lang>SEE SERVICES</a>
                 <a id="hero-cta-secondary" class="s-main__cta s-main__cta--secondary" href="#contact" data-lang>Contact</a>
               </div>
             </div>
@@ -125,16 +125,12 @@
                   <img id="hero-slide-4-alt" class="s-main__slide" src="src/img/Fotos/hero-d.webp" alt="Bicycle workshop" loading="lazy" data-lang data-lang-attr="alt" />
                 </figure>
               </div>
-              <p class="s-main__caption">
-                <span id="hero-caption-title" class="s-main__captionTitle" data-lang>We are open!</span>
-                <span id="hero-caption-promo" class="s-main__captionPromo" data-lang>Promos on premium services and bike rentals</span>
-              </p>
-              <button id="carousel-prev-label" class="s-main__arrow s-main__arrow--prev" type="button" aria-label="Previous photo" data-carousel-prev data-lang data-lang-attr="aria-label">
-                <span aria-hidden="true">‹</span>
-              </button>
-              <button id="carousel-next-label" class="s-main__arrow s-main__arrow--next" type="button" aria-label="Next photo" data-carousel-next data-lang data-lang-attr="aria-label">
-                <span aria-hidden="true">›</span>
-              </button>
+              <div class="s-main__dots" aria-label="Choose photo">
+                <button class="s-main__dot is-active" type="button" aria-label="Show photo 1" aria-current="true" data-carousel-dot></button>
+                <button class="s-main__dot" type="button" aria-label="Show photo 2" data-carousel-dot></button>
+                <button class="s-main__dot" type="button" aria-label="Show photo 3" data-carousel-dot></button>
+                <button class="s-main__dot" type="button" aria-label="Show photo 4" data-carousel-dot></button>
+              </div>
             </div>
           </div>
         </div>
@@ -157,8 +153,12 @@
               </div>
             </div>
           </div>
-          <div id="lang-1" class="s-about__copy reveal-up" data-reveal data-lang>
-            <p>
+          <div class="s-about__copy reveal-up" data-reveal>
+            <div class="s-about__promo">
+              <strong id="about-promo-title" class="s-about__promoTitle" data-lang>We are open!</strong>
+              <span id="about-promo-body" class="s-about__promoBody" data-lang>Promos on premium services and bike rentals</span>
+            </div>
+            <p id="lang-1" data-lang>
               Ono Bikeshop is a workshop in Ciutat Vella, València. Bring your bike for a safety check, maintenance, or a
               full rebuild — we’ll help you keep it running smoothly.
            

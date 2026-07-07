@@ -2,8 +2,7 @@ function initCarousel(root) {
   const frames = Array.from(root.querySelectorAll(".s-main__frame"));
   if (frames.length === 0) return;
 
-  const prevBtn = root.querySelector("[data-carousel-prev]");
-  const nextBtn = root.querySelector("[data-carousel-next]");
+  const dots = Array.from(root.querySelectorAll("[data-carousel-dot]"));
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   let index = Math.max(
@@ -15,6 +14,12 @@ function initCarousel(root) {
     index = (nextIndex + frames.length) % frames.length;
     for (let i = 0; i < frames.length; i++) {
       frames[i].classList.toggle("is-active", i === index);
+      dots[i]?.classList.toggle("is-active", i === index);
+      if (i === index) {
+        dots[i]?.setAttribute("aria-current", "true");
+      } else {
+        dots[i]?.removeAttribute("aria-current");
+      }
     }
   }
 
@@ -22,12 +27,9 @@ function initCarousel(root) {
     setActive(index + 1);
   }
 
-  function prev() {
-    setActive(index - 1);
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].addEventListener("click", () => setActive(i));
   }
-
-  prevBtn?.addEventListener("click", prev);
-  nextBtn?.addEventListener("click", next);
 
   let timerId = null;
 
@@ -48,6 +50,7 @@ function initCarousel(root) {
   root.addEventListener("focusout", start);
 
   start();
+  setActive(index);
 }
 
 window.addEventListener("DOMContentLoaded", () => {
