@@ -5,6 +5,7 @@
 @import url("./sections/about.css");
 @import url("./sections/services.css");
 @import url("./sections/rental.css");
+@import url("./sections/contact.css");
 
 :root {
     color-scheme: light;
