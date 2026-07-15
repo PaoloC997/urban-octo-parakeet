@@ -64,16 +64,112 @@ const contents = {
     es: "Contacto rápido",
   },
   "services-hero-eyebrow": {
-    en: "Workshop services",
-    es: "Servicios de taller",
-  },
-  "services-hero-title": {
     en: "Workshop and repairs",
     es: "Taller y reparaciones",
   },
+  "services-hero-title": {
+    en: "Services",
+    es: "Servicios",
+  },
   "services-hero-lead": {
-    en: "Our workshop is designed to help you get back on the road as soon as possible. We handle adjustments, maintenance, and repairs with fast, professional, and friendly service.\n\nWe offer basic, general, and premium maintenance, brake bleeding, part replacements, wheel alignment, lubrication, and everything needed to make your bike feel like new. Whether you live in Valencia and bring in your everyday bike, or you are visiting and need a quick solution, we are here to help with personalized attention and quality parts.",
-    es: "Nuestro taller está pensado para ayudarte a volver a la carretera lo antes posible. Realizamos ajustes, mantenimientos y reparaciones con un servicio rápido, profesional y cercano.\n\nOfrecemos mantenimiento básico, general y premium, purgado de frenos, cambios de piezas, alineaciones, engrase y todo lo necesario para que tu bicicleta quede como nueva. Tanto si eres de Valencia y traes tu bici habitual como si estás de visita y necesitas una solución rápida, estamos aquí para ayudarte con atención personalizada y piezas de calidad.",
+    en: "We repair and service all kinds of bikes, from quick adjustments to complete overhauls. Our workshop offers basic, general, and premium maintenance, brake bleeding, wheel alignment, lubrication, and part replacements using quality components.\n\nIf your bike needs attention, bring it by or give us a call for a free estimate. We work quickly, explain exactly what needs doing before any work begins, and get you back on the road as soon as possible.",
+    es: "Reparamos y revisamos todo tipo de bicicletas, desde ajustes rápidos hasta mantenimientos completos. Nuestro taller ofrece mantenimiento básico, general y premium, purgado de frenos, alineación de ruedas, engrase y cambios de piezas con componentes de calidad.\n\nSi tu bici necesita atención, tráela al taller o llámanos para pedir un presupuesto gratuito. Trabajamos rápido, te explicamos exactamente qué hace falta antes de empezar y te ayudamos a volver a la carretera lo antes posible.",
+  },
+  "services-list-title": {
+    en: "Individual workshop services",
+    es: "Servicios individuales de taller",
+  },
+  "services-options-title": {
+    en: "Maintenance options",
+    es: "Opciones de mantenimiento",
+  },
+  "service-price-inflate": {
+    en: "Inflate wheel",
+    es: "Inflar rueda",
+  },
+  "service-price-saddle": {
+    en: "Saddle adjustment",
+    es: "Ajuste sillín",
+  },
+  "service-price-derailleur": {
+    en: "Derailleur adjustment",
+    es: "Ajuste desviador",
+  },
+  "service-price-brakes": {
+    en: "Brake adjustment",
+    es: "Ajuste frenos",
+  },
+  "service-price-headset": {
+    en: "Headset adjustment",
+    es: "Ajuste dirección",
+  },
+  "service-price-bolts": {
+    en: "General bolt adjustment",
+    es: "Ajuste tornillería general",
+  },
+  "service-price-wheel": {
+    en: "Wheel truing",
+    es: "Centrar rueda",
+  },
+  "service-price-spoke": {
+    en: "Spoke replacement + wheel truing",
+    es: "Repuesto de radio + centrar rueda",
+  },
+  "service-price-handlebar": {
+    en: "Handlebar centering",
+    es: "Centrado manillar",
+  },
+  "service-price-chain-clean": {
+    en: "Clean + lubricate chain",
+    es: "Limpiar + engrasar cadena",
+  },
+  "service-price-bike-wash": {
+    en: "Bike wash + lubricate chain",
+    es: "Lavado bicicleta + engrasar cadena",
+  },
+  "service-price-headset-service": {
+    en: "Clean and lubricate headset / replace headset",
+    es: "Limpiar y engrasar dirección / cambiar dirección",
+  },
+  "service-price-bottom-bracket": {
+    en: "Clean and lubricate bottom bracket / replace bottom bracket",
+    es: "Limpiar y engrasar pedalier / cambiar pedalier",
+  },
+  "service-price-bar-tape": {
+    en: "Bar tape replacement",
+    es: "Repuesto cinta manillar",
+  },
+  "service-price-chain": {
+    en: "Chain replacement",
+    es: "Repuesto cadena",
+  },
+  "service-price-tube": {
+    en: "Tube / tire replacement",
+    es: "Repuesto cámara / cubierta",
+  },
+  "service-price-cassette": {
+    en: "Sprocket / cassette replacement",
+    es: "Repuesto piñón / cassette",
+  },
+  "service-price-cables": {
+    en: "Housing + cables replacement (brakes and gears)",
+    es: "Repuesto de fundas cable + cables (frenos y cambios)",
+  },
+  "service-price-bleed": {
+    en: "Brake bleeding Shimano / Sram",
+    es: "Purgado frenos Shimano / Sram",
+  },
+  "service-price-pads": {
+    en: "Brake pad / shoe replacement + adjustment",
+    es: "Repuesto pastilla / zapata freno + ajuste",
+  },
+  "service-price-note-parts": {
+    en: "Replacement parts are not included, only labor.",
+    es: "No incluida pieza de repuesto, solo mano de obra.",
+  },
+  "service-price-note-staff": {
+    en: "If you need the replacement part, our staff can help source it.",
+    es: "Si necesitas la pieza de repuesto, te la puede conseguir nuestro staff.",
   },
   "nav-lang-label": {
     en: "Language selection",
@@ -128,12 +224,12 @@ const contents = {
     es: "Taller de bicicletas",
   },
   "about-promo-title": {
-    en: "We are open!",
-    es: "¡Estamos abiertos!",
+    en: "Welcome to ONO Bikeshop!",
+    es: "¡Bienvenido a Ono Bikeshop!",
   },
   "about-promo-body": {
-    en: "Promos on premium services and bike rentals",
-    es: "Promos en servicios premium y alquiler de bicis",
+    en: "Fast repairs, quality bike servicing, and rentals with local assistance while you explore Valencia.",
+    es: "Reparaciones rápidas, servicio técnico de calidad y alquileres con asistencia local para descubrir Valencia.",
   },
   "carousel-prev-label": {
     en: "Previous photo",
@@ -148,12 +244,20 @@ const contents = {
     es: "Fotos del taller",
   },
   "lang-1": {
-    en: "Discover Valencia on two wheels with quality bikes, personalized attention, and truly competitive prices. Whether you want to ride through the historic center, enjoy the Turia Garden, or spend the day by the sea, at ONO you will find a comfortable, fun, and affordable way to explore Valencia.",
-    es: "Descubre Valencia sobre dos ruedas con bicicletas de calidad, atención personalizada y precios realmente competitivos. Ya sea que quieras recorrer el centro histórico, disfrutar del Jardín del Turia o pasar el día junto al mar, en ONO encontrarás una forma cómoda, divertida y económica de explorar Valencia.",
+    en: "Valencia is one of Spain's most bike-friendly cities. With its extensive network of bike lanes, green spaces, beach routes, and mild Mediterranean climate, it's easy to see why more and more visitors choose to explore the city by bike.\n\nAt ONO, we make it easy with quality bikes, fair prices, local tips, and free assistance during your rental.\n\nNeed to fix your bike? We also have a workshop for everything from everyday repairs to more complete maintenance. From basic servicing to brake bleeding, wheel truing, lubrication, and part replacements, we offer fast, quality work at an affordable price.\n\nCheck out our services below, or give us a call for a free estimate.",
+    es: "Valencia es una de las ciudades más cómodas de España para ir en bici, con una amplia red de carriles bici, zonas verdes, rutas de playa y un clima mediterráneo suave, por eso no sorprende que cada vez más visitantes elijan descubrirla en bici.\n\nEn ONO te lo ponemos fácil con bicis de calidad, precios justos, consejos locales y asistencia gratuita durante el alquiler.\n\n¿Necesitas arreglar tu bici? También contamos con taller para todo, desde reparaciones del día a día hasta mantenimientos más completos. Desde servicio básico hasta purgado de frenos, centrado de ruedas, engrase y cambios de piezas, ofrecemos un trabajo rápido y de calidad a un precio asequible.\n\nConsulta nuestros servicios más abajo o llámanos para pedir un presupuesto gratuito.",
   },
   "rental-title": {
     en: "Bike Rental",
     es: "Alquiler de bicis",
+  },
+  "rental-see-more": {
+    en: "See more",
+    es: "Ver más",
+  },
+  "services-see-more": {
+    en: "See more",
+    es: "Ver más",
   },
   "rental-regular-title": {
     en: "Regular bikes",
@@ -252,8 +356,8 @@ const contents = {
     es: "Recorre Valencia a tu ritmo",
   },
   "rentals-hero-lead": {
-    en: "We offer comfortable, safe, and well-maintained bicycles. Whether you ride solo, with friends, or with family, we have bikes for everyone, including options for our youngest cyclists. You can discover Valencia at your own pace with total peace of mind. Whether you want to rent for a few hours or several days, we have flexible options and special rates to help you enjoy the city in the most practical, comfortable, and fun way.",
-    es: "Ofrecemos bicicletas cómodas, seguras y bien mantenidas. Ya sea que pasees solo, con amigos o en familia, tenemos bicis para todos, incluyendo opciones para nuestros ciclistas más pequeños. Podrás descubrir Valencia a tu propio ritmo con total tranquilidad. Tanto si quieres alquilar por unas horas como por varios días, tenemos opciones flexibles y tarifas especiales que te ayudarán a disfrutar de la ciudad de la forma más práctica, cómoda y divertida.",
+    en: "We have bikes for every kind of ride, whether you're exploring Valencia solo, with friends, or with the whole family. All our bikes are kept in great condition, comfortable to ride, and ready to go, with options for children too.\n\nNeed a bike for a few hours or a few days? No problem. We offer flexible rentals, fair prices, and local advice to help you get the most out of your time in the city.",
+    es: "Tenemos bicis para cada tipo de paseo, ya sea que quieras descubrir Valencia solo, con amigos o con toda la familia. Todas nuestras bicis están en muy buen estado, son cómodas y están listas para salir, también con opciones para niños.\n\n¿Necesitas una bici por unas horas o por varios días? Sin problema. Ofrecemos alquileres flexibles, precios justos y consejos locales para ayudarte a aprovechar al máximo tu tiempo en la ciudad.",
   },
   "routes-title": {
     en: "Recommended routes",
@@ -324,8 +428,12 @@ const contents = {
     es: "Revisión",
   },
   "service-inspection-body": {
-    en: "Complete technical and safety inspection.",
-    es: "Revisión técnica y de seguridad completa.",
+    en: "Fast checks for safety, comfort, and small adjustments before your next ride.",
+    es: "Revisiones rápidas de seguridad, comodidad y pequeños ajustes antes de salir.",
+  },
+  "service-inspection-price": {
+    en: "from 5€",
+    es: "desde 5€",
   },
   "service-inspection-alt": {
     en: "Inspection",
@@ -336,8 +444,8 @@ const contents = {
     es: "Mantenimiento básico",
   },
   "service-basic-body": {
-    en: "Full clean, shifting + braking adjustment, chain lubrication.",
-    es: "Limpieza completa, ajuste de cambios y frenos, lubricación de cadena.",
+    en: "Essential maintenance for everyday bikes, including gears, brakes, bolts, and wheel truing.",
+    es: "Mantenimiento esencial para bicis de uso diario: cambios, frenos, tornillería y centrado.",
   },
   "service-basic-alt": {
     en: "Basic maintenance",
@@ -348,8 +456,8 @@ const contents = {
     es: "Mantenimiento premium",
   },
   "service-premium-body": {
-    en: "Full disassembly, inspection, lubrication, and rebuild.",
-    es: "Desmontaje completo, revisión, lubricación y reconstrucción.",
+    en: "General and premium tune-ups for bikes that need a deeper clean, adjustment, and lubrication.",
+    es: "Puestas a punto general y premium para bicis que necesitan limpieza, ajuste y engrase más profundo.",
   },
   "service-premium-alt": {
     en: "Premium maintenance",
@@ -360,8 +468,12 @@ const contents = {
     es: "Servicios por pieza",
   },
   "service-parts-body": {
-    en: "Wheel truing/building, hubs, bottom bracket, drivetrain, headset, handlebar, bar tape, seatpost + saddle.",
-    es: "Centrado y montaje de ruedas, bujes, pedalier, transmisión, dirección, manillar, cinta de manillar, tija y sillín.",
+    en: "Targeted workshop jobs for wheels, brakes, drivetrain, headset, bottom bracket, and chain.",
+    es: "Trabajos concretos de taller para ruedas, frenos, transmisión, dirección, pedalier y cadena.",
+  },
+  "service-parts-price": {
+    en: "from 1€",
+    es: "desde 1€",
   },
   "service-parts-alt": {
     en: "Per-part services",
@@ -372,8 +484,12 @@ const contents = {
     es: "Montajes personalizados",
   },
   "service-custom-body": {
-    en: "Personalized bicycles built from the frame.",
-    es: "Bicicletas personalizadas montadas desde el cuadro.",
+    en: "Parts fitted, replaced, and sourced for custom upgrades or practical everyday fixes.",
+    es: "Montaje, cambio y búsqueda de piezas para mejoras personalizadas o arreglos prácticos.",
+  },
+  "service-custom-price": {
+    en: "",
+    es: "",
   },
   "service-custom-alt": {
     en: "Custom builds",
@@ -384,8 +500,12 @@ const contents = {
     es: "Restauración + detailing",
   },
   "service-restoration-body": {
-    en: "We flip old bicycles and do full bicycle detailing.",
-    es: "Restauramos bicicletas antiguas y hacemos detailing completo.",
+    en: "Detailing, fork care, and deeper maintenance for older bikes that deserve a second life.",
+    es: "Detailing, cuidado de horquilla y mantenimiento profundo para bicis que merecen una segunda vida.",
+  },
+  "service-restoration-price": {
+    en: "from 25€",
+    es: "desde 25€",
   },
   "service-restoration-alt": {
     en: "Restoration and detailing",
@@ -451,17 +571,9 @@ const contents = {
     en: "Yes. The city has a good network of bike lanes and many quiet areas. We will point you toward the safest and most pleasant routes.",
     es: "Sí, la ciudad tiene una buena red de carriles bici y muchas zonas tranquilas. Te daremos indicaciones de las rutas más seguras y agradables.",
   },
-  "about-story-title": {
-    en: "Our story",
-    es: "Nuestra historia",
-  },
   "about-hero-title": {
-    en: "Discover Valencia with ONO",
-    es: "Descubre Valencia con ONO",
-  },
-  "about-hero-lead": {
-    en: "We are Sofía and Zoltán, a family bike rental and workshop in València created from our love for the city, cycling, and friendly local service.",
-    es: "Somos Sofía y Zoltán, un negocio familiar de alquiler y taller de bicicletas en Valencia creado desde nuestro amor por la ciudad, la bici y el trato cercano.",
+    en: "Our Story",
+    es: "Nuestra historia",
   },
   "about-story-p1": {
     en: "Hello, we are Sofía and Zoltán.",

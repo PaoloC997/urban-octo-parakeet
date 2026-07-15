@@ -133,6 +133,33 @@
   font-weight: 700;
 }
 
+.s-rental__more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin: 2rem auto 0;
+  padding: 0.75rem 1.25rem;
+  border: 0.0625rem solid color-mix(in srgb, var(--c-text) 36%, transparent);
+  border-radius: 62.4375rem;
+  color: var(--c-text);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition:
+    background 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+.s-rental__more:hover {
+  background: var(--c-text);
+  color: var(--c-bg);
+  transform: translateY(-0.1rem);
+}
+
 @media (max-width: 56.25rem) {
   .s-rental {
     max-height: none;
@@ -197,7 +224,7 @@
 .p-rentalsHero__inner,
 .p-rentalsPrices__inner,
 .p-routes__inner {
-  width: min(100% - clamp(2rem, 7vw, 8rem), 86rem);
+  width: min(100% - clamp(2rem, 7vw, 8rem), 104rem);
   margin: 0 auto;
 }
 
@@ -232,6 +259,7 @@
   color: rgba(248, 250, 252, 0.82);
   font-size: clamp(1rem, 1.35vw, 1.2rem);
   line-height: 1.8;
+  white-space: pre-line;
 }
 
 .p-rentalsHero__media {

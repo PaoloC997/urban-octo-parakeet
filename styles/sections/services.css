@@ -39,7 +39,11 @@
 .p-servicesHero__inner {
   position: relative;
   z-index: 1;
-  width: min(100% - clamp(2rem, 7vw, 8rem), 96rem);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: clamp(2rem, 6vw, 7rem);
+  width: min(100% - clamp(2rem, 7vw, 8rem), 104rem);
   margin: 0 auto;
 }
 
@@ -62,8 +66,9 @@
 }
 
 .p-servicesHero__lead {
+  flex: 0 1 42rem;
   max-width: 42rem;
-  margin: 1.5rem 0 0;
+  margin: 0;
   font-size: clamp(1.15rem, 2vw, 1.5rem);
   line-height: 1.45;
   opacity: 0.78;
@@ -76,9 +81,9 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
-  width: min(100% - clamp(2rem, 7vw, 8rem), 96rem);
+  width: min(100% - clamp(2rem, 7vw, 8rem), 104rem);
   margin: 0 auto;
-  padding: 3.5rem 0 6rem;
+  padding: 1.5rem 0 6rem;
   color: #0f172a;
 }
 
@@ -160,23 +165,20 @@
   letter-spacing: 0;
 }
 
+.p-serviceItem__price {
+  display: block;
+  margin: 0.45rem 0 0;
+  color: #64748b;
+  font-size: 0.92rem;
+  line-height: 1.1;
+  font-weight: 600;
+}
+
 .p-serviceItem__summary {
   max-width: 28rem;
   margin: 0.9rem 0 0;
   font-size: 1rem;
   line-height: 1.4;
-  font-weight: 500;
-}
-
-.p-serviceItem__detail {
-  width: fit-content;
-  margin: 0.85rem 0 0;
-  padding: 0.35rem 0.5rem;
-  border-radius: 62.4375rem;
-  background: color-mix(in srgb, var(--c-secondary) 14%, #fff);
-  color: #245663;
-  font-size: 0.8rem;
-  line-height: 1.25;
   font-weight: 500;
 }
 
@@ -186,6 +188,77 @@
   font-size: 0.94rem;
   line-height: 1.55;
   opacity: 0.76;
+}
+
+.p-servicesPriceList {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  margin: 0;
+  padding: clamp(4rem, 7vw, 7rem) clamp(2rem, 5vw, 5rem);
+  background: #fff;
+}
+
+.p-servicesPriceList__title {
+  width: min(100%, 104rem);
+  margin: 0 auto 2rem;
+  color: var(--c-secondary);
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.p-servicesPriceList__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  width: min(100%, 104rem);
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.p-servicesPriceList__list li {
+  display: flex;
+  flex: 1 1 50rem;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.05rem 2.25rem 1.05rem 0;
+  border-bottom: 0.0625rem solid color-mix(in srgb, #0f172a 10%, transparent);
+  color: #334155;
+  line-height: 1.25;
+}
+
+.p-servicesPriceList__list strong {
+  flex: 0 0 auto;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.p-servicesPriceList__note {
+  width: min(100%, 104rem);
+  margin: 1rem auto 0;
+  color: #64748b;
+  font-size: 0.92rem;
+  line-height: 1.35;
+}
+
+.p-servicesListHead {
+  width: min(100% - clamp(2rem, 7vw, 8rem), 104rem);
+  margin: 0 auto;
+  padding: 3.25rem 0 0;
+}
+
+.p-servicesListHead__eyebrow {
+  margin: 0;
+  color: var(--c-secondary);
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 
 .s-services .l-sectionTitle {
@@ -291,11 +364,13 @@
   font-weight: 600;
 }
 
-.s-services__cardIcon {
-  width: 1.25rem;
-  height: 1.25rem;
+.s-services__cardPrice {
   flex: 0 0 auto;
-  opacity: 0.8;
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.2;
+  font-weight: 600;
+  white-space: nowrap;
 }
 
 .s-services__cardBody {
@@ -320,6 +395,33 @@
   margin-top: 0.75rem;
   border: 0.0625rem solid color-mix(in srgb, var(--c-border) 60%, transparent);
   clip-path: polygon(0 0, 100% 0, calc(100% - var(--service-image-cut)) 100%, 0 100%);
+}
+
+.s-services__more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin: 2rem auto 0;
+  padding: 0.75rem 1.25rem;
+  border: 0.0625rem solid color-mix(in srgb, #0f172a 46%, transparent);
+  border-radius: 62.4375rem;
+  color: #0f172a;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition:
+    background 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+.s-services__more:hover {
+  background: #0f172a;
+  color: #fff;
+  transform: translateY(-0.1rem);
 }
 
 .s-faq {
@@ -410,7 +512,12 @@
   }
 
   .p-servicesHero__inner {
+    display: block;
     padding: 0 1rem;
+  }
+
+  .p-servicesHero__lead {
+    margin: 1.5rem 0 0;
   }
 
   .p-servicesHero__title {
@@ -420,7 +527,15 @@
   .p-servicesList {
     grid-template-columns: 1fr;
     width: calc(100% - 2rem);
-    padding: 3rem 0 4rem;
+    padding: 1.5rem 0 4rem;
+  }
+
+  .p-servicesListHead {
+    width: calc(100% - 2rem);
+  }
+
+  .p-servicesPriceList {
+    padding: 3.25rem 1rem;
   }
 
   .p-serviceItem {

@@ -64,6 +64,7 @@
 
 .s-about__promoBody {
   display: block;
+  color: #a9adb1;
   font-size: clamp(1.05rem, 1.7vw, 1.4rem);
   line-height: 1.15;
   font-weight: 500;
@@ -73,10 +74,6 @@
 .s-about__copy p {
   margin: 0 0 1rem;
   opacity: 0.9;
-}
-
-.s-about__copy p:last-child {
-  margin-bottom: 0;
 }
 
 .s-about__collage {
@@ -180,7 +177,7 @@
   display: grid;
   grid-template-columns: minmax(0, 0.95fr) minmax(18rem, 1.05fr);
   gap: clamp(2rem, 5vw, 5rem);
-  width: min(100% - clamp(2rem, 7vw, 8rem), 96rem);
+  width: min(100% - clamp(2rem, 7vw, 8rem), 104rem);
   margin: 0 auto;
   padding: 7rem 0 4rem;
   align-items: center;
@@ -245,7 +242,7 @@
   display: grid;
   grid-template-columns: minmax(18rem, 0.75fr) minmax(0, 1.25fr);
   gap: clamp(2rem, 5vw, 5rem);
-  width: min(100% - clamp(2rem, 7vw, 8rem), 96rem);
+  width: min(100% - clamp(2rem, 7vw, 8rem), 104rem);
   margin: 0 auto;
   padding: 2rem 0 5rem;
   align-items: center;
@@ -295,7 +292,7 @@
 }
 
 .p-aboutPage__values {
-  width: min(100% - clamp(2rem, 7vw, 8rem), 96rem);
+  width: min(100% - clamp(2rem, 7vw, 8rem), 104rem);
   margin: 0 auto;
   padding: 0 0 6rem;
 }
@@ -312,27 +309,33 @@
   font-weight: 500;
 }
 
-.p-aboutPage__valueGrid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1rem;
+.p-aboutPage__valueList {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 0.0625rem solid color-mix(in srgb, #0f172a 14%, transparent);
 }
 
 .p-aboutPage__value {
-  padding: clamp(1rem, 2vw, 1.5rem);
-  border: 0.0625rem solid color-mix(in srgb, #0f172a 12%, transparent);
-  border-radius: 0.5rem;
-  background: color-mix(in srgb, #0f172a 3%, #fff);
+  display: flex;
+  align-items: baseline;
+  gap: clamp(1rem, 3vw, 2.5rem);
+  padding: 1.15rem 0;
+  border-bottom: 0.0625rem solid color-mix(in srgb, #0f172a 14%, transparent);
 }
 
 .p-aboutPage__valueNumber {
   color: var(--c-primary);
-  font-size: 0.8rem;
+  flex: 0 0 3.5rem;
+  font-size: 0.82rem;
   letter-spacing: 0.14em;
 }
 
 .p-aboutPage__value p {
-  margin: 0.75rem 0 0;
+  margin: 0;
+  font-size: clamp(1.05rem, 1.8vw, 1.35rem);
   line-height: 1.45;
   opacity: 0.82;
 }
@@ -365,14 +368,18 @@
     padding-bottom: 4rem;
   }
 
-  .p-aboutPage__valueGrid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .p-aboutPage__value {
+    gap: 1rem;
   }
 }
 
 @media (max-width: 35rem) {
-  .p-aboutPage__valueGrid {
-    grid-template-columns: 1fr;
+  .p-aboutPage__value {
+    align-items: flex-start;
+  }
+
+  .p-aboutPage__valueNumber {
+    flex-basis: 2.75rem;
   }
 
   .p-aboutPage__photoGrid {

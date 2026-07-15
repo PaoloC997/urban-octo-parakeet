@@ -41,9 +41,9 @@
         <div class="c-navbar__panel" id="navbar-panel">
         <div class="c-navbar__nav" id="navbar-links">
           <a id="nav-home" class="c-navbar__link" href="index.html#main" data-lang>Home</a>
-          <a id="nav-about" class="c-navbar__link" href="about.html" data-lang>About</a>
           <a id="nav-services" class="c-navbar__link" href="services.html" data-lang>Services</a>
           <a id="nav-rentals" class="c-navbar__link" href="rentals.html" data-lang>Rentals</a>
+          <a id="nav-about" class="c-navbar__link" href="about.html" data-lang>About</a>
           <a id="nav-contact" class="c-navbar__link" href="contact.html" data-lang>Contact</a>
         </div>
         <div id="nav-contact-label" class="c-navbar__contact" aria-label="Quick contact" data-lang data-lang-attr="aria-label">
@@ -86,19 +86,52 @@
       <div class="p-servicesPage">
         <section class="p-servicesHero">
           <div class="p-servicesHero__inner">
-            <p id="services-hero-eyebrow" class="p-servicesHero__eyebrow" data-lang>Workshop services</p>
-            <h1 id="services-hero-title" class="p-servicesHero__title" data-lang>Workshop and repairs</h1>
+            <div class="p-servicesHero__head">
+              <p id="services-hero-eyebrow" class="p-servicesHero__eyebrow" data-lang>Workshop and repairs</p>
+              <h1 id="services-hero-title" class="p-servicesHero__title" data-lang>Services</h1>
+            </div>
             <p id="services-hero-lead" class="p-servicesHero__lead" data-lang>
-              Our workshop is designed to help you get back on the road as soon as possible. We handle adjustments,
-              maintenance, and repairs with fast, professional, and friendly service.
+              We repair and service all kinds of bikes, from quick adjustments to complete overhauls. Our workshop offers
+              basic, general, and premium maintenance, brake bleeding, wheel alignment, lubrication, and part replacements
+              using quality components.
 
-              We offer basic, general, and premium maintenance, brake bleeding, part replacements, wheel alignment,
-              lubrication, and everything needed to make your bike feel like new. Whether you live in Valencia and bring
-              in your everyday bike, or you are visiting and need a quick solution, we are here to help with personalized
-              attention and quality parts.
+              If your bike needs attention, bring it by or give us a call for a free estimate. We work quickly, explain
+              exactly what needs doing before any work begins, and get you back on the road as soon as possible.
             </p>
           </div>
         </section>
+
+        <section class="p-servicesPriceList" aria-labelledby="services-list-title" data-reveal>
+          <h2 id="services-list-title" class="p-servicesPriceList__title" data-lang>Individual workshop services</h2>
+          <ul class="p-servicesPriceList__list">
+            <li><span id="service-price-inflate" data-lang>Inflate wheel</span><strong>1€</strong></li>
+            <li><span id="service-price-saddle" data-lang>Saddle adjustment</span><strong>5€</strong></li>
+            <li><span id="service-price-derailleur" data-lang>Derailleur adjustment</span><strong>10€</strong></li>
+            <li><span id="service-price-brakes" data-lang>Brake adjustment</span><strong>10€</strong></li>
+            <li><span id="service-price-headset" data-lang>Headset adjustment</span><strong>7€</strong></li>
+            <li><span id="service-price-bolts" data-lang>General bolt adjustment</span><strong>15€</strong></li>
+            <li><span id="service-price-wheel" data-lang>Wheel truing</span><strong>15€</strong></li>
+            <li><span id="service-price-spoke" data-lang>Spoke replacement + wheel truing</span><strong>20€</strong></li>
+            <li><span id="service-price-handlebar" data-lang>Handlebar centering</span><strong>7€</strong></li>
+            <li><span id="service-price-chain-clean" data-lang>Clean + lubricate chain</span><strong>12€</strong></li>
+            <li><span id="service-price-bike-wash" data-lang>Bike wash + lubricate chain</span><strong>20€</strong></li>
+            <li><span id="service-price-headset-service" data-lang>Clean and lubricate headset / replace headset</span><strong>15€</strong></li>
+            <li><span id="service-price-bottom-bracket" data-lang>Clean and lubricate bottom bracket / replace bottom bracket</span><strong>15€</strong></li>
+            <li><span id="service-price-bar-tape" data-lang>Bar tape replacement</span><strong>15€</strong></li>
+            <li><span id="service-price-chain" data-lang>Chain replacement</span><strong>10€</strong></li>
+            <li><span id="service-price-tube" data-lang>Tube / tire replacement</span><strong>10€</strong></li>
+            <li><span id="service-price-cassette" data-lang>Sprocket / cassette replacement</span><strong>10€</strong></li>
+            <li><span id="service-price-cables" data-lang>Housing + cables replacement (brakes and gears)</span><strong>15€</strong></li>
+            <li><span id="service-price-bleed" data-lang>Brake bleeding Shimano / Sram</span><strong>20€ / 25€</strong></li>
+            <li><span id="service-price-pads" data-lang>Brake pad / shoe replacement + adjustment</span><strong>13€</strong></li>
+          </ul>
+          <p id="service-price-note-parts" class="p-servicesPriceList__note" data-lang>Replacement parts are not included, only labor.</p>
+          <p id="service-price-note-staff" class="p-servicesPriceList__note" data-lang>If you need the replacement part, our staff can help source it.</p>
+        </section>
+
+        <div class="p-servicesListHead">
+          <p id="services-options-title" class="p-servicesListHead__eyebrow" data-lang>Maintenance options</p>
+        </div>
 
         <section class="p-servicesList" aria-label="Detailed services">
         <article class="p-serviceItem" data-reveal>
@@ -108,11 +141,11 @@
           <div class="p-serviceItem__content">
             <p class="p-serviceItem__number">01</p>
             <h2 class="p-serviceItem__title">Inspection</h2>
+            <span id="service-inspection-price" class="p-serviceItem__price" data-lang>from 5€</span>
             <p class="p-serviceItem__summary">Complete technical and safety inspection.</p>
-            <p class="p-serviceItem__detail">Best for: pre-ride checks, used bikes, and quick diagnostics.</p>
-            <p class="p-serviceItem__body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae arcu sed nibh luctus tempor. Donec finibus, mi non
-              interdum cursus, lacus justo porttitor nisl, a facilisis libero sem at erat. Mauris vitae sapien ac mi gravida luctus.
+            <p id="service-inspection-body" class="p-serviceItem__body" data-lang>
+              Quick checks and simple adjustments from 5€ to 15€, including saddle position, derailleur setup, brake adjustment, headset
+              adjustment, general bolts, and wheel centering.
             </p>
           </div>
         </article>
@@ -124,11 +157,11 @@
           <div class="p-serviceItem__content">
             <p class="p-serviceItem__number">02</p>
             <h2 class="p-serviceItem__title">Basic maintenance</h2>
+            <span class="p-serviceItem__price">29€</span>
             <p class="p-serviceItem__summary">Full clean, shifting and braking adjustment, chain lubrication.</p>
-            <p class="p-serviceItem__detail">Best for: regular use, city bikes, and seasonal refreshes.</p>
-            <p class="p-serviceItem__body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ullamcorper ipsum id nibh consequat, vitae tincidunt
-              turpis luctus. Vivamus non neque at nisl tempor fermentum. Suspendisse potenti. Nulla facilisi morbi pretium.
+            <p id="service-basic-body" class="p-serviceItem__body" data-lang>
+              29€. Includes saddle adjustment, gears, derailleur, mechanical brakes, general bolts, and wheel truing. Hydraulic brake bleeding:
+              +20€ Shimano or +25€ Sram.
             </p>
           </div>
         </article>
@@ -140,11 +173,12 @@
           <div class="p-serviceItem__content">
             <p class="p-serviceItem__number">03</p>
             <h2 class="p-serviceItem__title">Premium maintenance</h2>
+            <span class="p-serviceItem__price">59€ / 79€</span>
             <p class="p-serviceItem__summary">Full disassembly, inspection, lubrication, and rebuild.</p>
-            <p class="p-serviceItem__detail">Best for: bikes that need deeper care, noise issues, and long-term reliability.</p>
-            <p class="p-serviceItem__body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a ipsum in justo pulvinar pulvinar. Praesent porttitor lectus
-              at nibh sagittis, sit amet venenatis lacus gravida. Aliquam erat volutpat. Proin eget augue ut mi congue mattis.
+            <p id="service-premium-body" class="p-serviceItem__body" data-lang>
+              General maintenance 59€ includes basic maintenance plus wash, cone lubrication, play inspection, brake pad adjustment, disc
+              alignment, and chain lubrication. Premium maintenance 79€ adds headset, hubs, bottom bracket, chainrings, cranks, pedals,
+              derailleur hanger, cassette/sprocket, and lubrication.
             </p>
           </div>
         </article>
@@ -156,11 +190,11 @@
           <div class="p-serviceItem__content">
             <p class="p-serviceItem__number">04</p>
             <h2 class="p-serviceItem__title">Per-part services</h2>
+            <span id="service-parts-price" class="p-serviceItem__price" data-lang>from 1€</span>
             <p class="p-serviceItem__summary">Wheel truing, hubs, bottom bracket, drivetrain, headset, bar tape, seatpost, and saddle.</p>
-            <p class="p-serviceItem__detail">Best for: targeted repairs, upgrades, and single-component problems.</p>
-            <p class="p-serviceItem__body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id orci sed lorem bibendum porta. Nam euismod pretium enim,
-              non volutpat augue vulputate id. Donec suscipit sem vitae nunc vulputate, quis vestibulum orci luctus.
+            <p id="service-parts-body" class="p-serviceItem__body" data-lang>
+              Individual work includes wheel truing 15€, spoke replacement + wheel truing 20€, chain cleaning 12€, bike wash + chain lubrication
+              20€, headset or bottom bracket service 15€, and brake bleeding 20€ / 25€.
             </p>
           </div>
         </article>
@@ -172,11 +206,11 @@
           <div class="p-serviceItem__content">
             <p class="p-serviceItem__number">05</p>
             <h2 class="p-serviceItem__title">Custom builds</h2>
+            <span id="service-custom-price" class="p-serviceItem__price" data-lang></span>
             <p class="p-serviceItem__summary">Personalized bicycles built from the frame.</p>
-            <p class="p-serviceItem__detail">Best for: custom geometry, personal parts choices, and complete bike projects.</p>
-            <p class="p-serviceItem__body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac felis in risus congue vulputate. Vestibulum ante ipsum
-              primis in faucibus orci luctus et ultrices posuere cubilia curae. Integer sed lectus ut elit tincidunt gravida.
+            <p id="service-custom-body" class="p-serviceItem__body" data-lang>
+              Need new parts fitted? We replace bar tape, chains, tubes, tires, sprockets, cassettes, cable housing, brake cables, and shift
+              cables. Replacement parts are not included in labor prices, but our team can help source them.
             </p>
           </div>
         </article>
@@ -188,15 +222,16 @@
           <div class="p-serviceItem__content">
             <p class="p-serviceItem__number">06</p>
             <h2 class="p-serviceItem__title">Restoration + detailing</h2>
+            <span id="service-restoration-price" class="p-serviceItem__price" data-lang>from 25€</span>
             <p class="p-serviceItem__summary">Old bicycles refreshed with careful restoration and detailing.</p>
-            <p class="p-serviceItem__detail">Best for: vintage bikes, second-life projects, and polished finishing work.</p>
-            <p class="p-serviceItem__body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque viverra dui eget enim dignissim, sed mattis ligula
-              elementum. Cras vel risus non nunc iaculis consequat. Sed tincidunt massa nec justo fermentum viverra.
+            <p id="service-restoration-body" class="p-serviceItem__body" data-lang>
+              Spring fork maintenance is 25€ and includes disassembly, cleaning, lubrication, and assembly. For older bikes, we can combine
+              detailing, replacement parts, and deeper maintenance to bring the bike back to a cleaner, smoother ride.
             </p>
           </div>
         </article>
         </section>
+
       </div>
     </main>
 
