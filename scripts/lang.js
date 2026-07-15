@@ -51,6 +51,10 @@ const contents = {
     en: "Services",
     es: "Servicios",
   },
+  "nav-rentals": {
+    en: "Rentals",
+    es: "Alquiler",
+  },
   "nav-contact": {
     en: "Contact",
     es: "Contacto",
@@ -58,6 +62,18 @@ const contents = {
   "nav-contact-label": {
     en: "Quick contact",
     es: "Contacto rápido",
+  },
+  "services-hero-eyebrow": {
+    en: "Workshop services",
+    es: "Servicios de taller",
+  },
+  "services-hero-title": {
+    en: "Workshop and repairs",
+    es: "Taller y reparaciones",
+  },
+  "services-hero-lead": {
+    en: "Our workshop is designed to help you get back on the road as soon as possible. We handle adjustments, maintenance, and repairs with fast, professional, and friendly service.\n\nWe offer basic, general, and premium maintenance, brake bleeding, part replacements, wheel alignment, lubrication, and everything needed to make your bike feel like new. Whether you live in Valencia and bring in your everyday bike, or you are visiting and need a quick solution, we are here to help with personalized attention and quality parts.",
+    es: "Nuestro taller está pensado para ayudarte a volver a la carretera lo antes posible. Realizamos ajustes, mantenimientos y reparaciones con un servicio rápido, profesional y cercano.\n\nOfrecemos mantenimiento básico, general y premium, purgado de frenos, cambios de piezas, alineaciones, engrase y todo lo necesario para que tu bicicleta quede como nueva. Tanto si eres de Valencia y traes tu bici habitual como si estás de visita y necesitas una solución rápida, estamos aquí para ayudarte con atención personalizada y piezas de calidad.",
   },
   "nav-lang-label": {
     en: "Language selection",
@@ -132,8 +148,8 @@ const contents = {
     es: "Fotos del taller",
   },
   "lang-1": {
-    en: "Ono Bikeshop is a workshop in Ciutat Vella, València. Bring your bike for a safety check, maintenance, or a full rebuild — we’ll help you keep it running smoothly.\n\nFrom quick adjustments to full overhauls, our focus is simple: reliable bikes, honest service, and clean results. Drop by the shop, tell us what you need, and we’ll recommend the best option for your bike and your riding.\n\nWe also build personalized bicycles from the frame and give old bikes a second life with careful restoration and detailing.",
-    es: "Ono Bikeshop es un taller en Ciutat Vella, València. Trae tu bicicleta para una revisión de seguridad, mantenimiento o una reconstrucción completa — te ayudaremos a que siga funcionando sin problemas.\n\nDesde ajustes rápidos hasta revisiones completas, nuestro objetivo es simple: bicicletas fiables, servicio honesto y resultados limpios. Pásate por la tienda, cuéntanos qué necesitas y te recomendaremos la mejor opción para tu bicicleta y tu forma de montar.\n\nTambién construimos bicicletas personalizadas desde el cuadro y damos una segunda vida a bicicletas antiguas con una restauración y un acabado cuidados.",
+    en: "Discover Valencia on two wheels with quality bikes, personalized attention, and truly competitive prices. Whether you want to ride through the historic center, enjoy the Turia Garden, or spend the day by the sea, at ONO you will find a comfortable, fun, and affordable way to explore Valencia.",
+    es: "Descubre Valencia sobre dos ruedas con bicicletas de calidad, atención personalizada y precios realmente competitivos. Ya sea que quieras recorrer el centro histórico, disfrutar del Jardín del Turia o pasar el día junto al mar, en ONO encontrarás una forma cómoda, divertida y económica de explorar Valencia.",
   },
   "rental-title": {
     en: "Bike Rental",
@@ -227,6 +243,78 @@ const contents = {
     en: "1 week",
     es: "1 semana",
   },
+  "rentals-hero-eyebrow": {
+    en: "Bike rental",
+    es: "Alquiler de bicis",
+  },
+  "rentals-hero-title": {
+    en: "Ride Valencia at your own pace",
+    es: "Recorre Valencia a tu ritmo",
+  },
+  "rentals-hero-lead": {
+    en: "We offer comfortable, safe, and well-maintained bicycles. Whether you ride solo, with friends, or with family, we have bikes for everyone, including options for our youngest cyclists. You can discover Valencia at your own pace with total peace of mind. Whether you want to rent for a few hours or several days, we have flexible options and special rates to help you enjoy the city in the most practical, comfortable, and fun way.",
+    es: "Ofrecemos bicicletas cómodas, seguras y bien mantenidas. Ya sea que pasees solo, con amigos o en familia, tenemos bicis para todos, incluyendo opciones para nuestros ciclistas más pequeños. Podrás descubrir Valencia a tu propio ritmo con total tranquilidad. Tanto si quieres alquilar por unas horas como por varios días, tenemos opciones flexibles y tarifas especiales que te ayudarán a disfrutar de la ciudad de la forma más práctica, cómoda y divertida.",
+  },
+  "routes-title": {
+    en: "Recommended routes",
+    es: "Rutas recomendadas",
+  },
+  "route-turia-title": {
+    en: "Jardín del Turia",
+    es: "Jardín del Turia",
+  },
+  "route-turia-body": {
+    en: "One of Europe’s most impressive urban parks. Almost 10 km of car-free bike lane, surrounded by gardens and a relaxed atmosphere. Perfect for every level.",
+    es: "Uno de los parques urbanos más impresionantes de Europa. Casi 10 km de carril bici sin coches, rodeado de jardines y ambiente relajado. Perfecto para todos los niveles.",
+  },
+  "route-arts-title": {
+    en: "City of Arts and Sciences",
+    es: "Ciudad de las Artes y las Ciencias",
+  },
+  "route-arts-body": {
+    en: "Valencia’s modern symbol. Futuristic architecture, waterside paths, and very photogenic.",
+    es: "El símbolo moderno de Valencia. Arquitectura futurista, paseos junto al agua y muy fotogénica.",
+  },
+  "route-malvarrosa-title": {
+    en: "Malvarrosa Beach and El Cabanyal",
+    es: "Playa de la Malvarrosa y El Cabanyal",
+  },
+  "route-malvarrosa-body": {
+    en: "Seafront promenade, sea breeze, and local atmosphere. Ideal for combining a bike ride with a swim and good food.",
+    es: "Paseo marítimo, brisa del mar y ambiente local. Ideal para combinar bici con baño y buena comida.",
+  },
+  "route-historic-title": {
+    en: "Historic Center",
+    es: "Centro Histórico",
+  },
+  "route-historic-body": {
+    en: "Medieval streets, La Lonja de la Seda, the Central Market, and charming squares. Valencia at its most authentic.",
+    es: "Calles medievales, la Lonja de la Seda, el Mercado Central y plazas con mucho encanto. La Valencia más auténtica.",
+  },
+  "route-bioparc-title": {
+    en: "Bioparc and Cabecera Park",
+    es: "Biòparc y Parque de Cabecera",
+  },
+  "route-bioparc-body": {
+    en: "Nature in the city. An innovative zoo and peaceful green areas, much loved by locals.",
+    es: "Naturaleza en la ciudad. Un zoo innovador y zonas verdes tranquilas, muy apreciadas por los locales.",
+  },
+  "route-huerta-title": {
+    en: "Huerta de Valencia and El Palmar (local favorite route)",
+    es: "Huerta de Valencia y El Palmar (ruta local favorita)",
+  },
+  "route-huerta-body": {
+    en: "For those who want something more authentic: rice fields, canals, and the village of El Palmar. A beautiful, very Valencian route.",
+    es: "Para los que quieren algo más auténtico: arrozales, canales y el pueblo de El Palmar. Una ruta preciosa y muy valenciana.",
+  },
+  "route-viveros-title": {
+    en: "Viveros and Jardines del Real",
+    es: "Viveros y Jardines del Real",
+  },
+  "route-viveros-body": {
+    en: "A local classic. Historic gardens, shade, and a very pleasant atmosphere, especially beautiful in spring and autumn.",
+    es: "Un clásico local. Jardines históricos, sombra y un ambiente muy agradable, especialmente bonito en primavera y otoño.",
+  },
   "services-title": {
     en: "Services",
     es: "Servicios",
@@ -303,37 +391,137 @@ const contents = {
     en: "Restoration and detailing",
     es: "Restauración y detailing",
   },
-  "workshop-title": {
-    en: "Workshop services available",
-    es: "Servicios de taller disponibles",
+  "faq-title": {
+    en: "FAQs",
+    es: "Preguntas frecuentes",
   },
-  "workshop-pills-label": {
-    en: "Workshop services",
-    es: "Servicios de taller",
+  "faq-reserve-q": {
+    en: "Do I need to book in advance?",
+    es: "¿Necesito reservar con antelación?",
   },
-  "workshop-cleaning": {
-    en: "Cleaning",
-    es: "Limpieza",
+  "faq-reserve-a": {
+    en: "We recommend it, especially on weekends, holidays, and during high season in spring and summer. Still, we always help walk-ins whenever we have availability.",
+    es: "Lo recomendamos especialmente en fines de semana, festivos y temporada alta (primavera y verano). Aun así, atendemos sin reserva siempre que tengamos disponibilidad.",
   },
-  "workshop-maintenance": {
-    en: "Maintenance",
-    es: "Mantenimiento",
+  "faq-days-q": {
+    en: "Can I rent for several days?",
+    es: "¿Puedo alquilar durante varios días?",
   },
-  "workshop-adjustments": {
-    en: "Adjustments",
-    es: "Ajustes",
+  "faq-days-a": {
+    en: "Yes. We offer attractive discounts for rentals of 2, 3, or more days.",
+    es: "¡Sí! Ofrecemos descuentos interesantes para alquileres de 2, 3 o más días.",
   },
-  "workshop-replacements": {
-    en: "Replacements",
-    es: "Sustituciones",
+  "faq-routes-q": {
+    en: "Can I get route recommendations?",
+    es: "¿Puedo recibir recomendaciones de rutas?",
   },
-  "workshop-lubrication": {
-    en: "Lubrication",
-    es: "Lubricación",
+  "faq-routes-a": {
+    en: "Of course. We love sharing our favorite routes and local tips so you can discover Valencia like a local.",
+    es: "Por supuesto. Nos encanta compartir nuestras rutas favoritas y consejos locales para que descubras Valencia como un valenciano más.",
   },
-  "workshop-note": {
-    en: "Components and accessories for sale.",
-    es: "Componentes y accesorios a la venta.",
+  "faq-bikes-q": {
+    en: "What type of bikes do you have?",
+    es: "¿Qué tipo de bicicletas tenéis?",
+  },
+  "faq-bikes-a": {
+    en: "We have comfortable, well-maintained city bikes in different sizes, ideal for adults and families, including options for children.",
+    es: "Disponemos de bicicletas urbanas cómodas y bien mantenidas, de diferentes tamaños e ideales tanto para adultos como para familias (incluyendo opciones para niños).",
+  },
+  "faq-accessories-q": {
+    en: "Are helmet, lock, and accessories included?",
+    es: "¿Hay casco, candado y accesorios?",
+  },
+  "faq-accessories-a": {
+    en: "Yes. We provide a helmet, lock, and basket or bag as needed, at no extra cost.",
+    es: "Sí, facilitamos casco, candado y cesta o bolsa según necesites, sin coste adicional.",
+  },
+  "faq-weather-q": {
+    en: "What happens if it rains or the weather is bad?",
+    es: "¿Qué pasa si llueve o hace mal tiempo?",
+  },
+  "faq-weather-a": {
+    en: "No problem. You can cancel or modify your booking at no cost if the weather does not cooperate, according to conditions.",
+    es: "No hay problema. Puedes cancelar o modificar tu reserva sin coste si el tiempo no acompaña (según condiciones).",
+  },
+  "faq-safe-q": {
+    en: "Is it safe to cycle in Valencia?",
+    es: "¿Es seguro pedalear por Valencia?",
+  },
+  "faq-safe-a": {
+    en: "Yes. The city has a good network of bike lanes and many quiet areas. We will point you toward the safest and most pleasant routes.",
+    es: "Sí, la ciudad tiene una buena red de carriles bici y muchas zonas tranquilas. Te daremos indicaciones de las rutas más seguras y agradables.",
+  },
+  "about-story-title": {
+    en: "Our story",
+    es: "Nuestra historia",
+  },
+  "about-hero-title": {
+    en: "Discover Valencia with ONO",
+    es: "Descubre Valencia con ONO",
+  },
+  "about-hero-lead": {
+    en: "We are Sofía and Zoltán, a family bike rental and workshop in València created from our love for the city, cycling, and friendly local service.",
+    es: "Somos Sofía y Zoltán, un negocio familiar de alquiler y taller de bicicletas en Valencia creado desde nuestro amor por la ciudad, la bici y el trato cercano.",
+  },
+  "about-story-p1": {
+    en: "Hello, we are Sofía and Zoltán.",
+    es: "Hola, somos Sofía y Zoltán.",
+  },
+  "about-story-p2": {
+    en: "After moving to Valencia, we completely fell in love with the city and its way of life: walking through its streets, discovering hidden corners, and above all, exploring it by bike. Without a doubt, it is the best way to get to know Valencia. The city has more than 160 km of bike lanes, completely flat terrain, mild weather almost all year round, and the wonderful Turia Garden, a linear park of almost 10 km where you can cycle peacefully.",
+    es: "Después de mudarnos a Valencia, nos enamoramos por completo de la ciudad y de su forma de vivir: paseando por sus calles, descubriendo rincones escondidos y, sobre todo, recorriéndola en bicicleta. Es, sin duda, la mejor manera de conocer Valencia. La ciudad cuenta con más de 160 km de carriles bici, un terreno completamente plano, un clima suave casi todo el año y el maravilloso Jardín del Turia, un parque lineal de casi 10 km donde puedes pedalear tranquilamente.",
+  },
+  "about-story-p3": {
+    en: "That is why we decided to create ONO Bikes. Zoltán, passionate about workshop life, has always enjoyed repairing and tuning bicycles. Together we ride many routes through the city and its surroundings, and we wanted to create a space where we could offer rental and workshop services in one place, both for Valencia locals and for visitors from other cities.",
+    es: "Por eso decidimos crear ONO Bikes. Zoltán, apasionado del mundo del taller, siempre ha disfrutado reparando y poniendo a punto bicicletas. Juntos hacemos muchas rutas por la ciudad y sus alrededores y quisimos crear un espacio donde pudiéramos ofrecer alquiler y taller en un mismo lugar, tanto para los vecinos de Valencia como para quienes nos visitan de otras ciudades.",
+  },
+  "about-story-p4": {
+    en: "We wanted to share our passion for cycling and create a place where you receive friendly service, useful advice, and bikes you can trust. As a family business, we believe in personalized attention, honesty, and fair prices. We love recommending routes, sharing special places, and making sure every customer has a comfortable and memorable experience.",
+    es: "Queríamos compartir nuestra pasión por andar en bicicleta y crear un lugar donde recibieras un trato cercano, consejos útiles y bicicletas en las que pudieras confiar. Como negocio familiar, creemos en la atención personalizada, la honestidad y los precios justos. Nos encanta recomendar rutas, compartir lugares especiales y asegurarnos de que cada cliente viva una experiencia cómoda y memorable.",
+  },
+  "about-story-p5": {
+    en: "Whether it is your first time in Valencia or you already know the city, we will be happy to help you discover it on two wheels. We hope to see you soon at ONO!",
+    es: "Tanto si es tu primera vez en Valencia como si ya la conoces, estaremos encantados de ayudarte a descubrirla sobre dos ruedas. ¡Esperamos verte pronto en ONO!",
+  },
+  "about-values-title": {
+    en: "Why choose ONO?",
+    es: "¿Por qué elegir ONO?",
+  },
+  "about-value-1": {
+    en: "Truly competitive prices in Valencia",
+    es: "Precios realmente competitivos en Valencia",
+  },
+  "about-value-2": {
+    en: "Friendly, personalized attention that feels like home",
+    es: "Atención cercana y personalizada, como en casa",
+  },
+  "about-value-3": {
+    en: "A family business with local soul",
+    es: "Negocio familiar con alma local",
+  },
+  "about-value-4": {
+    en: "Bikes checked and maintained with care",
+    es: "Bicicletas revisadas y mantenidas con cariño",
+  },
+  "about-value-5": {
+    en: "Central location, easy to find",
+    es: "Ubicación céntrica, fácil de encontrar",
+  },
+  "about-value-6": {
+    en: "Fast and professional service",
+    es: "Servicio rápido y profesional",
+  },
+  "about-value-7": {
+    en: "Authentic local recommendations to discover the city like a Valencian",
+    es: "Recomendaciones locales auténticas para descubrir la ciudad como un valenciano más",
+  },
+  "about-value-8": {
+    en: "Attractive discounts for groups and multi-day rentals",
+    es: "Descuentos atractivos para grupos y alquileres de varios días",
+  },
+  "about-values-body": {
+    en: "We believe discovering Valencia by bike should be accessible to everyone. That is why we offer very competitive rates without ever giving up the quality of our bikes or the friendly service you deserve. Our goal is simple: help you enjoy more, see more places, and spend less.",
+    es: "Creemos que descubrir Valencia en bicicleta debería estar al alcance de todos. Por eso ofrecemos tarifas muy competitivas sin renunciar nunca a la calidad de nuestras bicicletas ni al trato cercano que mereces. Nuestro objetivo es sencillo: que puedas disfrutar más, recorrer más lugares y gastar menos.",
   },
   "footer-logo-alt": {
     en: "Ono Bikeshop logo",

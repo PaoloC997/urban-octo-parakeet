@@ -32,17 +32,44 @@
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
-    <header class="c-navbar">
+    <nav id="nav-primary-label" class="c-navbar" aria-label="Primary" data-lang data-lang-attr="aria-label">
       <div class="c-navbar__inner">
         <a class="c-navbar__brand" href="index.html#main">
           <img id="nav-logo-alt" class="c-navbar__logo" src="src/img/logo.png" alt="Ono Bikeshop logo" data-lang data-lang-attr="alt" />
           <span class="c-navbar__brandText">ONO BIKESHOP</span>
         </a>
+        <div class="c-navbar__panel" id="navbar-panel">
+        <div class="c-navbar__nav" id="navbar-links">
+          <a id="nav-home" class="c-navbar__link" href="index.html#main" data-lang>Home</a>
+          <a id="nav-about" class="c-navbar__link" href="about.html" data-lang>About</a>
+          <a id="nav-services" class="c-navbar__link" href="services.html" data-lang>Services</a>
+          <a id="nav-rentals" class="c-navbar__link" href="rentals.html" data-lang>Rentals</a>
+          <a id="nav-contact" class="c-navbar__link" href="contact.html" data-lang>Contact</a>
+        </div>
+        <div id="nav-contact-label" class="c-navbar__contact" aria-label="Quick contact" data-lang data-lang-attr="aria-label">
+          <a class="c-navbar__contactLink" href="tel:+34694912878"
+            ><i class="c-navbar__contactIcon fa-solid fa-phone" aria-hidden="true"></i>(+34) 694 912 878</a
+          >
+          <span class="c-navbar__sep" aria-hidden="true">•</span>
+          <a class="c-navbar__contactLink" href="mailto:onobicicletas@gmail.com"
+            ><i class="c-navbar__contactIcon fa-solid fa-envelope" aria-hidden="true"></i>onobicicletas@gmail.com</a
+          >
+          <span class="c-navbar__sep" aria-hidden="true">•</span>
+          <a class="c-navbar__contactLink" href="https://instagram.com/onobikeshop" target="_blank" rel="noreferrer"
+            ><i class="c-navbar__contactIcon fa-brands fa-instagram" aria-hidden="true"></i>@onobikeshop</a
+          >
+          <span class="c-navbar__sep" aria-hidden="true">•</span>
+          <span id="nav-lang-label" class="c-navbar__lang" aria-label="Language selection" data-lang data-lang-attr="aria-label">
+            <a id="es" class="c-navbar__langLink" href="#" aria-label="Spanish version" data-lang data-lang-attr="aria-label">🇪🇸</a>
+            <a id="en" class="c-navbar__langLink" href="#" aria-label="English version" data-lang data-lang-attr="aria-label">🇬🇧</a>
+          </span>
+        </div>
+        </div>
         <button
           id="nav-toggle"
           class="c-navbar__toggle"
           type="button"
-          aria-controls="navbar-menu"
+          aria-controls="navbar-panel"
           aria-expanded="false"
           aria-label="Open menu"
           data-lang
@@ -52,43 +79,23 @@
           <span class="c-navbar__toggleLine" aria-hidden="true"></span>
           <span class="c-navbar__toggleLine" aria-hidden="true"></span>
         </button>
-        <div class="c-navbar__menu" id="navbar-menu">
-          <nav id="nav-primary-label" class="c-navbar__nav" aria-label="Primary" data-lang data-lang-attr="aria-label">
-            <a id="nav-home" class="c-navbar__link" href="index.html#main" data-lang>Home</a>
-            <a id="nav-about" class="c-navbar__link" href="about.html" data-lang>About</a>
-            <a id="nav-services" class="c-navbar__link" href="services.html" data-lang>Services</a>
-            <a id="nav-contact" class="c-navbar__link" href="contact.html" data-lang>Contact</a>
-          </nav>
-          <div id="nav-contact-label" class="c-navbar__contact" aria-label="Quick contact" data-lang data-lang-attr="aria-label">
-            <a class="c-navbar__contactLink" href="tel:+34694912878"
-              ><i class="c-navbar__contactIcon fa-solid fa-phone" aria-hidden="true"></i>(+34) 694 912 878</a
-            >
-            <span class="c-navbar__sep" aria-hidden="true">•</span>
-            <a class="c-navbar__contactLink" href="mailto:onobicicletas@gmail.com"
-              ><i class="c-navbar__contactIcon fa-solid fa-envelope" aria-hidden="true"></i>onobicicletas@gmail.com</a
-            >
-            <span class="c-navbar__sep" aria-hidden="true">•</span>
-            <a class="c-navbar__contactLink" href="https://instagram.com/onobikeshop" target="_blank" rel="noreferrer"
-              ><i class="c-navbar__contactIcon fa-brands fa-instagram" aria-hidden="true"></i>@onobikeshop</a
-            >
-            <span class="c-navbar__sep" aria-hidden="true">•</span>
-            <span id="nav-lang-label" class="c-navbar__lang" aria-label="Language selection" data-lang data-lang-attr="aria-label">
-              <a id="es" class="c-navbar__langLink" href="#" aria-label="Spanish version" data-lang data-lang-attr="aria-label">🇪🇸</a>
-              <a id="en" class="c-navbar__langLink" href="#" aria-label="English version" data-lang data-lang-attr="aria-label">🇬🇧</a>
-            </span>
-          </div>
-        </div>
       </div>
-    </header>
+    </nav>
 
     <main>
       <div class="p-servicesPage">
         <section class="p-servicesHero">
           <div class="p-servicesHero__inner">
-            <p class="p-servicesHero__eyebrow">Workshop services</p>
-            <h1 class="p-servicesHero__title">Service for every kind of ride</h1>
-            <p class="p-servicesHero__lead">
-              From fast checks to careful rebuilds, each service is handled with clear communication, clean work, and attention to how you ride.
+            <p id="services-hero-eyebrow" class="p-servicesHero__eyebrow" data-lang>Workshop services</p>
+            <h1 id="services-hero-title" class="p-servicesHero__title" data-lang>Workshop and repairs</h1>
+            <p id="services-hero-lead" class="p-servicesHero__lead" data-lang>
+              Our workshop is designed to help you get back on the road as soon as possible. We handle adjustments,
+              maintenance, and repairs with fast, professional, and friendly service.
+
+              We offer basic, general, and premium maintenance, brake bleeding, part replacements, wheel alignment,
+              lubrication, and everything needed to make your bike feel like new. Whether you live in Valencia and bring
+              in your everyday bike, or you are visiting and need a quick solution, we are here to help with personalized
+              attention and quality parts.
             </p>
           </div>
         </section>

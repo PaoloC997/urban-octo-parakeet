@@ -295,16 +295,31 @@
 }
 
 .p-aboutPage__values {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
   width: min(100% - clamp(2rem, 7vw, 8rem), 96rem);
   margin: 0 auto;
   padding: 0 0 6rem;
 }
 
+.p-aboutPage__valuesHead {
+  margin: 0 0 1.5rem;
+}
+
+.p-aboutPage__valuesHead h2 {
+  max-width: 10ch;
+  margin: 0;
+  font-size: clamp(2.5rem, 5vw, 4.75rem);
+  line-height: 0.95;
+  font-weight: 500;
+}
+
+.p-aboutPage__valueGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
 .p-aboutPage__value {
-  padding: clamp(1.25rem, 2.5vw, 2rem);
+  padding: clamp(1rem, 2vw, 1.5rem);
   border: 0.0625rem solid color-mix(in srgb, #0f172a 12%, transparent);
   border-radius: 0.5rem;
   background: color-mix(in srgb, #0f172a 3%, #fff);
@@ -316,17 +331,18 @@
   letter-spacing: 0.14em;
 }
 
-.p-aboutPage__value h2 {
-  margin: 0.75rem 0 0.75rem;
-  font-size: clamp(1.5rem, 2.5vw, 2.25rem);
-  line-height: 1;
-  font-weight: 500;
+.p-aboutPage__value p {
+  margin: 0.75rem 0 0;
+  line-height: 1.45;
+  opacity: 0.82;
 }
 
-.p-aboutPage__value p {
-  margin: 0;
-  line-height: 1.45;
-  opacity: 0.76;
+.p-aboutPage__valuesText {
+  max-width: 56rem;
+  margin: 1.5rem 0 0;
+  font-size: clamp(1.1rem, 1.7vw, 1.35rem);
+  line-height: 1.5;
+  opacity: 0.82;
 }
 
 @media (max-width: 56.25rem) {
@@ -346,12 +362,19 @@
   }
 
   .p-aboutPage__values {
-    grid-template-columns: 1fr;
     padding-bottom: 4rem;
+  }
+
+  .p-aboutPage__valueGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 35rem) {
+  .p-aboutPage__valueGrid {
+    grid-template-columns: 1fr;
+  }
+
   .p-aboutPage__photoGrid {
     grid-template-columns: 1fr;
     grid-template-rows: none;

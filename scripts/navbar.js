@@ -1,6 +1,6 @@
 const navbarToggle = document.querySelector(".c-navbar__toggle");
-const navbarMenu = document.querySelector(".c-navbar__menu");
-const navbarLinks = document.querySelectorAll(".c-navbar__menu a");
+const navbar = document.querySelector(".c-navbar");
+const navbarLinks = document.querySelectorAll(".c-navbar__panel a");
 const navbarLabels = {
   en: {
     open: "Open menu",
@@ -12,7 +12,7 @@ const navbarLabels = {
   },
 };
 
-if (navbarToggle && navbarMenu) {
+if (navbarToggle && navbar) {
   const updateNavbarLabel = () => {
     const lang = document.documentElement.lang || "en";
     const isOpen = navbarToggle.getAttribute("aria-expanded") === "true";
@@ -21,14 +21,14 @@ if (navbarToggle && navbarMenu) {
   };
 
   navbarToggle.addEventListener("click", () => {
-    const isOpen = navbarMenu.classList.toggle("is-open");
+    const isOpen = navbar.classList.toggle("is-open");
     navbarToggle.setAttribute("aria-expanded", String(isOpen));
     updateNavbarLabel();
   });
 
   for (const link of navbarLinks) {
     link.addEventListener("click", () => {
-      navbarMenu.classList.remove("is-open");
+      navbar.classList.remove("is-open");
       navbarToggle.setAttribute("aria-expanded", "false");
       updateNavbarLabel();
     });
