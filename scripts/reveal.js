@@ -24,4 +24,3 @@ function initReveals() {
 }
 
 window.addEventListener("DOMContentLoaded", initReveals);
-

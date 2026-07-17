@@ -709,7 +709,7 @@ function changeLang(lang) {
   initLang(lang);
 }
 
-const elements = document.getElementsByClassName("c-navbar__langLink");
+const elements = document.getElementsByClassName("c-navbar__lang-link");
 
 for (let i = 0; i < elements.length; i++) {
   elements[i].addEventListener("click", (event) => {

@@ -27,7 +27,7 @@
   flex-direction: column;
 }
 
-.c-footer__brandRow {
+.c-footer__brand-row {
   display: flex;
   align-items: center;
   gap: 0.875rem;
@@ -64,7 +64,7 @@
   align-items: flex-start;
 }
 
-.c-footer__rowText {
+.c-footer__row-text {
   display: flex;
   flex-direction: column;
   gap: 0.125rem;
@@ -93,7 +93,7 @@
 .c-footer__link {
   color: inherit;
   text-decoration: none;
-  border-bottom: 0.0625rem solid color-mix(in srgb, currentColor 55%, transparent);
+  border-bottom: 1px solid var(--c-border);
 }
 
 .c-footer__link:hover {
@@ -113,7 +113,7 @@
 
 .c-footer__map {
   height: 24rem;
-  border: 0.0625rem solid color-mix(in srgb, currentColor 18%, transparent);
+  border: 1px solid var(--c-border);
   border-radius: 1rem;
   padding: 1rem;
   display: flex;
@@ -121,21 +121,21 @@
   gap: 0.75rem;
 }
 
-.c-footer__mapTitle {
+.c-footer__map-title {
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
-.c-footer__mapBox {
+.c-footer__map-box {
   flex: 1 1 auto;
   min-height: 0;
   overflow: hidden;
   border-radius: 0.875rem;
-  border: 0.0625rem solid color-mix(in srgb, currentColor 22%, transparent);
+  border: 1px solid var(--c-border);
 }
 
-.c-footer__mapBox iframe {
+.c-footer__map-box iframe {
   display: block;
   width: 100%;
   height: 100%;
@@ -178,7 +178,7 @@
 }
 
 @media (max-width: 35rem) {
-  .c-footer__brandRow {
+  .c-footer__brand-row {
     align-items: flex-start;
   }
 

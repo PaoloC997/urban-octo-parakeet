@@ -47,7 +47,7 @@
   line-height: 1.05;
 }
 
-.s-main__brandLogo {
+.s-main__brand-logo {
   display: block;
   width: clamp(16rem, 28vw, 26rem);
   max-width: 100%;
@@ -55,7 +55,7 @@
   margin: 0 0 1rem;
   opacity: 0;
   transform: translateY(1rem) scale(0.98);
-  animation: heroIntro 900ms cubic-bezier(0.22, 1, 0.36, 1) 160ms forwards;
+  animation: hero-intro 900ms cubic-bezier(0.22, 1, 0.36, 1) 160ms forwards;
 }
 
 .s-main__divider {
@@ -66,10 +66,11 @@
   margin: 0 0 1rem;
   transform: scaleX(0);
   transform-origin: left center;
-  animation: heroLine 700ms cubic-bezier(0.22, 1, 0.36, 1) 520ms forwards;
+  animation: hero-line 700ms cubic-bezier(0.22, 1, 0.36, 1) 520ms forwards;
 }
 
 .s-main__lead {
+  color: rgba(17, 19, 24, 0.58);
   font-size: 2.125rem;
   line-height: 1.6;
   max-width: 70ch;
@@ -78,10 +79,10 @@
   font-weight: 400;
   letter-spacing: 0.1rem;
   transform: translateY(0.75rem);
-  animation: heroTextIntro 760ms cubic-bezier(0.22, 1, 0.36, 1) 360ms forwards;
+  animation: hero-text-intro 760ms cubic-bezier(0.22, 1, 0.36, 1) 360ms forwards;
 }
 
-.s-main__ctaRow {
+.s-main__cta-row {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
@@ -98,7 +99,7 @@
   font-weight: 400;
   opacity: 0;
   transform: translateY(0.75rem);
-  animation: heroIntro 680ms cubic-bezier(0.22, 1, 0.36, 1) 680ms forwards;
+  animation: hero-intro 680ms cubic-bezier(0.22, 1, 0.36, 1) 680ms forwards;
 }
 
 .s-main__cta:nth-child(2) {
@@ -123,7 +124,7 @@
   overflow: hidden;
   opacity: 0;
   transform: translateX(1.5rem);
-  animation: heroMediaIntro 1000ms cubic-bezier(0.22, 1, 0.36, 1) 260ms forwards;
+  animation: hero-media-intro 1000ms cubic-bezier(0.22, 1, 0.36, 1) 260ms forwards;
 }
 
 .s-main__slides {
@@ -168,27 +169,27 @@
   pointer-events: none;
 }
 
-@keyframes heroIntro {
+@keyframes hero-intro {
   to {
     opacity: 1;
     transform: translateY(0) scale(1);
   }
 }
 
-@keyframes heroTextIntro {
+@keyframes hero-text-intro {
   to {
     opacity: 0.85;
     transform: translateY(0);
   }
 }
 
-@keyframes heroLine {
+@keyframes hero-line {
   to {
     transform: scaleX(1);
   }
 }
 
-@keyframes heroMediaIntro {
+@keyframes hero-media-intro {
   to {
     opacity: 1;
     transform: translateX(0);
@@ -196,7 +197,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .s-main__brandLogo,
+  .s-main__brand-logo,
   .s-main__lead,
   .s-main__divider,
   .s-main__cta,
@@ -279,7 +280,7 @@
     padding: 4rem 1.25rem 0;
   }
 
-  .s-main__brandLogo {
+  .s-main__brand-logo {
     width: min(14rem, 70vw);
   }
 
@@ -313,7 +314,7 @@
     padding-top: 3rem;
   }
 
-  .s-main__ctaRow {
+  .s-main__cta-row {
     flex-direction: column;
   }
 

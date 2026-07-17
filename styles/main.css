@@ -84,6 +84,7 @@ main {
 #logo{
     max-width:1rem;
 }
+
 @media (prefers-reduced-motion: reduce) {
     .reveal-up,
     .reveal-right {
@@ -93,7 +94,7 @@ main {
     }
 }
 
-.l-sectionTitle {
+.l-section-title {
     max-width: 68.75rem;
     margin: 0 auto;
     padding: 0 1.25rem;
