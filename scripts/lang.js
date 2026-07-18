@@ -228,8 +228,8 @@ const contents = {
     es: "¡Bienvenido a Ono Bikeshop!",
   },
   "about-promo-body": {
-    en: "Fast repairs, quality bike servicing, and rentals with local assistance while you explore Valencia.",
-    es: "Reparaciones rápidas, servicio técnico de calidad y alquileres con asistencia local para descubrir Valencia.",
+    en: "Quality bike rentals and fast repairs in Valencia.",
+    es: "Alquiler de bicis de calidad y reparaciones rápidas en Valencia.",
   },
   "carousel-prev-label": {
     en: "Previous photo",
@@ -244,8 +244,8 @@ const contents = {
     es: "Fotos del taller",
   },
   "lang-1": {
-    en: "Valencia is one of Spain's most bike-friendly cities. With its extensive network of bike lanes, green spaces, beach routes, and mild Mediterranean climate, it's easy to see why more and more visitors choose to explore the city by bike.\n\nAt ONO, we make it easy with quality bikes, fair prices, local tips, and free assistance during your rental.\n\nNeed to fix your bike? We also have a workshop for everything from everyday repairs to more complete maintenance. From basic servicing to brake bleeding, wheel truing, lubrication, and part replacements, we offer fast, quality work at an affordable price.\n\nCheck out our services below, or give us a call for a free estimate.",
-    es: "Valencia es una de las ciudades más cómodas de España para ir en bici, con una amplia red de carriles bici, zonas verdes, rutas de playa y un clima mediterráneo suave, por eso no sorprende que cada vez más visitantes elijan descubrirla en bici.\n\nEn ONO te lo ponemos fácil con bicis de calidad, precios justos, consejos locales y asistencia gratuita durante el alquiler.\n\n¿Necesitas arreglar tu bici? También contamos con taller para todo, desde reparaciones del día a día hasta mantenimientos más completos. Desde servicio básico hasta purgado de frenos, centrado de ruedas, engrase y cambios de piezas, ofrecemos un trabajo rápido y de calidad a un precio asequible.\n\nConsulta nuestros servicios más abajo o llámanos para pedir un presupuesto gratuito.",
+    en: "With its extensive bike-lane network, historic landmarks, and green urban spaces, Valencia is made for cycling. Even in such a walkable city, more and more visitors are choosing to see it by bike.\n\nAt ONO, we make it easy with quality bikes, fair prices, local tips, and free assistance during your rental.\n\nNeed to fix your bike? We also have a workshop for everything from everyday repairs to more complete maintenance. From basic servicing to brake bleeding, wheel truing, lubrication, and part replacements, we offer fast, quality work at an affordable price.\n\nCheck out our services below, or give us a call for a free estimate.",
+    es: "Con su amplia red de carriles bici, monumentos históricos y zonas verdes urbanas, Valencia está hecha para ir en bici. Incluso siendo una ciudad tan caminable, cada vez más visitantes eligen descubrirla en bici.\n\nEn ONO te lo ponemos fácil con bicis de calidad, precios justos, consejos locales y asistencia gratuita durante el alquiler.\n\n¿Necesitas arreglar tu bici? También contamos con taller para todo, desde reparaciones del día a día hasta mantenimientos más completos. Desde servicio básico hasta purgado de frenos, centrado de ruedas, engrase y cambios de piezas, ofrecemos un trabajo rápido y de calidad a un precio asequible.\n\nConsulta nuestros servicios más abajo o llámanos para pedir un presupuesto gratuito.",
   },
   "rental-title": {
     en: "Bike Rental",
@@ -358,6 +358,22 @@ const contents = {
   "rentals-hero-lead": {
     en: "We have bikes for every kind of ride, whether you're exploring Valencia solo, with friends, or with the whole family. All our bikes are kept in great condition, comfortable to ride, and ready to go, with options for children too.\n\nNeed a bike for a few hours or a few days? No problem. We offer flexible rentals, fair prices, and local advice to help you get the most out of your time in the city.",
     es: "Tenemos bicis para cada tipo de paseo, ya sea que quieras descubrir Valencia solo, con amigos o con toda la familia. Todas nuestras bicis están en muy buen estado, son cómodas y están listas para salir, también con opciones para niños.\n\n¿Necesitas una bici por unas horas o por varios días? Sin problema. Ofrecemos alquileres flexibles, precios justos y consejos locales para ayudarte a aprovechar al máximo tu tiempo en la ciudad.",
+  },
+  "rentals-cta-title": {
+    en: "Ready to ride?",
+    es: "¿Listo para pedalear?",
+  },
+  "rentals-cta-body": {
+    en: "Reserve your bike by phone or email. Tell us when you are coming, how many bikes you need, and for how long.",
+    es: "Reserva tu bici por teléfono o email. Cuéntanos cuándo vienes, cuántas bicis necesitas y durante cuánto tiempo.",
+  },
+  "rentals-cta-call": {
+    en: "Call to rent",
+    es: "Llamar para alquilar",
+  },
+  "rentals-cta-email": {
+    en: "Email us",
+    es: "Enviar email",
   },
   "routes-title": {
     en: "Recommended routes",
@@ -696,8 +712,10 @@ function initLang(lang) {
 
     const attr = node.dataset.langAttr;
     if (attr) {
-      node.setAttribute(attr, translation);
-    } else {
+      if (node.getAttribute(attr) !== translation) {
+        node.setAttribute(attr, translation);
+      }
+    } else if (node.textContent !== translation) {
       node.textContent = translation;
     }
   }
