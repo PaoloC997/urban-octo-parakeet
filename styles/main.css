@@ -82,7 +82,7 @@ main {
 }
 
 #logo{
-    max-width:1rem;
+   max-width:1rem;
 }
 
 @media (prefers-reduced-motion: reduce) {
