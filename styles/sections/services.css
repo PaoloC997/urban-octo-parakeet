@@ -387,14 +387,22 @@
   clip-path: polygon(0 0, 100% 0, calc(100% - var(--service-image-cut)) 100%, 0 100%);
 }
 
+.s-services__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 2rem auto 0;
+}
+
 .s-services__more {
   display: flex;
   align-items: center;
   justify-content: center;
   width: fit-content;
-  margin: 2rem auto 0;
+  min-height: 2.75rem;
   padding: 0.75rem 1.25rem;
-  border: 1px solid var(--c-border);
+  border: 1px solid rgba(17, 19, 24, 0.26);
   border-radius: 62.4375rem;
   color: #0f172a;
   font-size: 0.82rem;
@@ -412,6 +420,12 @@
   background: #0f172a;
   color: #fff;
   transform: translateY(-0.1rem);
+}
+
+.s-services__more--primary {
+  border-color: #0f172a;
+  background: #0f172a;
+  color: #fff;
 }
 
 .s-faq {
@@ -557,6 +571,10 @@
     flex-direction: column;
     gap: 1rem;
     margin-top: 2rem;
+  }
+
+  .s-services__actions {
+    flex-wrap: wrap;
   }
 
   .s-services__card {

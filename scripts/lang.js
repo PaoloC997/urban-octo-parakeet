@@ -255,9 +255,17 @@ const contents = {
     en: "See more",
     es: "Ver más",
   },
+  "rental-call": {
+    en: "Rent now",
+    es: "Alquilar ahora",
+  },
   "services-see-more": {
     en: "See more",
     es: "Ver más",
+  },
+  "services-call": {
+    en: "Call workshop",
+    es: "Llamar al taller",
   },
   "rental-regular-title": {
     en: "Regular bikes",
@@ -651,6 +659,62 @@ const contents = {
     en: "We believe discovering Valencia by bike should be accessible to everyone. That is why we offer very competitive rates without ever giving up the quality of our bikes or the friendly service you deserve. Our goal is simple: help you enjoy more, see more places, and spend less.",
     es: "Creemos que descubrir Valencia en bicicleta debería estar al alcance de todos. Por eso ofrecemos tarifas muy competitivas sin renunciar nunca a la calidad de nuestras bicicletas ni al trato cercano que mereces. Nuestro objetivo es sencillo: que puedas disfrutar más, recorrer más lugares y gastar menos.",
   },
+  "privacy-eyebrow": {
+    en: "Legal information",
+    es: "Información legal",
+  },
+  "privacy-title": {
+    en: "Privacy Policy",
+    es: "Política de privacidad",
+  },
+  "privacy-lead": {
+    en: "This page explains how Ono Bikeshop handles personal data, legal information, and cookies on this website.",
+    es: "Esta página explica cómo Ono Bikeshop trata los datos personales, la información legal y las cookies en este sitio web.",
+  },
+  "privacy-legal-title": {
+    en: "Legal notice",
+    es: "Aviso legal",
+  },
+  "privacy-legal-body": {
+    en: "This website belongs to Ono Bikeshop, located at C/ de Guillem de Castro, 64, Ciutat Vella, 46001 València, Valencia, Spain. You can contact us by email at onobicicletas@gmail.com or by phone at (+34) 694 912 878.",
+    es: "Este sitio web pertenece a Ono Bikeshop, ubicado en C/ de Guillem de Castro, 64, Ciutat Vella, 46001 València, Valencia, España. Puedes contactarnos por email en onobicicletas@gmail.com o por teléfono en el (+34) 694 912 878.",
+  },
+  "privacy-data-title": {
+    en: "Personal data",
+    es: "Datos personales",
+  },
+  "privacy-data-body": {
+    en: "We do not collect personal data through forms on this website. If you contact us by phone, email, Instagram, or another direct channel, we may use the details you provide to answer your request, manage a rental, prepare an estimate, or arrange a workshop service.",
+    es: "No recogemos datos personales mediante formularios en este sitio web. Si contactas con nosotros por teléfono, email, Instagram u otro canal directo, podremos usar los datos que nos facilites para responder a tu solicitud, gestionar un alquiler, preparar un presupuesto o organizar un servicio de taller.",
+  },
+  "privacy-purpose-title": {
+    en: "Purpose and retention",
+    es: "Finalidad y conservación",
+  },
+  "privacy-purpose-body": {
+    en: "We use your data only to respond to your request and provide the service you asked for. We keep it only for as long as needed to manage the request, rental, repair, or any legal/accounting obligation that may apply.",
+    es: "Usamos tus datos solo para responder a tu solicitud y prestar el servicio que nos has pedido. Los conservamos únicamente durante el tiempo necesario para gestionar la consulta, alquiler, reparación o cualquier obligación legal o contable aplicable.",
+  },
+  "privacy-rights-title": {
+    en: "Your rights",
+    es: "Tus derechos",
+  },
+  "privacy-rights-body": {
+    en: "Under GDPR and Spanish data protection rules, you may request access, correction, deletion, objection, limitation, or portability of your personal data. To exercise these rights, contact us at onobicicletas@gmail.com.",
+    es: "Según el RGPD y la normativa española de protección de datos, puedes solicitar el acceso, rectificación, supresión, oposición, limitación o portabilidad de tus datos personales. Para ejercer estos derechos, escríbenos a onobicicletas@gmail.com.",
+  },
+  "privacy-cookies-title": {
+    en: "Cookies",
+    es: "Cookies",
+  },
+  "privacy-cookies-body": {
+    en: "This website does not use analytics, advertising cookies, tracking pixels, or its own non-essential cookies. Because of that, no cookie banner is shown at this stage.",
+    es: "Este sitio web no utiliza analítica, cookies publicitarias, píxeles de seguimiento ni cookies propias no esenciales. Por eso, en esta fase no se muestra un banner de cookies.",
+  },
+  "privacy-cookies-third-party": {
+    en: "Some pages include external services, such as Google Maps, which may load third-party content from Google. These services are governed by their own privacy and cookie policies.",
+    es: "Algunas páginas incluyen servicios externos, como Google Maps, que pueden cargar contenido de terceros de Google. Estos servicios se rigen por sus propias políticas de privacidad y cookies.",
+  },
   "footer-logo-alt": {
     en: "Ono Bikeshop logo",
     es: "Logo de Ono Bikeshop",
@@ -686,6 +750,10 @@ const contents = {
   "footer-website-label": {
     en: "Website",
     es: "Web",
+  },
+  "footer-privacy-link": {
+    en: "Privacy policy",
+    es: "Política de privacidad",
   },
   "footer-map-label": {
     en: "Map placeholder",

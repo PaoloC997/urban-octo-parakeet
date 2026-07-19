@@ -133,12 +133,20 @@
   font-weight: 700;
 }
 
+.s-rental__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 2rem auto 0;
+}
+
 .s-rental__more {
   display: flex;
   align-items: center;
   justify-content: center;
   width: fit-content;
-  margin: 2rem auto 0;
+  min-height: 2.75rem;
   padding: 0.75rem 1.25rem;
   border: 1px solid var(--c-border);
   border-radius: 62.4375rem;
@@ -160,6 +168,11 @@
   transform: translateY(-0.1rem);
 }
 
+.s-rental__more--primary {
+  background: var(--c-text);
+  color: var(--c-bg);
+}
+
 @media (max-width: 56.25rem) {
   .s-rental {
     max-height: none;
@@ -171,6 +184,10 @@
   .s-rental__cards {
     flex-direction: column;
     gap: 2rem;
+  }
+
+  .s-rental__actions {
+    flex-wrap: wrap;
   }
 
   .s-rental__card + .s-rental__card {

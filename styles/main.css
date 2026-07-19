@@ -6,6 +6,7 @@
 @import url("./sections/services.css");
 @import url("./sections/rental.css");
 @import url("./sections/contact.css");
+@import url("./sections/privacy.css");
 
 :root {
     color-scheme: light;
