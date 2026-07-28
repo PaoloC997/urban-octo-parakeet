@@ -87,81 +87,161 @@ const contents = {
     en: "Inflate wheel",
     es: "Inflar rueda",
   },
+  "service-price-inflate-cost": {
+    en: "from 1€",
+    es: "desde 1€",
+  },
   "service-price-saddle": {
     en: "Saddle adjustment",
     es: "Ajuste sillín",
+  },
+  "service-price-saddle-cost": {
+    en: "from 5€",
+    es: "desde 5€",
   },
   "service-price-derailleur": {
     en: "Derailleur adjustment",
     es: "Ajuste desviador",
   },
+  "service-price-derailleur-cost": {
+    en: "from 10€",
+    es: "desde 10€",
+  },
   "service-price-brakes": {
     en: "Brake adjustment",
     es: "Ajuste frenos",
+  },
+  "service-price-brakes-cost": {
+    en: "from 10€",
+    es: "desde 10€",
   },
   "service-price-headset": {
     en: "Headset adjustment",
     es: "Ajuste dirección",
   },
+  "service-price-headset-cost": {
+    en: "from 7€",
+    es: "desde 7€",
+  },
   "service-price-bolts": {
     en: "General bolt adjustment",
     es: "Ajuste tornillería general",
+  },
+  "service-price-bolts-cost": {
+    en: "from 15€",
+    es: "desde 15€",
   },
   "service-price-wheel": {
     en: "Wheel truing",
     es: "Centrar rueda",
   },
+  "service-price-wheel-cost": {
+    en: "from 15€",
+    es: "desde 15€",
+  },
   "service-price-spoke": {
     en: "Spoke replacement + wheel truing",
     es: "Repuesto de radio + centrar rueda",
+  },
+  "service-price-spoke-cost": {
+    en: "from 20€",
+    es: "desde 20€",
   },
   "service-price-handlebar": {
     en: "Handlebar centering",
     es: "Centrado manillar",
   },
+  "service-price-handlebar-cost": {
+    en: "from 7€",
+    es: "desde 7€",
+  },
   "service-price-chain-clean": {
     en: "Clean + lubricate chain",
     es: "Limpiar + engrasar cadena",
+  },
+  "service-price-chain-clean-cost": {
+    en: "from 12€",
+    es: "desde 12€",
   },
   "service-price-bike-wash": {
     en: "Bike wash + lubricate chain",
     es: "Lavado bicicleta + engrasar cadena",
   },
+  "service-price-bike-wash-cost": {
+    en: "from 20€",
+    es: "desde 20€",
+  },
   "service-price-headset-service": {
     en: "Clean and lubricate headset / replace headset",
     es: "Limpiar y engrasar dirección / cambiar dirección",
+  },
+  "service-price-headset-service-cost": {
+    en: "from 15€",
+    es: "desde 15€",
   },
   "service-price-bottom-bracket": {
     en: "Clean and lubricate bottom bracket / replace bottom bracket",
     es: "Limpiar y engrasar pedalier / cambiar pedalier",
   },
+  "service-price-bottom-bracket-cost": {
+    en: "from 15€",
+    es: "desde 15€",
+  },
   "service-price-bar-tape": {
     en: "Bar tape replacement",
     es: "Repuesto cinta manillar",
+  },
+  "service-price-bar-tape-cost": {
+    en: "from 15€",
+    es: "desde 15€",
   },
   "service-price-chain": {
     en: "Chain replacement",
     es: "Repuesto cadena",
   },
+  "service-price-chain-cost": {
+    en: "from 10€",
+    es: "desde 10€",
+  },
   "service-price-tube": {
     en: "Tube / tire replacement",
     es: "Repuesto cámara / cubierta",
+  },
+  "service-price-tube-cost": {
+    en: "from 10€",
+    es: "desde 10€",
   },
   "service-price-cassette": {
     en: "Sprocket / cassette replacement",
     es: "Repuesto piñón / cassette",
   },
+  "service-price-cassette-cost": {
+    en: "from 10€",
+    es: "desde 10€",
+  },
   "service-price-cables": {
     en: "Housing + cables replacement (brakes and gears)",
     es: "Repuesto de fundas cable + cables (frenos y cambios)",
+  },
+  "service-price-cables-cost": {
+    en: "from 15€",
+    es: "desde 15€",
   },
   "service-price-bleed": {
     en: "Brake bleeding Shimano / Sram",
     es: "Purgado frenos Shimano / Sram",
   },
+  "service-price-bleed-cost": {
+    en: "from 20€ / 25€",
+    es: "desde 20€ / 25€",
+  },
   "service-price-pads": {
     en: "Brake pad / shoe replacement + adjustment",
     es: "Repuesto pastilla / zapata freno + ajuste",
+  },
+  "service-price-pads-cost": {
+    en: "from 13€",
+    es: "desde 13€",
   },
   "service-price-note-parts": {
     en: "Replacement parts are not included, only labor.",
@@ -192,12 +272,12 @@ const contents = {
     es: "ALQUILER DE BICIS Y TALLER",
   },
   "hero-cta-primary": {
-    en: "SEE SERVICES",
-    es: "VER SERVICIOS",
+    en: "BIKE RENTALS",
+    es: "ALQUILER DE BICIS",
   },
   "hero-cta-secondary": {
-    en: "Contact",
-    es: "Contacto",
+    en: "OUR SERVICES",
+    es: "NUESTROS SERVICIOS",
   },
   "hero-slides-label": {
     en: "Workshop photos",
@@ -264,8 +344,8 @@ const contents = {
     es: "Ver más",
   },
   "services-call": {
-    en: "Call workshop",
-    es: "Llamar al taller",
+    en: "Contact us",
+    es: "Contacta con nosotros",
   },
   "rental-regular-title": {
     en: "Regular bikes",
@@ -471,6 +551,10 @@ const contents = {
     en: "Essential maintenance for everyday bikes, including gears, brakes, bolts, and wheel truing.",
     es: "Mantenimiento esencial para bicis de uso diario: cambios, frenos, tornillería y centrado.",
   },
+  "service-basic-price": {
+    en: "from 29€",
+    es: "desde 29€",
+  },
   "service-basic-alt": {
     en: "Basic maintenance",
     es: "Mantenimiento básico",
@@ -482,6 +566,10 @@ const contents = {
   "service-premium-body": {
     en: "General and premium tune-ups for bikes that need a deeper clean, adjustment, and lubrication.",
     es: "Puestas a punto general y premium para bicis que necesitan limpieza, ajuste y engrase más profundo.",
+  },
+  "service-premium-price": {
+    en: "from 59€ / 79€",
+    es: "desde 59€ / 79€",
   },
   "service-premium-alt": {
     en: "Premium maintenance",
@@ -572,12 +660,12 @@ const contents = {
     es: "Disponemos de bicicletas urbanas cómodas y bien mantenidas, de diferentes tamaños e ideales tanto para adultos como para familias (incluyendo opciones para niños).",
   },
   "faq-accessories-q": {
-    en: "Are helmet, lock, and accessories included?",
-    es: "¿Hay casco, candado y accesorios?",
+    en: "Are helmets and locks included?",
+    es: "¿Están incluidos los cascos y los candados?",
   },
   "faq-accessories-a": {
-    en: "Yes. We provide a helmet, lock, and basket or bag as needed, at no extra cost.",
-    es: "Sí, facilitamos casco, candado y cesta o bolsa según necesites, sin coste adicional.",
+    en: "We provide helmets free of charge to children up to 16 years old. Locks are included with every bike.",
+    es: "Facilitamos cascos gratis a niños de hasta 16 años. Los candados están incluidos con cada bicicleta.",
   },
   "faq-weather-q": {
     en: "What happens if it rains or the weather is bad?",
@@ -599,17 +687,13 @@ const contents = {
     en: "Our Story",
     es: "Nuestra historia",
   },
-  "about-story-p1": {
-    en: "Hello, we are Sofía and Zoltán.",
-    es: "Hola, somos Sofía y Zoltán.",
-  },
   "about-story-p2": {
     en: "After moving to Valencia, we completely fell in love with the city and its way of life: walking through its streets, discovering hidden corners, and above all, exploring it by bike. Without a doubt, it is the best way to get to know Valencia. The city has more than 160 km of bike lanes, completely flat terrain, mild weather almost all year round, and the wonderful Turia Garden, a linear park of almost 10 km where you can cycle peacefully.",
     es: "Después de mudarnos a Valencia, nos enamoramos por completo de la ciudad y de su forma de vivir: paseando por sus calles, descubriendo rincones escondidos y, sobre todo, recorriéndola en bicicleta. Es, sin duda, la mejor manera de conocer Valencia. La ciudad cuenta con más de 160 km de carriles bici, un terreno completamente plano, un clima suave casi todo el año y el maravilloso Jardín del Turia, un parque lineal de casi 10 km donde puedes pedalear tranquilamente.",
   },
   "about-story-p3": {
-    en: "That is why we decided to create ONO Bikes. Zoltán, passionate about workshop life, has always enjoyed repairing and tuning bicycles. Together we ride many routes through the city and its surroundings, and we wanted to create a space where we could offer rental and workshop services in one place, both for Valencia locals and for visitors from other cities.",
-    es: "Por eso decidimos crear ONO Bikes. Zoltán, apasionado del mundo del taller, siempre ha disfrutado reparando y poniendo a punto bicicletas. Juntos hacemos muchas rutas por la ciudad y sus alrededores y quisimos crear un espacio donde pudiéramos ofrecer alquiler y taller en un mismo lugar, tanto para los vecinos de Valencia como para quienes nos visitan de otras ciudades.",
+    en: "That is why we decided to create ONO Bikes. With a real passion for workshop life, we have always enjoyed repairing and tuning bicycles. We ride many routes through the city and its surroundings, and we wanted to create a space where we could offer rental and workshop services in one place, both for Valencia locals and for visitors from other cities.",
+    es: "Por eso decidimos crear ONO Bikes. Con una verdadera pasión por el mundo del taller, siempre hemos disfrutado reparando y poniendo a punto bicicletas. Hacemos muchas rutas por la ciudad y sus alrededores y quisimos crear un espacio donde pudiéramos ofrecer alquiler y taller en un mismo lugar, tanto para los vecinos de Valencia como para quienes nos visitan de otras ciudades.",
   },
   "about-story-p4": {
     en: "We wanted to share our passion for cycling and create a place where you receive friendly service, useful advice, and bikes you can trust. As a family business, we believe in personalized attention, honesty, and fair prices. We love recommending routes, sharing special places, and making sure every customer has a comfortable and memorable experience.",
@@ -668,52 +752,40 @@ const contents = {
     es: "Política de privacidad",
   },
   "privacy-lead": {
-    en: "This page explains how Ono Bikeshop handles personal data, legal information, and cookies on this website.",
-    es: "Esta página explica cómo Ono Bikeshop trata los datos personales, la información legal y las cookies en este sitio web.",
+    en: "This website does not collect or store users' personal data and does not use cookies that are not necessary for its operation.",
+    es: "Esta página web no recoge ni almacena datos personales de los usuarios ni utiliza cookies no necesarias para su funcionamiento.",
   },
   "privacy-legal-title": {
-    en: "Legal notice",
-    es: "Aviso legal",
+    en: "Ownership",
+    es: "Titularidad",
   },
   "privacy-legal-body": {
-    en: "This website belongs to Ono Bikeshop, located at C/ de Guillem de Castro, 64, Ciutat Vella, 46001 València, Valencia, Spain. You can contact us by email at onobicicletas@gmail.com or by phone at (+34) 694 912 878.",
-    es: "Este sitio web pertenece a Ono Bikeshop, ubicado en C/ de Guillem de Castro, 64, Ciutat Vella, 46001 València, Valencia, España. Puedes contactarnos por email en onobicicletas@gmail.com o por teléfono en el (+34) 694 912 878.",
+    en: "In accordance with the obligations established in Law 34/2002 on Information Society Services and Electronic Commerce, the domain owner is: ONO Bike Shop, Softan OE, E25912908, C/ Benifaió 22 46015 Valencia, 689489889. Hereinafter, the bicycle workshop and rental business.",
+    es: "De acuerdo con las obligaciones previstas en la Ley 34/2002, de servicios de la Sociedad de la Información y del comercio electrónico, el titular del dominio es: ONO Bike Shop, Softan OE, E25912908, C/ Benifaió 22 46015 Valencia, 689489889. En lo sucesivo, el taller y alquiler de bicicletas.",
   },
   "privacy-data-title": {
-    en: "Personal data",
-    es: "Datos personales",
+    en: "Data and cookies",
+    es: "Datos y cookies",
   },
   "privacy-data-body": {
-    en: "We do not collect personal data through forms on this website. If you contact us by phone, email, Instagram, or another direct channel, we may use the details you provide to answer your request, manage a rental, prepare an estimate, or arrange a workshop service.",
-    es: "No recogemos datos personales mediante formularios en este sitio web. Si contactas con nosotros por teléfono, email, Instagram u otro canal directo, podremos usar los datos que nos facilites para responder a tu solicitud, gestionar un alquiler, preparar un presupuesto o organizar un servicio de taller.",
+    en: "This website does not collect or store users' personal data and does not use cookies that are not necessary for its operation.",
+    es: "Esta página web no recoge ni almacena datos personales de los usuarios ni utiliza cookies no necesarias para su funcionamiento.",
   },
-  "privacy-purpose-title": {
-    en: "Purpose and retention",
-    es: "Finalidad y conservación",
-  },
-  "privacy-purpose-body": {
-    en: "We use your data only to respond to your request and provide the service you asked for. We keep it only for as long as needed to manage the request, rental, repair, or any legal/accounting obligation that may apply.",
-    es: "Usamos tus datos solo para responder a tu solicitud y prestar el servicio que nos has pedido. Los conservamos únicamente durante el tiempo necesario para gestionar la consulta, alquiler, reparación o cualquier obligación legal o contable aplicable.",
-  },
+  // "privacy-purpose-title": {
+  //   en: "Payment processing",
+  //   es: "Tratamiento de pagos",
+  // },
+  // "privacy-purpose-body": {
+  //   en: "If the user decides to make a payment, they will be redirected to Redsys' secure platform, which will manage the processing of the data necessary for the payment operation in accordance with its own privacy policy and applicable regulations.",
+  //   es: "Si el usuario decide realizar un pago, será redirigido a la plataforma segura de Redsys, que gestionará el tratamiento de los datos necesarios para la operación de pago conforme a su propia política de privacidad y a la normativa aplicable.",
+  // },
   "privacy-rights-title": {
-    en: "Your rights",
-    es: "Tus derechos",
+    en: "Applicable terms",
+    es: "Condiciones aplicables",
   },
   "privacy-rights-body": {
-    en: "Under GDPR and Spanish data protection rules, you may request access, correction, deletion, objection, limitation, or portability of your personal data. To exercise these rights, contact us at onobicicletas@gmail.com.",
-    es: "Según el RGPD y la normativa española de protección de datos, puedes solicitar el acceso, rectificación, supresión, oposición, limitación o portabilidad de tus datos personales. Para ejercer estos derechos, escríbenos a onobicicletas@gmail.com.",
-  },
-  "privacy-cookies-title": {
-    en: "Cookies",
-    es: "Cookies",
-  },
-  "privacy-cookies-body": {
-    en: "This website does not use analytics, advertising cookies, tracking pixels, or its own non-essential cookies. Because of that, no cookie banner is shown at this stage.",
-    es: "Este sitio web no utiliza analítica, cookies publicitarias, píxeles de seguimiento ni cookies propias no esenciales. Por eso, en esta fase no se muestra un banner de cookies.",
-  },
-  "privacy-cookies-third-party": {
-    en: "Some pages include external services, such as Google Maps, which may load third-party content from Google. These services are governed by their own privacy and cookie policies.",
-    es: "Algunas páginas incluyen servicios externos, como Google Maps, que pueden cargar contenido de terceros de Google. Estos servicios se rigen por sus propias políticas de privacidad y cookies.",
+    en: "The use of this website and any payment made through Redsys is subject to the applicable privacy policy, payment platform terms, and current regulations.",
+    es: "El uso de esta página web y cualquier pago realizado a través de Redsys quedan sujetos a la política de privacidad aplicable, las condiciones de la plataforma de pago y la normativa vigente.",
   },
   "footer-logo-alt": {
     en: "Ono Bikeshop logo",
@@ -769,6 +841,14 @@ const contents = {
   },
 };
 
+const languageStorageKey = "ono-language";
+const supportedLanguages = ["en", "es"];
+
+function getSavedLang() {
+  const savedLang = localStorage.getItem(languageStorageKey);
+  return supportedLanguages.includes(savedLang) ? savedLang : "en";
+}
+
 function initLang(lang) {
   const nodes = Array.from(document.querySelectorAll("[data-lang]"));
 
@@ -792,6 +872,8 @@ function initLang(lang) {
 }
 
 function changeLang(lang) {
+  if (!supportedLanguages.includes(lang)) return;
+  localStorage.setItem(languageStorageKey, lang);
   initLang(lang);
 }
 
@@ -804,4 +886,4 @@ for (let i = 0; i < elements.length; i++) {
   });
 }
 
-window.addEventListener("DOMContentLoaded", () => initLang("en"));
+window.addEventListener("DOMContentLoaded", () => initLang(getSavedLang()));
