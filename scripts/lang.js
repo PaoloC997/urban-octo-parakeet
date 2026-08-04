@@ -324,8 +324,8 @@ const contents = {
     es: "Fotos del taller",
   },
   "lang-1": {
-    en: "With its extensive bike-lane network, historic landmarks, and green urban spaces, Valencia is made for cycling. Even in such a walkable city, more and more visitors are choosing to see it by bike.\n\nAt ONO, we make it easy with quality bikes, fair prices, local tips, and free assistance during your rental.\n\nNeed to fix your bike? We also have a workshop for everything from everyday repairs to more complete maintenance. From basic servicing to brake bleeding, wheel truing, lubrication, and part replacements, we offer fast, quality work at an affordable price.\n\nCheck out our services below, or give us a call for a free estimate.",
-    es: "Con su amplia red de carriles bici, monumentos históricos y zonas verdes urbanas, Valencia está hecha para ir en bici. Incluso siendo una ciudad tan caminable, cada vez más visitantes eligen descubrirla en bici.\n\nEn ONO te lo ponemos fácil con bicis de calidad, precios justos, consejos locales y asistencia gratuita durante el alquiler.\n\n¿Necesitas arreglar tu bici? También contamos con taller para todo, desde reparaciones del día a día hasta mantenimientos más completos. Desde servicio básico hasta purgado de frenos, centrado de ruedas, engrase y cambios de piezas, ofrecemos un trabajo rápido y de calidad a un precio asequible.\n\nConsulta nuestros servicios más abajo o llámanos para pedir un presupuesto gratuito.",
+    en: "With its extensive bike-lane network, historic landmarks, and green urban spaces, Valencia is made for cycling. Even in such a walkable city, more and more visitors are choosing to see it by bike.\n\nAt ONO, we make it easy with quality bikes, fair prices, local tips, and the option of having assistance during your rental.\n\nNeed to fix your bike? We also have a workshop for everything from everyday repairs to more complete maintenance. From basic servicing to brake bleeding, wheel truing, lubrication, and part replacements, we offer fast, quality work at an affordable price.\n\nCheck out our services below, or give us a call for a free estimate.",
+    es: "Con su amplia red de carriles bici, monumentos históricos y zonas verdes urbanas, Valencia está hecha para ir en bici. Incluso siendo una ciudad tan caminable, cada vez más visitantes eligen descubrirla en bici.\n\nEn ONO te lo ponemos fácil con bicis de calidad, precios justos, consejos locales y la opción de contar con asistencia durante el alquiler.\n\n¿Necesitas arreglar tu bici? También contamos con taller para todo, desde reparaciones del día a día hasta mantenimientos más completos. Desde servicio básico hasta purgado de frenos, centrado de ruedas, engrase y cambios de piezas, ofrecemos un trabajo rápido y de calidad a un precio asequible.\n\nConsulta nuestros servicios más abajo o llámanos para pedir un presupuesto gratuito.",
   },
   "rental-title": {
     en: "Bike Rental",
@@ -336,8 +336,8 @@ const contents = {
     es: "Ver más",
   },
   "rental-call": {
-    en: "Rent now",
-    es: "Alquilar ahora",
+    en: "Contact us for rentals",
+    es: "Contacta con nosotros para alquileres",
   },
   "services-see-more": {
     en: "See more",
@@ -456,12 +456,12 @@ const contents = {
     es: "Reserva tu bici por teléfono o email. Cuéntanos cuándo vienes, cuántas bicis necesitas y durante cuánto tiempo.",
   },
   "rentals-cta-call": {
-    en: "Call to rent",
-    es: "Llamar para alquilar",
+    en: "Contact us for rentals",
+    es: "Contacta con nosotros para alquileres",
   },
-  "rentals-cta-email": {
-    en: "Email us",
-    es: "Enviar email",
+  "rentals-cta-whatsapp": {
+    en: "WhatsApp",
+    es: "WhatsApp",
   },
   "routes-title": {
     en: "Recommended routes",
@@ -539,6 +539,10 @@ const contents = {
     en: "from 5€",
     es: "desde 5€",
   },
+  "service-inspection-summary": {
+    en: "Complete technical and safety inspection.",
+    es: "Revisión técnica y de seguridad completa.",
+  },
   "service-inspection-alt": {
     en: "Inspection",
     es: "Revisión",
@@ -554,6 +558,10 @@ const contents = {
   "service-basic-price": {
     en: "from 29€",
     es: "desde 29€",
+  },
+  "service-basic-summary": {
+    en: "Full clean, shifting and braking adjustment, chain lubrication.",
+    es: "Limpieza completa, ajuste de cambios y frenos, lubricación de cadena.",
   },
   "service-basic-alt": {
     en: "Basic maintenance",
@@ -571,6 +579,10 @@ const contents = {
     en: "from 59€ / 79€",
     es: "desde 59€ / 79€",
   },
+  "service-premium-summary": {
+    en: "Full disassembly, inspection, lubrication, and rebuild.",
+    es: "Desmontaje completo, revisión, lubricación y montaje.",
+  },
   "service-premium-alt": {
     en: "Premium maintenance",
     es: "Mantenimiento premium",
@@ -586,6 +598,10 @@ const contents = {
   "service-parts-price": {
     en: "from 1€",
     es: "desde 1€",
+  },
+  "service-parts-summary": {
+    en: "Wheel truing, hubs, bottom bracket, drivetrain, headset, bar tape, seatpost, and saddle.",
+    es: "Centrado de ruedas, bujes, pedalier, transmisión, dirección, cinta de manillar, tija y sillín.",
   },
   "service-parts-alt": {
     en: "Per-part services",
@@ -603,6 +619,10 @@ const contents = {
     en: "",
     es: "",
   },
+  "service-custom-summary": {
+    en: "Personalized bicycles built from the frame.",
+    es: "Bicicletas personalizadas montadas desde el cuadro.",
+  },
   "service-custom-alt": {
     en: "Custom builds",
     es: "Montajes personalizados",
@@ -618,6 +638,10 @@ const contents = {
   "service-restoration-price": {
     en: "from 25€",
     es: "desde 25€",
+  },
+  "service-restoration-summary": {
+    en: "Old bicycles refreshed with careful restoration and detailing.",
+    es: "Bicicletas antiguas renovadas con restauración y detailing cuidadoso.",
   },
   "service-restoration-alt": {
     en: "Restoration and detailing",
@@ -846,7 +870,10 @@ const supportedLanguages = ["en", "es"];
 
 function getSavedLang() {
   const savedLang = localStorage.getItem(languageStorageKey);
-  return supportedLanguages.includes(savedLang) ? savedLang : "en";
+  if (supportedLanguages.includes(savedLang)) return savedLang;
+
+  const host = window.location.hostname.toLowerCase();
+  return host === "onobikeshop.es" || host === "www.onobikeshop.es" ? "es" : "en";
 }
 
 function initLang(lang) {
