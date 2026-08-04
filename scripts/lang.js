@@ -28,8 +28,8 @@ const contents = {
     es: "Alquiler de bicis, reparación de bicicletas y taller de bicis en Valencia en Ono Bikeshop, con mantenimiento, restauración y consejos locales.",
   },
   "hero-title": {
-    en: "Bike Rental and Bicycle Repair in Valencia",
-    es: "Alquiler y reparación de bicicletas en Valencia",
+    en: "Bike Rental and Workshop in Valencia",
+    es: "Alquiler de bicis y taller en Valencia",
   },
   "services-page-title": {
     en: "Ono Bikeshop | Bike Workshop & Bicycle Repair in Valencia",
@@ -422,6 +422,18 @@ const contents = {
   "about-media-label": {
     en: "Workshop photos",
     es: "Fotos del taller",
+  },
+  "about-photo-1-alt": {
+    en: "Ono Bikeshop bicycle workshop in Valencia",
+    es: "Taller de bicicletas Ono Bikeshop en Valencia",
+  },
+  "about-photo-2-alt": {
+    en: "Bike helmets available at Ono Bikeshop",
+    es: "Cascos de bicicleta disponibles en Ono Bikeshop",
+  },
+  "about-photo-3-alt": {
+    en: "Bicycles and accessories at Ono Bikeshop Valencia",
+    es: "Bicicletas y accesorios en Ono Bikeshop Valencia",
   },
   "lang-1": {
     en: "With its extensive bike-lane network, historic landmarks, and green urban spaces, Valencia is made for cycling. Even in such a walkable city, more and more visitors are choosing to see it by bike.\n\nAt ONO, we make it easy with quality bikes, fair prices, local tips, and the option of having assistance during your rental.\n\nNeed to fix your bike? We also have a workshop for everything from everyday repairs to more complete maintenance. From basic servicing to brake bleeding, wheel truing, lubrication, and part replacements, we offer fast, quality work at an affordable price.\n\nCheck out our services below, or give us a call for a free estimate.",
