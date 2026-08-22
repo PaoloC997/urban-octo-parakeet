@@ -471,9 +471,17 @@ const contents = {
     en: "4 hours",
     es: "4 horas",
   },
+  "rental-regular-4h-price": {
+    en: "10€",
+    es: "10€",
+  },
   "rental-regular-1d": {
     en: "1 day",
     es: "1 día",
+  },
+  "rental-regular-1d-price": {
+    en: "12€",
+    es: "12€",
   },
   "rental-regular-return": {
     en: "(return by closing)",
@@ -483,37 +491,73 @@ const contents = {
     en: "24 hours",
     es: "24 horas",
   },
+  "rental-regular-24h-price": {
+    en: "17€",
+    es: "17€",
+  },
   "rental-regular-2d": {
     en: "2 days",
     es: "2 días",
+  },
+  "rental-regular-2d-price": {
+    en: "27€",
+    es: "27€",
   },
   "rental-regular-3d": {
     en: "3 days",
     es: "3 días",
   },
+  "rental-regular-3d-price": {
+    en: "39€",
+    es: "39€",
+  },
   "rental-regular-4d": {
     en: "4 days",
     es: "4 días",
+  },
+  "rental-regular-4d-price": {
+    en: "47€",
+    es: "47€",
   },
   "rental-regular-5d": {
     en: "5 days",
     es: "5 días",
   },
+  "rental-regular-5d-price": {
+    en: "56€",
+    es: "56€",
+  },
   "rental-regular-6d": {
     en: "6 days",
     es: "6 días",
+  },
+  "rental-regular-6d-price": {
+    en: "64€",
+    es: "64€",
   },
   "rental-regular-week": {
     en: "1 week",
     es: "1 semana",
   },
+  "rental-regular-week-price": {
+    en: "72€",
+    es: "72€",
+  },
   "rental-premium-4h": {
     en: "4 hours",
     es: "4 horas",
   },
+  "rental-premium-4h-price": {
+    en: "15€",
+    es: "15€",
+  },
   "rental-premium-1d": {
     en: "1 day",
     es: "1 día",
+  },
+  "rental-premium-1d-price": {
+    en: "20€",
+    es: "20€",
   },
   "rental-premium-return": {
     en: "(return by closing)",
@@ -523,29 +567,57 @@ const contents = {
     en: "24 hours",
     es: "24 horas",
   },
+  "rental-premium-24h-price": {
+    en: "25€",
+    es: "25€",
+  },
   "rental-premium-2d": {
     en: "2 days",
     es: "2 días",
+  },
+  "rental-premium-2d-price": {
+    en: "39€",
+    es: "39€",
   },
   "rental-premium-3d": {
     en: "3 days",
     es: "3 días",
   },
+  "rental-premium-3d-price": {
+    en: "50€",
+    es: "50€",
+  },
   "rental-premium-4d": {
     en: "4 days",
     es: "4 días",
+  },
+  "rental-premium-4d-price": {
+    en: "61€",
+    es: "61€",
   },
   "rental-premium-5d": {
     en: "5 days",
     es: "5 días",
   },
+  "rental-premium-5d-price": {
+    en: "72€",
+    es: "72€",
+  },
   "rental-premium-6d": {
     en: "6 days",
     es: "6 días",
   },
+  "rental-premium-6d-price": {
+    en: "83€",
+    es: "83€",
+  },
   "rental-premium-week": {
     en: "1 week",
     es: "1 semana",
+  },
+  "rental-premium-week-price": {
+    en: "92€",
+    es: "92€",
   },
   "rentals-hero-eyebrow": {
     en: "Bike rental",
