@@ -380,6 +380,46 @@
   font-size: 1.05rem;
 }
 
+.p-rentals-upgrades {
+  margin-top: clamp(1rem, 2vw, 1.5rem);
+  border: 1px solid var(--c-border);
+  background: rgba(255, 255, 255, 0.86);
+  padding: clamp(1.25rem, 2.8vw, 2.25rem);
+  box-shadow: 0 1.25rem 3rem rgba(10, 10, 15, 0.09);
+}
+
+.p-rentals-upgrades__title {
+  margin: 0 0 1.25rem;
+  color: #fb8003;
+  font-size: clamp(1.15rem, 1.8vw, 1.5rem);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.p-rentals-upgrades__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  list-style: disc;
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.p-rentals-upgrades__list li {
+  color: rgba(17, 19, 24, 0.82);
+  line-height: 1.45;
+}
+
+.p-rentals-upgrades__deposit {
+  margin: 1.25rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--c-border);
+  color: #111318;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
 .p-rentals-cta {
   display: flex;
   justify-content: space-between;

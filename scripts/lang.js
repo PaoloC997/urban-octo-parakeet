@@ -619,6 +619,30 @@ const contents = {
     en: "92€",
     es: "92€",
   },
+  "rental-upgrades-title": {
+    en: "Upgrade your experience",
+    es: "Mejora tu experiencia",
+  },
+  "rental-upgrade-helmet": {
+    en: "Helmet 2€/day (free for children up to 16 y.o)",
+    es: "Casco 2€/día (gratis para niños de hasta 16 años)",
+  },
+  "rental-upgrade-phone": {
+    en: "Phone holder 1€/day",
+    es: "Soporte para móvil 1€/día",
+  },
+  "rental-upgrade-child-seat": {
+    en: "Child seat 5€/day",
+    es: "Silla infantil 5€/día",
+  },
+  "rental-upgrade-assistance": {
+    en: "Assistance 5€/day per bicycle (this includes mechanical assistance in the city of Valencia and covers accidental damage to parts. Lost or stolen parts are covered up to 50% from the total price stated in the contract).",
+    es: "Asistencia 5€/día por bicicleta (incluye asistencia mecánica en la ciudad de Valencia y cubre daños accidentales en piezas. Las piezas perdidas o robadas se cubren hasta el 50% del precio total indicado en el contrato).",
+  },
+  "rental-deposit-note": {
+    en: "ONO requests a deposit of 50€ per bike (it can be adjusted depending on the size of the group).",
+    es: "ONO solicita un depósito de 50€ por bicicleta (puede ajustarse según el tamaño del grupo).",
+  },
   "rentals-hero-eyebrow": {
     en: "Bike rental",
     es: "Alquiler de bicis",
@@ -864,8 +888,16 @@ const contents = {
     es: "¿Qué tipo de bicicletas tenéis?",
   },
   "faq-bikes-a": {
-    en: "We have comfortable, well-maintained city bikes in different sizes, ideal for adults and families, including options for children.",
-    es: "Disponemos de bicicletas urbanas cómodas y bien mantenidas, de diferentes tamaños e ideales tanto para adultos como para familias (incluyendo opciones para niños).",
+    en: "We have comfortable, well-maintained city bikes in different sizes, ideal for adults and families, including options for children. We also have mountain bikes, road bikes and hybrid bikes.",
+    es: "Disponemos de bicicletas urbanas cómodas y bien mantenidas, de diferentes tamaños e ideales tanto para adultos como para familias (incluyendo opciones para niños). También tenemos bicicletas de montaña, bicicletas de carretera y bicicletas híbridas.",
+  },
+  "faq-kids-q": {
+    en: "Are there any options for kids?",
+    es: "¿Hay opciones para niños?",
+  },
+  "faq-kids-a": {
+    en: "Yes! We have kids' bikes, child seats that can be attached to an adult bike, and a bike trailer that can comfortably fit up to two children.",
+    es: "¡Sí! Tenemos bicicletas para niños, sillas infantiles que se pueden colocar en una bicicleta de adulto y un remolque que puede llevar cómodamente hasta dos niños.",
   },
   "faq-accessories-q": {
     en: "Are helmets and locks included?",
