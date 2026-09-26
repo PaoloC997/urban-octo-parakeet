@@ -4,7 +4,7 @@
 }
 
 .p-privacy {
-  width: min(100% - clamp(2rem, 7vw, 8rem), 96rem);
+  width: 90vw;
   margin: 0 auto;
   padding: clamp(4rem, 8vw, 7rem) 0;
 }

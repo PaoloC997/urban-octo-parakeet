@@ -29,6 +29,7 @@
 
 .s-about__grid {
   display: flex;
+  flex-direction: row;
   align-items: center;
   min-height: 40vh;
 }
@@ -80,6 +81,7 @@
   width: min(42rem, 50vw);
   margin: 0 auto;
   display: flex;
+  flex-direction: row;
   gap: 1rem;
   align-items: stretch;
   height: clamp(24rem, 44vh, 34rem);
@@ -100,7 +102,8 @@
 }
 
 .s-about__tile--small {
-  flex: 1 1 0%;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 .s-about__photo {
@@ -177,7 +180,7 @@
   display: grid;
   grid-template-columns: minmax(0, 0.95fr) minmax(18rem, 1.05fr);
   gap: clamp(2rem, 5vw, 5rem);
-  width: min(100% - clamp(2rem, 7vw, 8rem), 104rem);
+  width: 90vw;
   margin: 0 auto;
   padding: 7rem 0 4rem;
   align-items: center;
@@ -234,7 +237,7 @@
   display: grid;
   grid-template-columns: minmax(18rem, 0.75fr) minmax(0, 1.25fr);
   gap: clamp(2rem, 5vw, 5rem);
-  width: min(100% - clamp(2rem, 7vw, 8rem), 104rem);
+  width: 90vw;
   margin: 0 auto;
   padding: 2rem 0 5rem;
   align-items: center;
@@ -276,7 +279,7 @@
 }
 
 .p-about-page__values {
-  width: min(100% - clamp(2rem, 7vw, 8rem), 104rem);
+  width: 90vw;
   margin: 0 auto;
   padding: 0 0 6rem;
 }
@@ -304,6 +307,7 @@
 
 .p-about-page__value {
   display: flex;
+  flex-direction: row;
   align-items: baseline;
   gap: clamp(1rem, 3vw, 2.5rem);
   padding: 1.15rem 0;

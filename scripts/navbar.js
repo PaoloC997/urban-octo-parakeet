@@ -1,6 +1,7 @@
 const navbarToggle = document.querySelector(".c-navbar__toggle");
 const navbar = document.querySelector(".c-navbar");
 const navbarLinks = document.querySelectorAll(".c-navbar__panel a");
+const navPageLinks = document.querySelectorAll(".c-navbar__link");
 const navbarLabels = {
   en: {
     open: "Open menu",
@@ -11,6 +12,15 @@ const navbarLabels = {
     close: "Cerrar menú",
   },
 };
+
+const currentPath = window.location.pathname.endsWith("/") ? "/index.html" : window.location.pathname;
+
+for (const link of navPageLinks) {
+  if (link.pathname === currentPath) {
+    link.classList.add("is-active");
+    link.setAttribute("aria-current", "page");
+  }
+}
 
 if (navbarToggle && navbar) {
   const updateNavbarLabel = () => {

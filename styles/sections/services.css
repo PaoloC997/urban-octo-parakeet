@@ -40,10 +40,11 @@
   position: relative;
   z-index: 1;
   display: flex;
+  flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
   gap: clamp(2rem, 6vw, 7rem);
-  width: min(100% - clamp(2rem, 7vw, 8rem), 104rem);
+  width: 90vw;
   margin: 0 auto;
 }
 
@@ -79,7 +80,7 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  width: min(100% - clamp(2rem, 7vw, 8rem), 104rem);
+  width: 90vw;
   margin: 0 auto;
   padding: 1.5rem 0 6rem;
   color: #0f172a;
@@ -87,6 +88,7 @@
 
 .p-service-item {
   display: flex;
+  flex-direction: row;
   min-height: 22rem;
   overflow: hidden;
   border: 1px solid var(--c-border);
@@ -190,7 +192,7 @@
 }
 
 .p-services-price-list__title {
-  width: min(100%, 104rem);
+  width: 90vw;
   margin: 0 auto 2rem;
   color: var(--c-secondary);
   font-size: 0.95rem;
@@ -202,9 +204,10 @@
 
 .p-services-price-list__list {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   gap: 0;
-  width: min(100%, 104rem);
+  width: 90vw;
   margin: 0 auto;
   padding: 0;
   list-style: none;
@@ -212,6 +215,7 @@
 
 .p-services-price-list__list li {
   display: flex;
+  flex-direction: row;
   flex: 1 1 50rem;
   justify-content: space-between;
   gap: 2rem;
@@ -228,7 +232,7 @@
 }
 
 .p-services-price-list__note {
-  width: min(100%, 104rem);
+  width: 90vw;
   margin: 1rem auto 0;
   color: rgba(17, 19, 24, 0.58);
   font-size: 0.92rem;
@@ -236,7 +240,7 @@
 }
 
 .p-services-list-head {
-  width: min(100% - clamp(2rem, 7vw, 8rem), 104rem);
+  width: 90vw;
   margin: 0 auto;
   padding: 3.25rem 0 0;
 }
@@ -326,8 +330,9 @@
 
 .s-services__grid {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  gap: 0.875rem;
+  gap: 1.5rem;
   margin-top: 3rem;
 }
 
@@ -343,6 +348,7 @@
 
 .s-services__card-head {
   display: flex;
+  flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
   gap: 0.75rem;
@@ -389,6 +395,7 @@
 
 .s-services__actions {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
@@ -397,6 +404,7 @@
 
 .s-services__more {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   width: fit-content;
@@ -435,7 +443,7 @@
 }
 
 .s-faq__inner {
-  width: min(100% - clamp(2rem, 7vw, 8rem), 96rem);
+  width: 90vw;
   margin: 0 auto;
 }
 
@@ -575,10 +583,6 @@
 
   .s-services__actions {
     flex-wrap: wrap;
-  }
-
-  .s-services__card {
-    flex-basis: auto;
   }
 
   .s-services__card-body {

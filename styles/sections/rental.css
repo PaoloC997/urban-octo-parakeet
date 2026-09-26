@@ -1,6 +1,5 @@
 .s-rental {
-  max-height:90vh;
-  min-height:80vh;
+  min-height: 80vh;
   padding-right: 0;
   padding-bottom: 7vh;
   padding-left: 0;
@@ -55,6 +54,7 @@
 
 .s-rental__cards {
   display: flex;
+  flex-direction: row;
   gap: 0;
   margin-top: 3rem;
   position: relative;
@@ -112,6 +112,7 @@
 
 .s-rental__item {
   display: flex;
+  flex-direction: row;
   gap: 0.875rem;
   align-items: baseline;
   padding: 0.125rem 0;
@@ -149,14 +150,68 @@
 
 .s-rental__actions {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
-  margin-top: 6rem;
+  margin-top: 2rem;
+}
+
+.s-rental-upgrades {
+  max-width: 72vw;
+  margin-top: 3rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 2rem;
+  border-top: 1px solid var(--c-border);
+}
+
+.s-rental-upgrades__title {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #fb8003;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.s-rental-upgrades__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.s-rental-upgrades__list li {
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+  line-height: 1.45;
+}
+
+.s-rental-upgrades__dot {
+  flex-shrink: 0;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-top: 0.45rem;
+  border-radius: 62.4375rem;
+  background: #12c2ff;
+}
+
+.s-rental-upgrades__deposit {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-weight: 600;
+  line-height: 1.45;
 }
 
 .s-rental__more {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   width: fit-content;
@@ -215,6 +270,12 @@
     width: 100%;
   }
 
+  .s-rental-upgrades {
+    max-width: none;
+    margin-top: 2rem;
+    padding-top: 2rem;
+  }
+
   .s-rental__card-title {
     margin-bottom: 1.25rem;
   }
@@ -256,12 +317,13 @@
 .p-rentals-hero__inner,
 .p-rentals-prices__inner,
 .p-routes__inner {
-  width: min(100% - clamp(2rem, 7vw, 8rem), 104rem);
+  width: 90vw;
   margin: 0 auto;
 }
 
 .p-rentals-hero__inner {
   display: flex;
+  flex-direction: row;
   gap: clamp(2rem, 6vw, 5rem);
   align-items: center;
 }
@@ -345,11 +407,14 @@
 
 .p-rentals-prices__row {
   display: flex;
+  flex-direction: row;
   gap: clamp(1rem, 2vw, 1.5rem);
 }
 
 .p-rentals-prices__card {
-  flex: 1 1 0;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: 44vw;
   border: 1px solid var(--c-border);
   background: rgba(255, 255, 255, 0.86);
   padding: clamp(1.25rem, 2.8vw, 2.25rem);
@@ -388,6 +453,7 @@
 
 .p-rentals-prices__list li {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   gap: 1.25rem;
   align-items: baseline;
@@ -451,6 +517,7 @@
 
 .p-rentals-cta {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   gap: 1.5rem;
   align-items: center;
@@ -475,12 +542,14 @@
 
 .p-rentals-cta__actions {
   display: flex;
+  flex-direction: row;
   flex: 0 0 auto;
   gap: 0.75rem;
 }
 
 .p-rentals-cta__button {
   display: inline-flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   min-height: 2.75rem;
@@ -510,13 +579,16 @@
 
 .p-routes__list {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   gap: clamp(1rem, 2vw, 1.5rem);
 }
 
 .p-routes__item {
   display: flex;
-  flex: 0 1 calc(50% - 0.75rem);
+  flex-direction: row;
+  flex-shrink: 0;
+  width: 44vw;
   gap: clamp(1rem, 2vw, 1.5rem);
   align-items: stretch;
   min-height: 13rem;
@@ -604,7 +676,7 @@
   }
 
   .p-routes__item {
-    flex-basis: 100%;
+    width: 100%;
   }
 
   .p-rentals-hero__media {
@@ -628,9 +700,12 @@
   }
 
   .p-routes__item img {
-    flex-basis: auto;
     width: 100%;
     height: 13rem;
+  }
+
+  .p-rentals-prices__card {
+    width: 100%;
   }
 
   .p-rentals-cta__actions,
