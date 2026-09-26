@@ -43,7 +43,7 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  gap: clamp(2rem, 6vw, 7rem);
+  gap: 4rem;
   width: 90vw;
   margin: 0 auto;
 }
@@ -60,17 +60,19 @@
 .p-services-hero__title {
   max-width: 14ch;
   margin: 0;
-  font-size: clamp(3rem, 7vw, 6rem);
+  font-size: 5rem;
   line-height: 0.92;
   font-weight: 500;
   letter-spacing: 0;
 }
 
 .p-services-hero__lead {
-  flex: 0 1 42rem;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 42rem;
   max-width: 42rem;
   margin: 0;
-  font-size: clamp(1.15rem, 2vw, 1.5rem);
+  font-size: 1.3rem;
   line-height: 1.45;
   opacity: 0.78;
   white-space: pre-line;
@@ -117,11 +119,13 @@
 
 .p-service-item__media {
   position: relative;
-  flex: 0 0 42%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 42%;
   min-height: 100%;
   overflow: hidden;
   background: color-mix(in srgb, var(--c-primary) 8%, #fff);
-  clip-path: polygon(0 0, 100% 0, calc(100% - var(--service-image-cut)) 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 88% 100%, 0 100%);
 }
 
 .p-service-item__img {
@@ -135,11 +139,13 @@
 
 .p-service-item__content {
   display: flex;
-  flex: 1 1 auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
   flex-direction: column;
   justify-content: center;
   min-width: 0;
-  padding: clamp(1.75rem, 3.2vw, 3.5rem);
+  padding: 2.5rem;
 }
 
 .p-service-item__number {
@@ -153,7 +159,7 @@
 .p-service-item__title {
   max-width: 13ch;
   margin: 0;
-  font-size: clamp(1.65rem, 3vw, 2.55rem);
+  font-size: 2.2rem;
   line-height: 0.98;
   font-weight: 500;
   letter-spacing: 0;
@@ -187,7 +193,10 @@
 .p-services-price-list {
   width: 100%;
   margin: 0;
-  padding: clamp(4rem, 7vw, 7rem) clamp(2rem, 5vw, 5rem);
+  padding-top: 5rem;
+  padding-right: 3rem;
+  padding-bottom: 5rem;
+  padding-left: 3rem;
   background: #fff;
 }
 
@@ -216,7 +225,9 @@
 .p-services-price-list__list li {
   display: flex;
   flex-direction: row;
-  flex: 1 1 50rem;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 50rem;
   justify-content: space-between;
   gap: 2rem;
   padding: 1.05rem 2.25rem 1.05rem 0;
@@ -226,7 +237,9 @@
 }
 
 .p-services-price-list__list strong {
-  flex: 0 0 auto;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
   color: #0f172a;
   font-weight: 600;
 }
@@ -260,7 +273,7 @@
   text-transform: uppercase;
   letter-spacing: 0.12em;
   font-weight: 400;
-  font-size: clamp(2.25rem, 5vw, 3.25rem);
+  font-size: 3rem;
   margin-bottom: 0.75rem;
   opacity: 0;
   transform: translateY(1rem);
@@ -271,7 +284,7 @@
 
 .s-services__divider {
   height: 0.1875rem;
-  width: min(40rem, calc(100% - 2.5rem));
+  width: 40vw;
   margin: 0 auto 1.5rem;
   border-radius: 62.4375rem;
   background: var(--c-brand-grad);
@@ -337,7 +350,9 @@
 }
 
 .s-services__card {
-  flex: 1 1 20rem;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 20rem;
   display: flex;
   flex-direction: column;
   border: 1px solid var(--c-border);
@@ -361,7 +376,9 @@
 }
 
 .s-services__card-price {
-  flex: 0 0 auto;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
   color: rgba(17, 19, 24, 0.58);
   font-size: 0.95rem;
   line-height: 1.2;
@@ -377,7 +394,7 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden;
-  min-height: calc(1.6em * 3);
+  min-height: 4.8em;
   line-height: 1.6;
 }
 
@@ -390,7 +407,7 @@
   border-radius: 0.75rem;
   margin-top: 0.75rem;
   border: 1px solid var(--c-border);
-  clip-path: polygon(0 0, 100% 0, calc(100% - var(--service-image-cut)) 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 88% 100%, 0 100%);
 }
 
 .s-services__actions {
@@ -443,7 +460,7 @@
 }
 
 .s-faq__inner {
-  width: 90vw;
+  width: 93vw;
   margin: 0 auto;
 }
 
@@ -454,7 +471,7 @@
 .s-faq__title {
   max-width: 13ch;
   margin: 0;
-  font-size: clamp(2.75rem, 6vw, 5.5rem);
+  font-size: 5.5rem;
   line-height: 0.92;
   font-weight: 500;
 }
@@ -470,7 +487,8 @@
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  padding: clamp(1.25rem, 2.4vw, 2rem) 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   border-bottom: 1px solid var(--c-border);
 }
 
@@ -478,7 +496,7 @@
 .s-faq__item::after {
   content: "";
   position: absolute;
-  top: calc(clamp(1.25rem, 2.4vw, 2rem) + 0.62em);
+  top: 2.62rem;
   left: 0;
   width: 0.85rem;
   height: 0.1rem;
@@ -493,7 +511,7 @@
 .s-faq__item h3 {
   margin: 0;
   padding-left: 1.75rem;
-  font-size: clamp(1.15rem, 1.7vw, 1.5rem);
+  font-size: 1.5rem;
   line-height: 1.15;
   font-weight: 500;
 }
@@ -537,12 +555,12 @@
   }
 
   .p-services-list {
-    width: calc(100% - 2rem);
+    width: 90vw;
     padding: 1.5rem 0 4rem;
   }
 
   .p-services-list-head {
-    width: calc(100% - 2rem);
+    width: 90vw;
   }
 
   .p-services-price-list {
@@ -592,7 +610,7 @@
   }
 
   .s-services__card-img {
-    height: clamp(11rem, 48vw, 16rem);
+    height: 14rem;
   }
 
   .s-faq {
@@ -600,11 +618,26 @@
   }
 
   .s-faq__inner {
-    width: calc(100% - 2rem);
+    width: 93vw;
   }
 
   .s-faq__item {
     gap: 0.65rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .s-faq__title {
+    font-size: 2.75rem;
+  }
+
+  .s-faq__item::before,
+  .s-faq__item::after {
+    top: 1.95rem;
+  }
+
+  .s-faq__item h3 {
+    font-size: 1.15rem;
   }
 }
 
@@ -622,11 +655,11 @@
 
 @media (max-width: 35rem) {
   .p-services-hero__title {
-    font-size: clamp(3rem, 18vw, 4.8rem);
+    font-size: 4rem;
   }
 
   .p-service-item__title {
-    font-size: clamp(1.45rem, 10vw, 2.25rem);
+    font-size: 2rem;
   }
 
   .p-service-item {
