@@ -467,6 +467,14 @@ const contents = {
     en: "Premium bikes",
     es: "Bicis premium",
   },
+  "rental-mtb-title": {
+    en: "MTB/Road bikes",
+    es: "Bicis MTB/carretera",
+  },
+  "rental-ebike-title": {
+    en: "E-Bikes",
+    es: "E-Bikes",
+  },
   "rental-regular-4h": {
     en: "4 hours",
     es: "4 horas",
@@ -548,16 +556,16 @@ const contents = {
     es: "4 horas",
   },
   "rental-premium-4h-price": {
-    en: "15€",
-    es: "15€",
+    en: "12€",
+    es: "12€",
   },
   "rental-premium-1d": {
     en: "1 day",
     es: "1 día",
   },
   "rental-premium-1d-price": {
-    en: "20€",
-    es: "20€",
+    en: "14€",
+    es: "14€",
   },
   "rental-premium-return": {
     en: "(return by closing)",
@@ -568,56 +576,208 @@ const contents = {
     es: "24 horas",
   },
   "rental-premium-24h-price": {
-    en: "25€",
-    es: "25€",
+    en: "19€",
+    es: "19€",
   },
   "rental-premium-2d": {
     en: "2 days",
     es: "2 días",
   },
   "rental-premium-2d-price": {
-    en: "39€",
-    es: "39€",
+    en: "31€",
+    es: "31€",
   },
   "rental-premium-3d": {
     en: "3 days",
     es: "3 días",
   },
   "rental-premium-3d-price": {
-    en: "50€",
-    es: "50€",
+    en: "43€",
+    es: "43€",
   },
   "rental-premium-4d": {
     en: "4 days",
     es: "4 días",
   },
   "rental-premium-4d-price": {
-    en: "61€",
-    es: "61€",
+    en: "54€",
+    es: "54€",
   },
   "rental-premium-5d": {
     en: "5 days",
     es: "5 días",
   },
   "rental-premium-5d-price": {
-    en: "72€",
-    es: "72€",
+    en: "63€",
+    es: "63€",
   },
   "rental-premium-6d": {
     en: "6 days",
     es: "6 días",
   },
   "rental-premium-6d-price": {
-    en: "83€",
-    es: "83€",
+    en: "71€",
+    es: "71€",
   },
   "rental-premium-week": {
     en: "1 week",
     es: "1 semana",
   },
   "rental-premium-week-price": {
+    en: "80€",
+    es: "80€",
+  },
+  "rental-mtb-4h": {
+    en: "4 hours",
+    es: "4 horas",
+  },
+  "rental-mtb-4h-price": {
+    en: "15€",
+    es: "15€",
+  },
+  "rental-mtb-1d": {
+    en: "1 day",
+    es: "1 día",
+  },
+  "rental-mtb-1d-price": {
+    en: "20€",
+    es: "20€",
+  },
+  "rental-mtb-return": {
+    en: "(return by closing)",
+    es: "(devolución al cierre)",
+  },
+  "rental-mtb-24h": {
+    en: "24 hours",
+    es: "24 horas",
+  },
+  "rental-mtb-24h-price": {
+    en: "25€",
+    es: "25€",
+  },
+  "rental-mtb-2d": {
+    en: "2 days",
+    es: "2 días",
+  },
+  "rental-mtb-2d-price": {
+    en: "39€",
+    es: "39€",
+  },
+  "rental-mtb-3d": {
+    en: "3 days",
+    es: "3 días",
+  },
+  "rental-mtb-3d-price": {
+    en: "50€",
+    es: "50€",
+  },
+  "rental-mtb-4d": {
+    en: "4 days",
+    es: "4 días",
+  },
+  "rental-mtb-4d-price": {
+    en: "61€",
+    es: "61€",
+  },
+  "rental-mtb-5d": {
+    en: "5 days",
+    es: "5 días",
+  },
+  "rental-mtb-5d-price": {
+    en: "72€",
+    es: "72€",
+  },
+  "rental-mtb-6d": {
+    en: "6 days",
+    es: "6 días",
+  },
+  "rental-mtb-6d-price": {
+    en: "83€",
+    es: "83€",
+  },
+  "rental-mtb-week": {
+    en: "1 week",
+    es: "1 semana",
+  },
+  "rental-mtb-week-price": {
     en: "92€",
     es: "92€",
+  },
+  "rental-ebike-4h": {
+    en: "4 hours",
+    es: "4 horas",
+  },
+  "rental-ebike-4h-price": {
+    en: "25€",
+    es: "25€",
+  },
+  "rental-ebike-1d": {
+    en: "1 day",
+    es: "1 día",
+  },
+  "rental-ebike-1d-price": {
+    en: "30€",
+    es: "30€",
+  },
+  "rental-ebike-return": {
+    en: "(return by closing)",
+    es: "(devolución al cierre)",
+  },
+  "rental-ebike-24h": {
+    en: "24 hours",
+    es: "24 horas",
+  },
+  "rental-ebike-24h-price": {
+    en: "35€",
+    es: "35€",
+  },
+  "rental-ebike-2d": {
+    en: "2 days",
+    es: "2 días",
+  },
+  "rental-ebike-2d-price": {
+    en: "60€",
+    es: "60€",
+  },
+  "rental-ebike-3d": {
+    en: "3 days",
+    es: "3 días",
+  },
+  "rental-ebike-3d-price": {
+    en: "85€",
+    es: "85€",
+  },
+  "rental-ebike-4d": {
+    en: "4 days",
+    es: "4 días",
+  },
+  "rental-ebike-4d-price": {
+    en: "110€",
+    es: "110€",
+  },
+  "rental-ebike-5d": {
+    en: "5 days",
+    es: "5 días",
+  },
+  "rental-ebike-5d-price": {
+    en: "135€",
+    es: "135€",
+  },
+  "rental-ebike-6d": {
+    en: "6 days",
+    es: "6 días",
+  },
+  "rental-ebike-6d-price": {
+    en: "155€",
+    es: "155€",
+  },
+  "rental-ebike-week": {
+    en: "1 week",
+    es: "1 semana",
+  },
+  "rental-ebike-week-price": {
+    en: "175€",
+    es: "175€",
   },
   "rental-upgrades-title": {
     en: "Upgrade your experience",

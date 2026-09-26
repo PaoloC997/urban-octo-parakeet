@@ -1,8 +1,9 @@
 .s-rental {
   max-height:90vh;
   min-height:80vh;
-  padding-top:3.5rem;
-  padding-bottom:5rem;
+  padding-right: 0;
+  padding-bottom: 7vh;
+  padding-left: 0;
   background: var(--c-bg);
   color: var(--c-text);
   position: relative;
@@ -32,37 +33,40 @@
   letter-spacing: 0.12em;
   font-weight: 400;
   font-size: clamp(2.25rem, 5vw, 3.25rem);
-  margin-bottom: 0.75rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .s-rental__divider {
   height: 0.1875rem;
-  width: min(40rem, calc(100% - 2.5rem));
-  margin: 0 auto 1.5rem;
+  width: 40vw;
+  margin-top: 0.75rem;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
   border-radius: 62.4375rem;
   background: linear-gradient(90deg, #12c2ff 0%, #fb8003 50%, #7a2cff 100%);
 }
 
 .s-rental__inner {
-  max-width: 68.75rem;
+  width: 95vw;
   margin: 0 auto;
-  padding: 0 1.25rem;
 }
 
 .s-rental__cards {
   display: flex;
   gap: 0;
+  margin-top: 3rem;
   position: relative;
 }
 
 .s-rental__card {
-  flex: 1 1 0%;
-}
-
-.s-rental__card {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: 23.75vw;
   border: 0;
   border-radius: 0;
-  padding: 0 2rem;
+  padding: 0 1.75vw;
   background: transparent;
 }
 
@@ -82,9 +86,19 @@
   color: #12c2ff;
 }
 
-.s-rental__card:last-child .s-rental__card-title,
-.s-rental__card:last-child .s-rental__price {
+.s-rental__card--premium .s-rental__card-title,
+.s-rental__card--premium .s-rental__price {
   color: #7a2cff;
+}
+
+.s-rental__card--mtb .s-rental__card-title,
+.s-rental__card--mtb .s-rental__price {
+  color: #12c2ff;
+}
+
+.s-rental__card--ebike .s-rental__card-title,
+.s-rental__card--ebike .s-rental__price {
+  color: #5da2ff;
 }
 
 .s-rental__list {
@@ -138,7 +152,7 @@
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
-  margin: 2rem auto 0;
+  margin-top: 6rem;
 }
 
 .s-rental__more {
@@ -198,6 +212,7 @@
 
   .s-rental__card {
     padding: 0;
+    width: 100%;
   }
 
   .s-rental__card-title {
@@ -324,6 +339,12 @@
 
 .p-rentals-prices__cards {
   display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 2vw, 1.5rem);
+}
+
+.p-rentals-prices__row {
+  display: flex;
   gap: clamp(1rem, 2vw, 1.5rem);
 }
 
@@ -346,6 +367,14 @@
 
 .p-rentals-prices__card--premium .p-rentals-prices__card-title {
   color: #754ff6;
+}
+
+.p-rentals-prices__card--mtb .p-rentals-prices__card-title {
+  color: #12a8e0;
+}
+
+.p-rentals-prices__card--ebike .p-rentals-prices__card-title {
+  color: #4f93f6;
 }
 
 .p-rentals-prices__list {
@@ -562,6 +591,10 @@
 @media (max-width: 62rem) {
   .p-rentals-hero__inner,
   .p-rentals-prices__cards {
+    flex-direction: column;
+  }
+
+  .p-rentals-prices__row {
     flex-direction: column;
   }
 
